@@ -15,7 +15,8 @@ const { text, remainingCharacters } = useCharacterLimit({
     <Input
       id="input-35"
       type="text"
-      v-model="text"
+      v-model:value="text"
+      @update:value="val => (text = val)"
       :maxlength="maxLength"
       aria-describedby="characters-left"
     />

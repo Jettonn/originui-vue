@@ -47,6 +47,20 @@
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
                 </a>
               </li>
+              <li>
+                <span
+                  className="inline-flex w-full flex-col justify-between gap-2 whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/[0.04] sm:h-14 sm:flex-row sm:items-center"
+                >
+                  <span className="flex items-start gap-2">
+                    Checkbox, Radio, and Switch
+                    <span
+                      class="-mt-1 text-[10px] font-medium uppercase text-zinc-400 dark:text-zinc-600 animate-pulse"
+                    >
+                      Available soon
+                    </span>
+                  </span>
+                </span>
+              </li>
             </ul>
           </nav>
         </div>

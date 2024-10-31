@@ -21,7 +21,8 @@ const {
         id="input-34"
         class="peer pe-14"
         type="text"
-        v-model="text"
+        v-model:value="text"
+        @update:value="val => (text = val)"
         :maxlength="maxLength"
         aria-describedby="character-count"
       />

@@ -38,6 +38,6 @@ onMounted(() => {
     <Suspense>
       <component :is="Component" />
     </Suspense>
-    <CopyButton :component-source="source || ''" />
+    <CopyButton :code="source" />
   </div>
 </template>
