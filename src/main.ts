@@ -5,17 +5,21 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import VueGtag from "vue-gtag";
 
-const app = createApp(App)
+import './router';
 
-router.beforeEach((to, from, next) => {
-  if (to.meta.title) {
-    document.title = to.meta.title as string;
-  }
-  next();
-});
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(router)
 
-app.mount('#app')
+const googleAnalyticsId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
+if (googleAnalyticsId && import.meta.env.PROD) {
+  app.use(VueGtag, {
+    config: { id: googleAnalyticsId },
+  });
+}
+
+app.use(createPinia());
+app.use(router);
+
+app.mount('#app');

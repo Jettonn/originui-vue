@@ -32,6 +32,9 @@ dependencies:
   vue:
     specifier: ^3.5.12
     version: 3.5.12(typescript@5.6.3)
+  vue-gtag:
+    specifier: ^2.0.1
+    version: 2.0.1(vue@3.5.12)
   vue-router:
     specifier: ^4.4.5
     version: 4.4.5(vue@3.5.12)
@@ -3345,6 +3348,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-gtag@2.0.1(vue@3.5.12):
+    resolution: {integrity: sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.5.12(typescript@5.6.3)
+    dev: false
 
   /vue-router@4.4.5(vue@3.5.12):
     resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
