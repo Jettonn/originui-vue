@@ -8,6 +8,9 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.1.0
     version: 5.1.0
+  '@internationalized/date':
+    specifier: ^3.5.6
+    version: 3.5.6
   '@vueuse/core':
     specifier: ^11.1.0
     version: 11.1.0(vue@3.5.12)
@@ -35,6 +38,9 @@ dependencies:
   vue-gtag:
     specifier: ^2.0.1
     version: 2.0.1(vue@3.5.12)
+  vue-input-otp:
+    specifier: ^0.2.2
+    version: 0.2.2(vue@3.5.12)
   vue-router:
     specifier: ^4.4.5
     version: 4.4.5(vue@3.5.12)
@@ -3353,6 +3359,14 @@ packages:
     resolution: {integrity: sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==}
     peerDependencies:
       vue: ^3.0.0
+    dependencies:
+      vue: 3.5.12(typescript@5.6.3)
+    dev: false
+
+  /vue-input-otp@0.2.2(vue@3.5.12):
+    resolution: {integrity: sha512-Y6/naPdPc0mIjyPefo9Cn7gYwCYCQFam/jmuSKbukPsTmsuphEefZFrFCzTU20u08J0K/X0UPznKeQOsLDos8w==}
+    peerDependencies:
+      vue: ^3.2.0
     dependencies:
       vue: 3.5.12(typescript@5.6.3)
     dev: false

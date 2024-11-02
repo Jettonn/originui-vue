@@ -5,6 +5,7 @@ import Label from '../ui/Label.vue'
 import Input from '../ui/Input.vue'
 
 const isVisible = ref(false)
+const password = ref('')
 
 const toggleVisibility = () => {
   isVisible.value = !isVisible.value
@@ -17,6 +18,7 @@ const toggleVisibility = () => {
     <div class="relative">
       <Input
         id="input-23"
+        v-model:value="password"
         class="pe-9"
         placeholder="Password"
         :type="isVisible ? 'text' : 'password'"

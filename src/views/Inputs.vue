@@ -30,7 +30,6 @@ import DemoComponent from '@/demo/DemoComponent.vue'
 import PageHeader from '@/demo/PageHeader.vue'
 import { ref } from 'vue'
 
-// Define an array of input file names
 const inputFiles = ref([
   'Input01',
   'Input02',
@@ -81,8 +80,8 @@ const inputFiles = ref([
   'Input47',
   'Input48',
   'Input49',
-  'Input50'
-  // 'Input51'
+  'Input50',
+  'Input51'
 ])
 
 const directory = 'inputs'
