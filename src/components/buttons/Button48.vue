@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { CircleUserRound } from 'lucide-vue-next'
-import Button from '../ui/Button.vue'
+import Button from '@/components/ui/Button.vue'
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const files = ref<FileList | null>(null)

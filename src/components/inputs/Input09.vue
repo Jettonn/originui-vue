@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { AtSign } from 'lucide-vue-next'
-import Input from '../ui/Input.vue'
-import Label from '../ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
+import Label from '@/components/ui/Label.vue'
 </script>
 
 <template>

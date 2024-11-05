@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { Check, Eye, EyeOff, X } from 'lucide-vue-next'
-import Label from '../ui/Label.vue'
-import Input from '../ui/Input.vue'
+import Label from '@/components/ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
 
 const password = ref('')
 const isVisible = ref(false)
@@ -55,7 +55,7 @@ const getStrengthText = (score: number) => {
           class="pe-9"
           placeholder="Password"
           :type="isVisible ? 'text' : 'password'"
-          v-model:value="password"
+          v-model="password"
           :aria-invalid="strengthScore < 4"
           aria-describedby="password-strength"
         />

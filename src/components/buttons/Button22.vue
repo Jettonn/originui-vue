@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Plus } from 'lucide-vue-next'
-import Button from '../ui/Button.vue'
-import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '../ui/Tooltip'
+import Button from '@/components/ui/Button.vue'
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/Tooltip'
 </script>
 
 <template>

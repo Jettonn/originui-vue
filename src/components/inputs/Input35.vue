@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useCharacterLimit } from '@/hooks/useCharacterLimit'
-import Input from '../ui/Input.vue'
-import Label from '../ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
+import Label from '@/components/ui/Label.vue'
 
 const maxLength = 8
 const { text, remainingCharacters } = useCharacterLimit({
@@ -15,8 +15,7 @@ const { text, remainingCharacters } = useCharacterLimit({
     <Input
       id="input-35"
       type="text"
-      v-model:value="text"
-      @update:value="val => (text = val)"
+      v-model="text"
       :maxlength="maxLength"
       aria-describedby="characters-left"
     />

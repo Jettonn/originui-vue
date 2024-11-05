@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Eye, EyeOff } from 'lucide-vue-next'
-import Label from '../ui/Label.vue'
-import Input from '../ui/Input.vue'
+import Label from '@/components/ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
 
 const isVisible = ref(false)
 const password = ref('')
@@ -18,7 +18,7 @@ const toggleVisibility = () => {
     <div class="relative">
       <Input
         id="input-23"
-        v-model:value="password"
+        v-model="password"
         class="pe-9"
         placeholder="Password"
         :type="isVisible ? 'text' : 'password'"

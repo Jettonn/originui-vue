@@ -3,7 +3,7 @@
 
 import { ref } from 'vue'
 import { LoaderCircle } from 'lucide-vue-next'
-import Button from '../ui/Button.vue'
+import Button from '@/components/ui/Button.vue'
 
 const isLoading = ref(false)
 

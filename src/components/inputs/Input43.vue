@@ -18,7 +18,7 @@ import {
   DateRangePickerRoot,
   DateRangePickerTrigger
 } from 'radix-vue'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
 import { CalendarIcon, ChevronLeft, ChevronRight } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 import { getLocalTimeZone, isWeekend, today, type DateValue } from '@internationalized/date'
@@ -40,10 +40,10 @@ const isDateUnavailable = (date: DateValue): boolean => {
 
 <template>
   <div class="space-y-2">
-    <Label class="text-sm text-gray9" for="date-range-picker"
+    <Label class="text-sm text-gray9" for="date-range-picker-2"
       >Date range picker (unavailable dates)</Label
     >
-    <DateRangePickerRoot id="date-range-picker" :is-date-unavailable="isDateUnavailable">
+    <DateRangePickerRoot id="date-range-picker-2" :is-date-unavailable="isDateUnavailable">
       <div class="flex">
         <DateRangePickerField
           v-slot="{ segments }"
@@ -143,7 +143,7 @@ const isDateUnavailable = (date: DateValue): boolean => {
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix UI DateRangePicker
+        Radix Vue DateRangePicker
       </a>
     </p>
   </div>

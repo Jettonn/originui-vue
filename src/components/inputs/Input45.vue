@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { OTPInput } from 'vue-input-otp'
 import type { SlotProps } from 'vue-input-otp'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
 import { cn } from '@/lib/utils'
 import { ref } from 'vue'
 import { Minus } from 'lucide-vue-next'

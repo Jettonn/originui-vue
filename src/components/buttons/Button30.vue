@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { AlignCenter, AlignJustify, AlignLeft, AlignRight } from 'lucide-vue-next'
 import { ref } from 'vue'
-import { ToggleGroup, ToggleGroupItem } from '../ui/ToggleGroup'
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/ToggleGroup'
 
 const value = ref('left')
 </script>

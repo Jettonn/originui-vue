@@ -18,7 +18,7 @@ import {
   DateRangePickerRoot,
   DateRangePickerTrigger
 } from 'radix-vue'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
 import { CalendarIcon, ChevronLeft, ChevronRight } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 import { getLocalTimeZone, today } from '@internationalized/date'
@@ -129,7 +129,7 @@ const now = today(getLocalTimeZone())
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix UI DateRangePicker
+        Radix Vue DateRangePicker
       </a>
     </p>
   </div>

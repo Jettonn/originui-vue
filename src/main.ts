@@ -7,6 +7,8 @@ import App from './App.vue'
 import router from './router'
 import VueGtag from "vue-gtag";
 
+import { mask } from 'vue-the-mask'
+
 import './router';
 
 const app = createApp(App);
@@ -21,5 +23,6 @@ if (googleAnalyticsId && import.meta.env.PROD) {
 
 app.use(createPinia());
 app.use(router);
+app.directive('mask', mask);
 
 app.mount('#app');

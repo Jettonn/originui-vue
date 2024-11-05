@@ -25,7 +25,7 @@ const handleCopy = async () => {
 
 <template>
   <div class="absolute right-2 top-2 transition-opacity" :class="cn(props.class)">
-    <TooltipProvider>
+    <TooltipProvider :delay-duration="0">
       <Tooltip>
         <TooltipTrigger
           @click="handleCopy"

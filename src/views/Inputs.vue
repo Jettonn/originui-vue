@@ -14,12 +14,16 @@
           <DemoComponent
             v-for="componentName in inputFiles"
             :key="componentName"
-            :directory="directory"
+            :directory="inputFilesDir"
+            :componentName="componentName"
+          />
+          <DemoComponent
+            v-for="componentName in textareaFiles"
+            :key="componentName"
+            :directory="textareaDir"
             :componentName="componentName"
           />
         </div>
-
-        <Cta />
       </div>
     </div>
   </main>
@@ -81,8 +85,38 @@ const inputFiles = ref([
   'Input48',
   'Input49',
   'Input50',
-  'Input51'
+  'Input51',
+  'Input52',
+  'Input53',
+  'Input54',
+  'Input55',
+  'Input56',
+  'Input57'
 ])
 
-const directory = 'inputs'
+const inputFilesDir = 'inputs'
+
+const textareaDir = 'textareas'
+
+const textareaFiles = ref([
+  'Textarea01',
+  'Textarea02',
+  'Textarea03',
+  'Textarea04',
+  'Textarea05',
+  'Textarea06',
+  'Textarea07',
+  'Textarea08',
+  'Textarea09',
+  'Textarea10',
+  'Textarea11',
+  'Textarea12',
+  'Textarea13',
+  'Textarea14',
+  'Textarea15',
+  'Textarea16',
+  'Textarea17',
+  'Textarea18',
+  'Textarea19'
+])
 </script>

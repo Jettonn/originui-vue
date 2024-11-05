@@ -1,7 +1,7 @@
 <template>
   <input
     ref="inputRef"
-    :value="value"
+    :value="modelValue"
     @input="onInput"
     :class="computedClass"
     :type="type"
@@ -15,13 +15,13 @@ import { cn } from '@/lib/utils'
 
 interface InputProps {
   inputRef?: HTMLInputElement | null
-  value?: string
+  modelValue?: string
   class?: string
   type?: 'text' | 'password' | 'email' | 'number' | 'search' | 'file'
 }
 
 const emit = defineEmits<{
-  'update:value': [string]
+  'update:modelValue': [string]
   input: [Event]
 }>()
 
@@ -34,7 +34,7 @@ const inputRef = ref<HTMLInputElement | null>(props.inputRef ?? null)
 
 const onInput = (event: Event) => {
   const target = event.target as HTMLInputElement
-  emit('update:value', target.value)
+  emit('update:modelValue', target.value)
   emit('input', event)
 }
 
