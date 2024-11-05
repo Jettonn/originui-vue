@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Ellipsis, Files, Film } from 'lucide-vue-next'
-import Button from '../ui/Button.vue'
+import Button from '@/components/ui/Button.vue'
 </script>
 
 <template>

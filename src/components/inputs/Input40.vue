@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { DateFieldInput, DateFieldRoot } from 'radix-vue'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
 </script>
 
 <template>
@@ -32,7 +32,7 @@ import Label from '../ui/Label.vue'
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix UI DateField
+        Radix Vue DateField
       </a>
     </p>
   </div>

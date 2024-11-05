@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Button from '../ui/Button.vue'
+import Button from '@/components/ui/Button.vue'
 import { ChevronUp, ChevronDown } from 'lucide-vue-next'
 
 const isExpanded = ref(false)

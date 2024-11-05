@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Label from '../ui/Label.vue'
-import Input from '../ui/Input.vue'
+import Label from '@/components/ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
 </script>
 
 <template>

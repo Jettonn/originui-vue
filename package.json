@@ -25,7 +25,8 @@
     "vue": "^3.5.12",
     "vue-gtag": "^2.0.1",
     "vue-input-otp": "^0.2.2",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.2",

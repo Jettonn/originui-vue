@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import ToggleGroup from '../ui/ToggleGroup/ToggleGroup.vue'
-import ToggleGroupItem from '../ui/ToggleGroup/ToggleGroupItem.vue'
+import ToggleGroup from '@/components/ui/ToggleGroup/ToggleGroup.vue'
+import ToggleGroupItem from '@/components/ui/ToggleGroup/ToggleGroupItem.vue'
 
 const options = [
   {

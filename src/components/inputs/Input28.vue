@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
 import { Minus, Plus } from 'lucide-vue-next'
 import {
   NumberFieldDecrement,

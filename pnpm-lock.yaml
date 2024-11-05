@@ -44,6 +44,9 @@ dependencies:
   vue-router:
     specifier: ^4.4.5
     version: 4.4.5(vue@3.5.12)
+  vue-the-mask:
+    specifier: ^0.11.1
+    version: 0.11.1
 
 devDependencies:
   '@iconify/vue':
@@ -3378,6 +3381,10 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12(typescript@5.6.3)
+    dev: false
+
+  /vue-the-mask@0.11.1:
+    resolution: {integrity: sha512-UquSfnSWejD0zAfcD+3jJ1chUAkOAyoxya9Lxh9acCRtrlmGcAIvd0cQYraWqKenbuZJUdum+S174atv2AuEHQ==}
     dev: false
 
   /vue-tsc@2.1.8(typescript@5.6.3):

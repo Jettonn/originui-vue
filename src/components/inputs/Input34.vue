@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useCharacterLimit } from '@/hooks/useCharacterLimit'
-import Label from '../ui/Label.vue'
-import Input from '../ui/Input.vue'
+import Label from '@/components/ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
 
 const maxLength = 50
 const {
@@ -21,8 +21,7 @@ const {
         id="input-34"
         class="peer pe-14"
         type="text"
-        v-model:value="text"
-        @update:value="val => (text = val)"
+        v-model="text"
         :maxlength="maxLength"
         aria-describedby="character-count"
       />

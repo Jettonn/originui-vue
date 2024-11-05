@@ -7,7 +7,7 @@
         class="peer pe-9 ps-9"
         placeholder="Search..."
         type="search"
-        v-model:value="inputValue"
+        v-model="inputValue"
       />
       <div
         class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 peer-disabled:opacity-50"
@@ -37,7 +37,7 @@
 import { ref, watchEffect } from 'vue'
 import Label from '@/components/ui/Label.vue'
 import Input from '@/components/ui/Input.vue'
-import { LoaderCircle, Search } from 'lucide-vue-next'
+import { LoaderCircle, Mic, Search } from 'lucide-vue-next'
 
 const inputValue = ref('')
 const isLoading = ref(false)
