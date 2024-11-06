@@ -4,7 +4,7 @@
 > This is a fork of the original [Origin UI](https://originui.com/) project. This project is unaffiliated with the original. I appreciate their work and have developed these Vue components based on their design.
 
 > [!NOTE]  
-> This is a work in progress. For some components the implementation is coming soon using (e.g. [Radix Vue](https://www.radix-vue.com/)).
+> This is a work in progress. For some components, the implementation is coming soon using (e.g. [Radix Vue](https://www.radix-vue.com/)).
 
 Origin UI - Vue is a collection of copy-and-paste components for quickly building app UIs using Vue. The collection currently features 90+ components and is updated with new examples if the original library is updated.
 
@@ -60,13 +60,13 @@ You can copy and use the components in your Vue project. Note that some componen
 If you want to use the components in your project, you need to setup the following:
 
 - [Vue](https://vuejs.org)
-- [TailwindCSS](https://tailwindcss.com)
+- [Tailwind CSS](https://tailwindcss.com)
 - [Lucide Icons](https://lucide.dev)
 - [Radix Vue](https://www.radix-vue.com/overview/introduction.html)
 
 #### Utils
 
-In the `src/lib/utils.ts` folder you will find the common `cn` function for tailwindcss class merging.
+In the `src/lib/utils.ts` folder you will find the common `cn` function for Tailwind CSS class merging.
 
 #### Base Components
 
@@ -74,7 +74,7 @@ You need to copy the base components from the `src/lib/components/ui` folder to 
 
 #### CSS Variables
 
-Import the CSS in your `src/lib/app.css` or `src/lib/main.css` file (the following is based on tailwindcss):
+Import the CSS in your `src/lib/app.css` or `src/lib/main.css` file (the following is based on Tailwind CSS):
 
 ```css
 @layer base {
@@ -156,4 +156,4 @@ For any questions or feedback, please open an issue on this repository.
 
 ## Notes
 
-This project is a work in progress, and i am continuously working to improve and expand this collection.
+This project is a work in progress, and I am continuously working to improve and expand this collection.
