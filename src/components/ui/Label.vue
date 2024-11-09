@@ -9,7 +9,7 @@ interface Props {
 const props = defineProps<Props>()
 
 const labelClass = computed(() => {
-  return cn('text-sm font-medium text-foreground', props.class)
+  return cn('text-sm font-medium leading-none text-foreground', props.class)
 })
 </script>
 

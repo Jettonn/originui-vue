@@ -35,9 +35,7 @@ onMounted(() => {
 
 <template>
   <div :class="cn('group/item relative', className)">
-    <Suspense>
-      <component :is="Component" />
-    </Suspense>
+    <component :is="Component" />
     <CopyButton :code="source" />
   </div>
 </template>

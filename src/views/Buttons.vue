@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div class="mx-auto w-full max-w-6xl">
         <PageHeader title="Button">
-          A growing collection of over 51 button components built with
+          A growing collection of over {{ buttonFiles.length }} button components built with
           <span class="text-vue">Vue</span>
           and TailwindCSS.
         </PageHeader>
@@ -12,7 +12,7 @@
           class="grid max-w-6xl grid-cols-1 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:px-1 [&>*]:py-12 [&>*]:before:absolute [&>*]:before:bg-border/70 [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:bg-border/70 [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] sm:[&>*]:px-8 xl:[&>*]:px-12"
         >
           <DemoComponent
-            v-for="componentName in inputFiles"
+            v-for="componentName in buttonFiles"
             :key="componentName"
             :directory="directory"
             :componentName="componentName"
@@ -31,8 +31,7 @@ import DemoComponent from '@/demo/DemoComponent.vue'
 import PageHeader from '@/demo/PageHeader.vue'
 import { ref } from 'vue'
 
-// Define an array of input file names
-const inputFiles = ref([
+const buttonFiles = ref([
   'Button01',
   'Button02',
   'Button03',
