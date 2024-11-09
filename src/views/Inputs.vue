@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div class="mx-auto w-full max-w-6xl">
         <PageHeader title="Input">
-          A growing collection of over 50 input components built with
+          A growing collection of over {{ inputFilesLength }} input components built with
           <span class="text-vue">Vue</span>
           and TailwindCSS.
         </PageHeader>
@@ -32,7 +32,7 @@
 <script setup lang="ts">
 import DemoComponent from '@/demo/DemoComponent.vue'
 import PageHeader from '@/demo/PageHeader.vue'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const inputFiles = ref([
   'Input01',
@@ -119,4 +119,6 @@ const textareaFiles = ref([
   'Textarea18',
   'Textarea19'
 ])
+
+const inputFilesLength = computed(() => inputFiles.value.length + textareaFiles.value.length)
 </script>

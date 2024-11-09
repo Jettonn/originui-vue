@@ -1,0 +1,14 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import Label from '../ui/Label.vue'
+import Switch from '../ui/Switch.vue'
+
+const checked = ref(false)
+</script>
+
+<template>
+  <div class="inline-flex items-center gap-2">
+    <Switch v-model="checked" id="switch-08" aria-label="Toggle switch" />
+    <Label for="switch-08" class="text-sm font-medium"> {{ checked ? 'On' : 'Off' }} </Label>
+  </div>
+</template>

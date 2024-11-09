@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ChevronDown, ChevronUp } from 'lucide-vue-next'
 import Button from '@/components/ui/Button.vue'
+import { ref } from 'vue'
+
+const count = ref(235)
 </script>
 
 <template>
@@ -11,16 +14,20 @@ import Button from '@/components/ui/Button.vue'
       class="rounded-none shadow-none first:rounded-s-full last:rounded-e-full focus-visible:z-10"
       size="icon"
       aria-label="Upvote"
+      @click="count++"
     >
       <ChevronUp :size="16" :stroke-width="2" aria-hidden="true" />
     </Button>
-    <span class="flex items-center bg-primary px-1 text-sm font-medium text-primary-foreground">
-      235
+    <span
+      class="flex items-center justify-center bg-primary px-1 text-sm font-medium text-primary-foreground w-11"
+    >
+      {{ count }}
     </span>
     <Button
       class="rounded-none shadow-none first:rounded-s-full last:rounded-e-full focus-visible:z-10"
       size="icon"
       aria-label="Downvote"
+      @click="count--"
     >
       <ChevronDown :size="16" :stroke-width="2" aria-hidden="true" />
     </Button>

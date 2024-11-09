@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/Home.vue'
 import Inputs from '@/views/Inputs.vue'
 import Buttons from '@/views/Buttons.vue'
+import CheckRadioSwitches from '@/views/CheckRadioSwitches.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +25,13 @@ const router = createRouter({
       component: Buttons,
       meta: { title: 'originui-vue/buttons' }
     },
-  ],
+    {
+      path: '/check-radio-switches',
+      name: 'check-radio-switches',
+      component: CheckRadioSwitches,
+      meta: { title: 'originui-vue/check-radio-switches' }
+    }
+  ]
 })
 
 router.beforeEach((to, from, next) => {
