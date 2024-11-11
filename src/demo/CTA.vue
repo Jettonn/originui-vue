@@ -28,7 +28,7 @@
     <span class="-ml-0.5 flex -space-x-2">
       <a
         class="group relative h-7 w-7 overflow-hidden rounded-full border-2 border-background"
-        href="https://x.com/jetonkorenica7"
+        href="https://x.com/intent/follow?screen_name=jetonkorenica7"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Jeton's profile image"

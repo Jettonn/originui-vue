@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { LoaderCircle } from 'lucide-vue-next'
 import Button from '@/components/ui/Button.vue'
+import { LoaderCircle } from 'lucide-vue-next'
 </script>
 
 <template>

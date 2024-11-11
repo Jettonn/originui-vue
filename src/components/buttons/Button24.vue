@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Bookmark } from 'lucide-vue-next'
 import { ref } from 'vue'
 import Toggle from '@/components/ui/Toggle/Toggle.vue'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/Tooltip'
+import { Bookmark } from 'lucide-vue-next'
 
 const bookmarked = ref(false)
 </script>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/RadioGroup'
 import { Star } from 'lucide-vue-next'
 
 const selectedValue = ref('all')

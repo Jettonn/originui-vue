@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { AlignCenter, AlignJustify, AlignLeft, AlignRight } from 'lucide-vue-next'
 import { ref } from 'vue'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/ToggleGroup'
+import { AlignCenter, AlignJustify, AlignLeft, AlignRight } from 'lucide-vue-next'
 
 const value = ref('left')
 </script>
 
 <template>
   <ToggleGroup
-    class="inline-flex gap-0 -space-x-px divide-x divide-background rounded-lg shadow-sm shadow-black/[0.04] rtl:space-x-reverse"
+    class="inline-flex gap-0 -space-x-px divide-x divide-background rounded-lg shadow-sm shadow-black/5 rtl:space-x-reverse"
     type="single"
     v-model="value"
   >

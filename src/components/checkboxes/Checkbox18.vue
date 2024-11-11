@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Checkbox from '../ui/Checkbox.vue'
+import Checkbox from '@/components/ui/Checkbox.vue'
 
 const items = ref([
   { checked: true, id: 'checkbox-18-c1', label: 'Monday', value: 'c1' },

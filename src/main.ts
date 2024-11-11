@@ -10,6 +10,7 @@ import VueGtag from "vue-gtag";
 import { mask } from 'vue-the-mask'
 
 import './router';
+import { createHead } from '@unhead/vue'
 
 const app = createApp(App);
 
@@ -21,8 +22,11 @@ if (googleAnalyticsId && import.meta.env.PROD) {
   });
 }
 
+const head = createHead()
+
 app.use(createPinia());
 app.use(router);
+app.use(head)
 app.directive('mask', mask);
 
 app.mount('#app');

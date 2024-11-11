@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Checkbox from '../ui/Checkbox.vue'
+import Checkbox from '@/components/ui/Checkbox.vue'
 import Label from './Label.vue'
 
 interface TreeNode {

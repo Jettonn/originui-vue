@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Switch from '../ui/Switch.vue'
+import Label from '@/components/ui/Label.vue'
+import Switch from '@/components/ui/Switch.vue'
 import { Moon, Sun } from 'lucide-vue-next'
-import Label from '../ui/Label.vue'
 
 const checked = ref(false)
 </script>

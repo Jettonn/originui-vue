@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup'
-import Label from '../ui/Label.vue'
+import Label from '@/components/ui/Label.vue'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/RadioGroup'
 
 const items = [
   { id: 'radio-15-r1', label: 'Hobby', price: '$9/mo', value: 'r1' },

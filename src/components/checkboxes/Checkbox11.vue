@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Checkbox from '../ui/Checkbox.vue'
-import Label from '../ui/Label.vue'
-import Input from '../ui/Input.vue'
+import { nextTick, ref, watch } from 'vue'
+import Checkbox from '@/components/ui/Checkbox.vue'
+import Label from '@/components/ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
 
 const checked = ref(false)
-const inputElement = ref<HTMLInputElement | null>(null)
+const inputElement = ref<InstanceType<typeof Input> | null>(null)
 
-// const handleTransitionEnd = () => {
-//   nextTick().then(() => {
-//     if (checked.value && inputElement.value) {
-//       inputElement.value.focus()
-//     }
-//   })
-// }
+watch(checked, async newValue => {
+  if (newValue) {
+    await nextTick()
+    inputElement.value?.$el?.focus()
+  }
+})
 </script>
 
 <template>
@@ -44,8 +43,6 @@ const inputElement = ref<HTMLInputElement | null>(null)
             <div class="mt-3">
               <Input
                 ref="inputElement"
-                type="text"
-                autofocus
                 id="checkbox-11-additional-info"
                 placeholder="Enter details"
                 aria-label="Additional Information"

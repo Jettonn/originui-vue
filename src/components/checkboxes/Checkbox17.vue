@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import CheckboxTree from '../ui/CheckboxTree.vue'
-// import Checkbox from '../ui/Checkbox.vue'
+import CheckboxTree from '@/components/ui/CheckboxTree.vue'
 
 interface TreeNode {
   id: string

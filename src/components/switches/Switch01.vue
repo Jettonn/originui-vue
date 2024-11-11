@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Label from '../ui/Label.vue'
-import Switch from '../ui/Switch.vue'
+import Label from '@/components/ui/Label.vue'
+import Switch from '@/components/ui/Switch.vue'
 
 const checked = ref(false)
 </script>

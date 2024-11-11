@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Printer } from 'lucide-vue-next'
 import Button from '@/components/ui/Button.vue'
+import { Printer } from 'lucide-vue-next'
 </script>
 
 <template>

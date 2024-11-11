@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Trash } from 'lucide-vue-next'
 import Button from '@/components/ui/Button.vue'
+import { Trash } from 'lucide-vue-next'
 </script>
 
 <template>

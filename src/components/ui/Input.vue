@@ -1,20 +1,12 @@
 <template>
-  <input
-    ref="inputRef"
-    :value="modelValue"
-    @input="onInput"
-    :class="computedClass"
-    :type="type"
-    v-bind="$attrs"
-  />
+  <input :value="modelValue" @input="onInput" :class="computedClass" :type="type" v-bind="$attrs" />
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { cn } from '@/lib/utils'
 
 interface InputProps {
-  inputRef?: HTMLInputElement | null
   modelValue?: string
   class?: string
   type?: 'text' | 'password' | 'email' | 'number' | 'search' | 'file'
@@ -29,8 +21,6 @@ const props = withDefaults(defineProps<InputProps>(), {
   type: 'text',
   value: ''
 })
-
-const inputRef = ref<HTMLInputElement | null>(props.inputRef ?? null)
 
 const onInput = (event: Event) => {
   const target = event.target as HTMLInputElement

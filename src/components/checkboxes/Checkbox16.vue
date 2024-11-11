@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Brush, Eraser, Scissors, SwatchBook } from 'lucide-vue-next'
-import Checkbox from '../ui/Checkbox.vue'
-import Label from '../ui/Label.vue'
 import { ref } from 'vue'
+import Checkbox from '@/components/ui/Checkbox.vue'
+import Label from '@/components/ui/Label.vue'
+import { Brush, Eraser, Scissors, SwatchBook } from 'lucide-vue-next'
 
 const items = ref([
   { checked: true, Icon: SwatchBook, id: 'checkbox-16-c1', label: 'Palette', value: 'c1' },

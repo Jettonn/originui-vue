@@ -32,7 +32,7 @@
               <li>
                 <a
                   href="/inputs"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/[0.04] ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
+                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Input
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
@@ -41,7 +41,7 @@
               <li>
                 <a
                   href="/buttons"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/[0.04] ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
+                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Button
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
@@ -50,7 +50,7 @@
               <li>
                 <a
                   href="/check-radio-switches"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/[0.04] ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
+                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Checkbox, Radio, and Switch
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
@@ -58,7 +58,7 @@
               </li>
               <li>
                 <span
-                  className="inline-flex w-full flex-col justify-between gap-2 whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/[0.04] sm:h-14 sm:flex-row sm:items-center"
+                  className="inline-flex w-full flex-col justify-between gap-2 whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 sm:h-14 sm:flex-row sm:items-center"
                 >
                   <span className="flex items-start gap-2">
                     Select
@@ -80,4 +80,29 @@
 
 <script setup lang="ts">
 import { ArrowRight as ArrowRightIcon } from 'lucide-vue-next'
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Origin UI - Vue Components with Tailwind CSS',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Beautiful UI components built with Tailwind CSS and Vue. Origin UI - Vue is an extensive collection of copy-and-paste components for quickly building app UIs.'
+    },
+    {
+      property: 'og:title',
+      content: 'Origin UI - Vue Components with Tailwind CSS'
+    },
+    {
+      property: 'og:description',
+      content:
+        'Beautiful UI components built with Tailwind CSS and Vue. Free and open-source UI components ready to drop into your projects.'
+    },
+    {
+      name: 'keywords',
+      content: 'Vue, Tailwind CSS, UI components, Origin UI, Vue components, frontend development'
+    }
+  ]
+})
 </script>

@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
+import Label from '@/components/ui/Label.vue'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/RadioGroup'
 import { Brush, Eraser, Scissors, SwatchBook } from 'lucide-vue-next'
-import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup'
-import Label from '../ui/Label.vue'
 
 const items = [
   { Icon: SwatchBook, id: 'radio-11-r1', label: 'Palette', value: 'r1' },

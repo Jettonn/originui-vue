@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Checkbox from '../ui/Checkbox.vue'
-import Label from '../ui/Label.vue'
 import { ref } from 'vue'
+import Checkbox from '@/components/ui/Checkbox.vue'
+import Label from '@/components/ui/Label.vue'
 
 const checkedVue = ref(true)
 const checkedNuxt = ref(true)

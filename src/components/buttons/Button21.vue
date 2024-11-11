@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Plus } from 'lucide-vue-next'
-import Button from '@/components/ui/Button.vue'
 import { ref } from 'vue'
+import Button from '@/components/ui/Button.vue'
+import { Plus } from 'lucide-vue-next'
 
 const open = ref(false)
 

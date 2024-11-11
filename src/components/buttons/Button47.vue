@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ChevronLeft } from 'lucide-vue-next'
 import Button from '@/components/ui/Button.vue'
+import { ChevronLeft } from 'lucide-vue-next'
 </script>
 
 <template>

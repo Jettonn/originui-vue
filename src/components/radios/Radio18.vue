@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/RadioGroup'
 import { Check as IconCheck, Minus as IconMinus } from 'lucide-vue-next'
-import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup'
 import uiLight from '@/assets/ui-light.png'
 import uiDark from '@/assets/ui-dark.png'
 import uiSystem from '@/assets/ui-system.png'

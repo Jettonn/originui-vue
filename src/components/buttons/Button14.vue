@@ -1,9 +1,7 @@
 <script setup lang="ts">
-// Dependencies: pnpm install lucide-vue-next
-
 import { ref } from 'vue'
-import { LoaderCircle } from 'lucide-vue-next'
 import Button from '@/components/ui/Button.vue'
+import { LoaderCircle } from 'lucide-vue-next'
 
 const isLoading = ref(false)
 

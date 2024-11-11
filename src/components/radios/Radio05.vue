@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup'
-import Label from '../ui/Label.vue'
-import Input from '../ui/Input.vue'
+import { nextTick, ref, watch } from 'vue'
+import Label from '@/components/ui/Label.vue'
+import Input from '@/components/ui/Input.vue'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/RadioGroup'
 
 const selectedValue = ref('without-expansion')
-const inputElement = ref<HTMLInputElement | null>(null)
+const inputElement = ref<InstanceType<typeof Input> | null>(null)
 
-// const handleTransitionEnd = (event: TransitionEvent) => {
-// 	if (selectedValue.value === 'with-expansion' && inputElement.value) {
-// 		inputElement.value.focus();
-// 	}
-// };
+watch(selectedValue, async newValue => {
+  if (newValue === 'with-expansion') {
+    await nextTick()
+    inputElement.value?.$el?.focus()
+  }
+})
 </script>
 
 <template>

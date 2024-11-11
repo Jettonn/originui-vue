@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/RadioGroup'
 
 const selectedValue = ref('')
 </script>

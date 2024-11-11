@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Minus, Plus, Volume, Volume1, Volume2, VolumeX } from 'lucide-vue-next'
-import Button from '@/components/ui/Button.vue'
 import { computed, ref } from 'vue'
+import Button from '@/components/ui/Button.vue'
+import { Minus, Plus, Volume, Volume1, Volume2, VolumeX } from 'lucide-vue-next'
 
 const volume = ref(0)
 
