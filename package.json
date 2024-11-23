@@ -25,6 +25,7 @@
     "radix-vue": "^1.9.8",
     "tailwind-merge": "^2.5.4",
     "vue": "^3.5.12",
+    "vue-command-palette": "^0.2.3",
     "vue-gtag": "^2.0.1",
     "vue-input-otp": "^0.2.2",
     "vue-router": "^4.4.5",
