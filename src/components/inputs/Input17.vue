@@ -21,7 +21,7 @@ import Input from '@/components/ui/Input.vue'
           <option value="wss://">wss://</option>
         </select>
         <span
-          class="pointer-events-none absolute inset-y-0 end-px flex h-full w-9 items-center justify-center text-muted-foreground/80 peer-disabled:opacity-50"
+          class="pointer-events-none absolute inset-y-0 end-px z-10 flex h-full w-9 items-center justify-center text-muted-foreground/80 peer-disabled:opacity-50"
         >
           <ChevronDown :size="16" :stroke-width="2" aria-hidden="true" />
         </span>
