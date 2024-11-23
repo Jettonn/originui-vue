@@ -3,7 +3,8 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Checkbox, Radio, and Switch"
+          title="Checkbox, Radio, and Switch Components | Origin UI Vue"
+          heading="Checkbox, Radio, and Switch"
           description="A growing collection of checkbox, radio, and switch components built with Vue and TailwindCSS."
         >
           A growing collection of {{ totalComponents }} checkbox, radio, and switch components built
