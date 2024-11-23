@@ -3,11 +3,11 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Select Components | Origin UI Vue"
-          heading="Select"
-          description="A growing collection of select components built with Vue and TailwindCSS."
+          title="Sliders Components | Origin UI Vue"
+          heading="Slider"
+          description="A growing collection of slider components built with Vue and TailwindCSS."
         >
-          A growing collection of over {{ selectFiles.length }} select components built with
+          A growing collection of over {{ sliderFiles.length }} slider components built with
           <span class="text-vue">Vue</span>
           and TailwindCSS.
         </PageHeader>
@@ -45,71 +45,47 @@ const currentPage = ref(1)
 const containerRef = ref<HTMLElement | null>(null)
 const isLoading = ref(false)
 
-const selectFiles = ref([
-  'Select01',
-  'Select02',
-  'Select03',
-  'Select04',
-  'Select05',
-  'Select06',
-  'Select07',
-  'Select08',
-  'Select09',
-  'Select10',
-  'Select11',
-  'Select12',
-  'Select13',
-  'Select14',
-  'Select15',
-  'Select16',
-  'Select17',
-  'Select18',
-  'Select19',
-  'Select20',
-  'Select21',
-  'Select22',
-  'Select23',
-  'Select24',
-  'Select25',
-  'Select26',
-  'Select27',
-  'Select28',
-  'Select29',
-  'Select30',
-  'Select31',
-  'Select32',
-  'Select33',
-  'Select34',
-  'Select35',
-  'Select36',
-  'Select37',
-  'Select38',
-  'Select39',
-  'Select40',
-  'Select41',
-  'Select42',
-  'Select43',
-  'Select44',
-  'Select45',
-  'Select46',
-  'Select47',
-  'Select48',
-  'Select49',
-  'Select50',
-  'Select51'
+const sliderFiles = ref([
+  'Slider01',
+  'Slider02',
+  'Slider03',
+  'Slider04',
+  'Slider05',
+  'Slider06',
+  'Slider07',
+  'Slider08',
+  'Slider09',
+  'Slider10',
+  'Slider11',
+  'Slider12',
+  'Slider13',
+  'Slider14',
+  'Slider15',
+  'Slider16',
+  'Slider17',
+  'Slider18',
+  'Slider19',
+  'Slider20',
+  'Slider21',
+  'Slider22',
+  'Slider23',
+  'Slider24',
+  'Slider25',
+  'Slider26',
+  'Slider27'
 ])
-const directory = 'selects'
+const directory = 'sliders'
 
 const visibleComponents = computed(() => {
   const startIndex = 0
   const endIndex = currentPage.value * itemsPerPage
-  return selectFiles.value.slice(startIndex, endIndex)
+  return sliderFiles.value.slice(startIndex, endIndex)
 })
 
 useInfiniteScroll(
   containerRef,
   async () => {
-    if (isLoading.value || visibleComponents.value.length >= selectFiles.value.length) return
+    if (isLoading.value || visibleComponents.value.length >= sliderFiles.value.length) return
 
     isLoading.value = true
     await new Promise(resolve => setTimeout(resolve, 300))

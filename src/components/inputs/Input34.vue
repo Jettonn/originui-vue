@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useCharacterLimit } from '@/hooks/useCharacterLimit'
+import { useCharacterLimit } from '@/composables/useCharacterLimit'
 import Label from '@/components/ui/Label.vue'
 import Input from '@/components/ui/Input.vue'
 

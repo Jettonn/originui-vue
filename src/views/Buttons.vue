@@ -3,7 +3,8 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Button"
+          title="Button Components | Origin UI Vue"
+          heading="Button"
           description="A growing collection of button components built with Vue and TailwindCSS."
         >
           A growing collection of over {{ buttonFiles.length }} button components built with
