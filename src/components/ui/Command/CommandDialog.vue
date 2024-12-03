@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { DialogContent, DialogRoot, DialogPortal } from 'radix-vue'
-import Command from './Command.vue'
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/Dialog'
+import { Command } from './index'
+import { VisuallyHidden } from 'radix-vue'
 
 defineProps<{
   modelValue?: boolean
@@ -12,15 +13,17 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <DialogRoot :open="modelValue" @update:open="val => emit('update:modelValue', val)">
-    <DialogPortal>
-      <DialogContent class="overflow-hidden p-0">
-        <Command
-          class="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5"
-        >
+  <Dialog :open="modelValue" @update:open="val => emit('update:modelValue', val)">
+    <DialogContent class="overflow-hidden p-0 sm:max-w-lg [&>button:last-child]:hidden">
+      <VisuallyHidden>
+        <DialogTitle>Command Dialog</DialogTitle>
+        <DialogDescription>Use the arrow keys to navigate, and press Enter to select an item.</DialogDescription>
+      </VisuallyHidden>
+      <Command class="[&_[command-group-heading]]:px-2 [&_[command-group-heading]]:font-medium [&_[command-group-heading]]:text-muted-foreground [&_[command-group]]:px-2 [&_[command-input]]:h-12 [&_[command-item]]:px-3 [&_[command-item]]:py-2">
+        <div command-dialog-wrapper="">
           <slot />
-        </Command>
-      </DialogContent>
-    </DialogPortal>
-  </DialogRoot>
+        </div>
+      </Command>
+    </DialogContent>
+  </Dialog>
 </template>

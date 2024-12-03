@@ -9,14 +9,14 @@ const props = defineProps<{
 
 const classes = computed(() =>
   cn(
-    'overflow-hidden p-1 text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground',
+    'overflow-hidden p-2 text-foreground [&_[command-group-heading]]:px-3 [&_[command-group-heading]]:py-2 [&_[command-group-heading]]:text-xs [&_[command-group-heading]]:font-medium [&_[command-group-heading]]:text-muted-foreground',
     props.class
   )
 )
 </script>
 
 <template>
-  <Command.Group :class="classes" heading="">
+  <Command.Group :class="classes">
     <slot />
   </Command.Group>
 </template>
