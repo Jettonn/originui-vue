@@ -17,7 +17,7 @@ const slotClass = (slot: SlotProps) => {
 </script>
 
 <template>
-  <div className="space-y-2">
+  <div class="space-y-2">
     <Label for="input-44">OTP input single</Label>
     <OTPInput
       v-slot="{ slots }"
@@ -30,7 +30,7 @@ const slotClass = (slot: SlotProps) => {
           {{ slot.char }}
         </div>
       </div>
-      <div className="text-muted-foreground/80">
+      <div class="text-muted-foreground/80">
         <Minus :size="16" :stroke-width="2" aria-hidden="true" />
       </div>
       <div class="flex">
@@ -39,10 +39,10 @@ const slotClass = (slot: SlotProps) => {
         </div>
       </div>
     </OTPInput>
-    <p className="mt-2 text-xs text-muted-foreground" role="region" aria-live="polite">
+    <p class="mt-2 text-xs text-muted-foreground" role="region" aria-live="polite">
       Built with
       <a
-        className="underline hover:text-foreground"
+        class="underline hover:text-foreground"
         href="https://github.com/wobsoriano/vue-input-otp"
         target="_blank"
         rel="noopener nofollow"
