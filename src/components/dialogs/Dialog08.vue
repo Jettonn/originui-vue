@@ -36,7 +36,7 @@ const inputValue = ref("")
           <DialogTitle class="sm:text-center">Final confirmation</DialogTitle>
           <DialogDescription class="sm:text-center">
             This action cannot be undone. To confirm, please enter the project name
-            <span class="text-foreground">Origin UI</span>.
+            <span class="text-foreground">{{ PROJECT_NAME }}</span>.
           </DialogDescription>
         </DialogHeader>
       </div>
@@ -47,7 +47,7 @@ const inputValue = ref("")
           <Input
             id="project-name"
             type="text"
-            placeholder="Type Origin UI to confirm"
+            :placeholder="`Type ${PROJECT_NAME} to confirm`"
             v-model="inputValue"
           />
         </div>
