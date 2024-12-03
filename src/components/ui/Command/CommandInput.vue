@@ -23,7 +23,7 @@ const classes = computed(() =>
 
 <template>
   <div class="flex items-center border-b border-border px-5" command-dialog-header="">
-    <Search size="20" stroke-width="2" class="me-3 text-muted-foreground/80" />
+    <Search :size="20" stroke-width="2" class="me-3 text-muted-foreground/80" />
     <Command.Input
       :value="modelValue"
       @input="val => emit('update:modelValue', val.toString())"

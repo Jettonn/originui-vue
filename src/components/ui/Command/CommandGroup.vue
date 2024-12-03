@@ -16,7 +16,7 @@ const classes = computed(() =>
 </script>
 
 <template>
-  <Command.Group :class="classes">
+  <Command.Group :class="classes" heading="">
     <slot />
   </Command.Group>
 </template>

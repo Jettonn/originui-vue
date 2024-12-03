@@ -40,7 +40,7 @@ const couponCode = ref('')
           class="flex size-11 shrink-0 items-center justify-center rounded-full border border-border"
           aria-hidden="true"
         >
-          <Store class="opacity-80" size="16" stroke-width="2" />
+          <Store class="opacity-80" :size="16" stroke-width="2" />
         </div>
         <DialogHeader>
           <DialogTitle class="text-left">Confirm and pay</DialogTitle>
@@ -77,7 +77,9 @@ const couponCode = ref('')
               />
               <div class="inline-flex items-start justify-between gap-2">
                 <p class="text-sm font-medium text-foreground">Yearly</p>
-                <div class="inline-flex items-center rounded-full bg-primary px-2 text-xs font-medium leading-5 text-primary-foreground">
+                <div
+                  class="inline-flex items-center rounded-full bg-primary px-2 text-xs font-medium leading-5 text-primary-foreground"
+                >
                   Popular
                 </div>
               </div>
@@ -104,7 +106,7 @@ const couponCode = ref('')
                 <div
                   class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50"
                 >
-                  <CreditCard size="16" stroke-width="2" aria-hidden="true" />
+                  <CreditCard :size="16" stroke-width="2" aria-hidden="true" />
                 </div>
               </div>
               <div class="-mt-px flex">
@@ -141,11 +143,7 @@ const couponCode = ref('')
             </button>
             <div v-else class="space-y-2">
               <Label for="coupon">Coupon code</Label>
-              <Input
-                id="coupon"
-                placeholder="Enter your code"
-                v-model="couponCode"
-              />
+              <Input id="coupon" placeholder="Enter your code" v-model="couponCode" />
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ import Textarea from '@/components/ui/Textarea.vue'
 import { ref } from 'vue'
 
 const ratings = Array.from({ length: 9 }, (_, i) => i)
-const selectedRating = ref(null)
+const selectedRating = ref<string>('')
 </script>
 
 <template>
@@ -35,7 +35,10 @@ const selectedRating = ref(null)
                 <legend class="text-lg font-semibold leading-none text-foreground">
                   How hard was it to set up your account?
                 </legend>
-                <RadioGroup class="flex gap-0 -space-x-px rounded-lg shadow-sm shadow-black/5" v-model="selectedRating">
+                <RadioGroup
+                  class="flex gap-0 -space-x-px rounded-lg shadow-sm shadow-black/5"
+                  v-model="selectedRating"
+                >
                   <template v-for="number in ratings" :key="number">
                     <label
                       class="relative flex size-9 flex-1 cursor-pointer flex-col items-center justify-center gap-3 border border-input text-center text-sm outline-offset-2 transition-colors first:rounded-s-lg last:rounded-e-lg has-[[data-state=checked]]:z-10 has-[[data-disabled]]:cursor-not-allowed has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent has-[[data-disabled]]:opacity-50 has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-ring/70"

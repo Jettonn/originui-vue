@@ -1,32 +1,29 @@
 <script setup lang="ts">
-import { AlertDialogCancel } from 'radix-vue';
-import { cn } from '@/lib/utils';
-import { buttonVariants } from '@/lib/utils';
+import { AlertDialogCancel } from 'radix-vue'
+import { cn } from '@/lib/utils'
+import { buttonVariants } from '@/lib/utils'
 import { toRefs } from 'vue'
 
 const props = defineProps({
   class: {
     type: String,
-    default: '',
+    default: ''
   },
   variant: {
-    type: String,
-    default: 'outline',
+    type: String as () => 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link',
+    default: 'outline'
   },
   size: {
-    type: String,
-    default: 'default',
-  },
-});
+    type: String as () => 'default' | 'sm' | 'lg' | 'icon',
+    default: 'default'
+  }
+})
 
-const { variant, size, class: extraClasses } = toRefs(props);
+const { variant, size, class: extraClasses } = toRefs(props)
 </script>
 
 <template>
-  <AlertDialogCancel
-    :class="cn(buttonVariants({ variant, size }), extraClasses)"
-    v-bind="$attrs"
-  >
+  <AlertDialogCancel :class="cn(buttonVariants({ variant, size }), extraClasses)" v-bind="$attrs">
     <slot />
   </AlertDialogCancel>
 </template>

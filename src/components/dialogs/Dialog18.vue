@@ -28,7 +28,7 @@ const selectedPlan = ref('plan-02')
           class="flex size-11 shrink-0 items-center justify-center rounded-full border border-border"
           aria-hidden="true"
         >
-          <RefreshCcw class="opacity-80" size="16" stroke-width="2" />
+          <RefreshCcw class="opacity-80" :size="16" stroke-width="2" />
         </div>
         <DialogHeader>
           <DialogTitle class="text-left">Change your plan</DialogTitle>
@@ -40,7 +40,9 @@ const selectedPlan = ref('plan-02')
 
       <form class="space-y-5">
         <RadioGroup class="gap-2" default-value="plan-02" v-model="selectedPlan">
-          <div class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent">
+          <div
+            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+          >
             <RadioGroupItem
               value="plan-01"
               id="plan-01"
@@ -55,7 +57,9 @@ const selectedPlan = ref('plan-02')
             </div>
           </div>
 
-          <div class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent">
+          <div
+            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+          >
             <RadioGroupItem
               value="plan-02"
               id="plan-02"
@@ -70,7 +74,9 @@ const selectedPlan = ref('plan-02')
             </div>
           </div>
 
-          <div class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent">
+          <div
+            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+          >
             <RadioGroupItem
               value="plan-03"
               id="plan-03"
@@ -93,7 +99,7 @@ const selectedPlan = ref('plan-02')
           <ul class="space-y-2 text-sm text-muted-foreground">
             <li class="flex gap-2">
               <Check
-                size="16"
+                :size="16"
                 stroke-width="2"
                 class="mt-0.5 shrink-0 text-primary"
                 aria-hidden="true"
@@ -102,7 +108,7 @@ const selectedPlan = ref('plan-02')
             </li>
             <li class="flex gap-2">
               <Check
-                size="16"
+                :size="16"
                 stroke-width="2"
                 class="mt-0.5 shrink-0 text-primary"
                 aria-hidden="true"
@@ -111,7 +117,7 @@ const selectedPlan = ref('plan-02')
             </li>
             <li class="flex gap-2">
               <Check
-                size="16"
+                :size="16"
                 stroke-width="2"
                 class="mt-0.5 shrink-0 text-primary"
                 aria-hidden="true"
@@ -120,7 +126,7 @@ const selectedPlan = ref('plan-02')
             </li>
             <li class="flex gap-2">
               <Check
-                size="16"
+                :size="16"
                 stroke-width="2"
                 class="mt-0.5 shrink-0 text-primary"
                 aria-hidden="true"
@@ -129,7 +135,7 @@ const selectedPlan = ref('plan-02')
             </li>
             <li class="flex gap-2">
               <Check
-                size="16"
+                :size="16"
                 stroke-width="2"
                 class="mt-0.5 shrink-0 text-primary"
                 aria-hidden="true"
@@ -138,7 +144,7 @@ const selectedPlan = ref('plan-02')
             </li>
             <li class="flex gap-2">
               <Check
-                size="16"
+                :size="16"
                 stroke-width="2"
                 class="mt-0.5 shrink-0 text-primary"
                 aria-hidden="true"
@@ -149,13 +155,9 @@ const selectedPlan = ref('plan-02')
         </div>
 
         <div class="grid gap-2">
-          <Button type="button" class="w-full">
-            Change plan
-          </Button>
+          <Button type="button" class="w-full"> Change plan </Button>
           <DialogClose asChild>
-            <Button type="button" variant="ghost" class="w-full">
-              Cancel
-            </Button>
+            <Button type="button" variant="ghost" class="w-full"> Cancel </Button>
           </DialogClose>
         </div>
       </form>

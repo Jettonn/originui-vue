@@ -48,18 +48,20 @@ function handleAvatarChange(event: Event) {
     <DialogTrigger asChild>
       <Button variant="outline">Edit profile</Button>
     </DialogTrigger>
-    <DialogContent class="flex flex-col gap-0 overflow-y-visible p-0 sm:max-w-lg [&>button:last-child]:top-3.5">
+    <DialogContent
+      class="flex flex-col gap-0 overflow-y-visible p-0 sm:max-w-lg [&>button:last-child]:top-3.5"
+    >
       <DialogHeader class="contents space-y-0 text-left">
-        <DialogTitle class="border-b border-border px-6 py-4 text-base">
-          Edit profile
-        </DialogTitle>
+        <DialogTitle class="border-b border-border px-6 py-4 text-base"> Edit profile </DialogTitle>
       </DialogHeader>
       <DialogDescription class="sr-only">
         Make changes to your profile here. You can change your photo and set a username.
       </DialogDescription>
       <div class="overflow-y-auto">
         <div class="h-32">
-          <div class="relative flex h-full w-full items-center justify-center overflow-hidden bg-muted">
+          <div
+            class="relative flex h-full w-full items-center justify-center overflow-hidden bg-muted"
+          >
             <img
               v-if="profileBgImage"
               :src="profileBgImage"
@@ -73,7 +75,7 @@ function handleAvatarChange(event: Event) {
                 @click="$refs.profileBgInput.click()"
                 aria-label="Change background"
               >
-                <ImagePlus size="16" stroke-width="2" aria-hidden="true" />
+                <ImagePlus :size="16" stroke-width="2" aria-hidden="true" />
               </button>
               <button
                 v-if="profileBgImage"
@@ -82,7 +84,7 @@ function handleAvatarChange(event: Event) {
                 @click="profileBgImage = ''"
                 aria-label="Remove background"
               >
-                <X size="16" stroke-width="2" aria-hidden="true" />
+                <X :size="16" stroke-width="2" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -96,7 +98,9 @@ function handleAvatarChange(event: Event) {
         </div>
 
         <div class="-mt-10 px-6">
-          <div class="relative flex size-20 items-center justify-center overflow-hidden rounded-full border-4 border-background bg-muted shadow-sm shadow-black/10">
+          <div
+            class="relative flex size-20 items-center justify-center overflow-hidden rounded-full border-4 border-background bg-muted shadow-sm shadow-black/10"
+          >
             <img
               v-if="avatarImage"
               :src="avatarImage"
@@ -109,7 +113,7 @@ function handleAvatarChange(event: Event) {
               @click="$refs.avatarInput.click()"
               aria-label="Change profile picture"
             >
-              <ImagePlus size="16" stroke-width="2" aria-hidden="true" />
+              <ImagePlus :size="16" stroke-width="2" aria-hidden="true" />
             </button>
             <input
               ref="avatarInput"
@@ -156,20 +160,19 @@ function handleAvatarChange(event: Event) {
                   type="text"
                   required
                 />
-                <div class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50">
-                  <Check
-                    size="16"
-                    stroke-width="2"
-                    class="text-emerald-500"
-                    aria-hidden="true"
-                  />
+                <div
+                  class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50"
+                >
+                  <Check :size="16" stroke-width="2" class="text-emerald-500" aria-hidden="true" />
                 </div>
               </div>
             </div>
             <div class="space-y-2">
               <Label for="edit-website">Website</Label>
               <div class="flex rounded-lg shadow-sm shadow-black/5">
-                <span class="inline-flex items-center rounded-s-lg border border-input bg-background px-3 text-sm text-muted-foreground">
+                <span
+                  class="inline-flex items-center rounded-s-lg border border-input bg-background px-3 text-sm text-muted-foreground"
+                >
                   https://
                 </span>
                 <Input

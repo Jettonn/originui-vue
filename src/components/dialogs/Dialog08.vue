@@ -15,8 +15,8 @@ import Label from '@/components/ui/Label.vue'
 import { CircleAlert } from 'lucide-vue-next'
 import { ref } from 'vue'
 
-const PROJECT_NAME = "Origin UI"
-const inputValue = ref("")
+const PROJECT_NAME = 'Origin UI'
+const inputValue = ref('')
 </script>
 
 <template>
@@ -30,13 +30,14 @@ const inputValue = ref("")
           class="flex size-9 shrink-0 items-center justify-center rounded-full border border-border"
           aria-hidden="true"
         >
-          <CircleAlert class="opacity-80" size="16" stroke-width="2" />
+          <CircleAlert class="opacity-80" :size="16" stroke-width="2" />
         </div>
         <DialogHeader>
           <DialogTitle class="sm:text-center">Final confirmation</DialogTitle>
           <DialogDescription class="sm:text-center">
             This action cannot be undone. To confirm, please enter the project name
-            <span class="text-foreground">{{ PROJECT_NAME }}</span>.
+            <span class="text-foreground">{{ PROJECT_NAME }}</span
+            >.
           </DialogDescription>
         </DialogHeader>
       </div>
@@ -55,11 +56,7 @@ const inputValue = ref("")
           <DialogClose asChild>
             <Button type="button" variant="outline" class="flex-1">Cancel</Button>
           </DialogClose>
-          <Button
-            type="button"
-            class="flex-1"
-            :disabled="inputValue !== PROJECT_NAME"
-          >
+          <Button type="button" class="flex-1" :disabled="inputValue !== PROJECT_NAME">
             Delete
           </Button>
         </DialogFooter>
