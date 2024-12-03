@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Command as CommandPrimitive } from 'vue-command-palette'
+import { Command } from 'vue-command-palette'
 import { cn } from '@/lib/utils'
 
 const props = defineProps<{
@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <CommandPrimitive
+  <Command
     :class="
       cn(
         'flex h-full w-full flex-col overflow-hidden rounded-lg bg-popover text-popover-foreground',
@@ -17,5 +17,5 @@ const props = defineProps<{
     "
   >
     <slot />
-  </CommandPrimitive>
+  </Command>
 </template>

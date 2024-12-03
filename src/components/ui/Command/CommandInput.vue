@@ -15,15 +15,15 @@ const emit = defineEmits<{
 
 const classes = computed(() =>
   cn(
-    'flex h-10 w-full rounded-lg bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50',
+    'flex h-10 w-full rounded-lg bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground/70 disabled:cursor-not-allowed disabled:opacity-50',
     props.class
   )
 )
 </script>
 
 <template>
-  <div class="flex items-center border-b px-3" cmdk-input-wrapper="">
-    <Search class="mr-2 h-4 w-4 shrink-0 opacity-50" />
+  <div class="flex items-center border-b border-border px-5" command-dialog-header="">
+    <Search size="20" stroke-width="2" class="me-3 text-muted-foreground/80" />
     <Command.Input
       :value="modelValue"
       @input="val => emit('update:modelValue', val.toString())"

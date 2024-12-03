@@ -7,11 +7,13 @@ const props = defineProps<{
   class?: string
 }>()
 
-const classes = computed(() => cn('max-h-[300px] overflow-y-auto overflow-x-hidden', props.class))
+const classes = computed(() => cn('max-h-80 overflow-y-auto overflow-x-hidden', props.class))
 </script>
 
 <template>
-  <Command.List :class="classes">
-    <slot />
-  </Command.List>
+  <div command-dialog-body="">
+    <Command.List :class="classes" v-bind="$attrs">
+      <slot />
+    </Command.List>
+  </div>
 </template>
