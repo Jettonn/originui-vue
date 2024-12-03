@@ -11,6 +11,9 @@ import Button from '@/components/ui/Button.vue'
 import Input from '@/components/ui/Input.vue'
 import Label from '@/components/ui/Label.vue'
 import Checkbox from '@/components/ui/Checkbox.vue'
+import { ref } from 'vue'
+
+const rememberMe = ref(false)
 </script>
 
 <template>
@@ -62,7 +65,7 @@ import Checkbox from '@/components/ui/Checkbox.vue'
         </div>
         <div class="flex justify-between gap-2">
           <div class="flex items-center gap-2">
-            <Checkbox id="login-remember" />
+            <Checkbox id="login-remember" v-model="rememberMe" />
             <Label for="login-remember" class="font-normal text-muted-foreground">
               Remember me
             </Label>
