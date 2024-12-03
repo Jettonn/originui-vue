@@ -50,6 +50,7 @@ const dialogFiles = ref([
   'Dialog03',
   'Dialog04',
   'Dialog05',
+  'Dialog06',
 ])
 const directory = 'dialogs'
 
