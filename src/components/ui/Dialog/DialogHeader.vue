@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils';
+import { toRefs } from 'vue'
 
-defineProps({
-  className: {
+const props = defineProps({
+  class: {
     type: String,
     default: '',
   },
 });
+
+const { class: extraClasses } = toRefs(props);
 </script>
 
 <template>
-  <div :class="cn('flex flex-col space-y-1.5 text-center sm:text-left', className)" v-bind="$attrs">
+  <div :class="cn('flex flex-col space-y-1.5 text-center sm:text-left', extraClasses)">
     <slot />
   </div>
 </template>

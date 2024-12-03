@@ -1,21 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, toRefs } from 'vue'
 import { ScrollAreaRoot, ScrollAreaViewport, ScrollAreaCorner } from 'radix-vue';
 import { cn } from '@/lib/utils';
 import { ScrollBar } from './index'
 
-defineProps({
-  className: {
+const props = defineProps({
+  class: {
     type: String,
     default: '',
   },
 });
 
+const { class: extraClasses } = toRefs(props);
+
 const rootRef = ref(null);
 </script>
 
 <template>
-  <ScrollAreaRoot ref="rootRef" :class="cn('relative overflow-hidden', className)">
+  <ScrollAreaRoot ref="rootRef" :class="cn('relative overflow-hidden', extraClasses)">
     <ScrollAreaViewport class="h-full w-full rounded-[inherit]">
       <slot />
     </ScrollAreaViewport>

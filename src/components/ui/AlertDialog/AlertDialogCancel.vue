@@ -2,9 +2,10 @@
 import { AlertDialogCancel } from 'radix-vue';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/lib/utils';
+import { toRefs } from 'vue'
 
-defineProps({
-  className: {
+const props = defineProps({
+  class: {
     type: String,
     default: '',
   },
@@ -17,11 +18,13 @@ defineProps({
     default: 'default',
   },
 });
+
+const { variant, size, class: extraClasses } = toRefs(props);
 </script>
 
 <template>
   <AlertDialogCancel
-    :class="cn(buttonVariants({ variant, size }), className)"
+    :class="cn(buttonVariants({ variant, size }), extraClasses)"
     v-bind="$attrs"
   >
     <slot />

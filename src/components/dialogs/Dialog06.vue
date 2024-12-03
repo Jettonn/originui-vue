@@ -18,11 +18,11 @@ import Button from '@/components/ui/Button.vue'
       <Button variant="outline">Scrollable (sticky footer)</Button>
     </DialogTrigger>
     <DialogContent
-      className="flex flex-col gap-0 p-0 sm:max-h-[min(640px,80vh)] sm:max-w-lg [&>button:last-child]:hidden"
+      class="flex flex-col gap-0 p-0 sm:max-h-[min(640px,80vh)] sm:max-w-lg [&>button:last-child]:hidden"
     >
       <div class="overflow-y-auto">
-        <DialogHeader className="contents space-y-0 text-left">
-          <DialogTitle className="px-6 pt-6 text-base">
+        <DialogHeader class="contents space-y-0 text-left">
+          <DialogTitle class="px-6 pt-6 text-base">
             Frequently Asked Questions (FAQ)
           </DialogTitle>
           <DialogDescription asChild>
@@ -135,7 +135,7 @@ import Button from '@/components/ui/Button.vue'
           </DialogDescription>
         </DialogHeader>
       </div>
-      <DialogFooter className="border-t border-border px-6 py-4">
+      <DialogFooter class="border-t border-border px-6 py-4">
         <DialogClose asChild>
           <Button type="button" variant="outline">Cancel</Button>
         </DialogClose>

@@ -32,10 +32,10 @@ const handleScroll = () => {
       <Button variant="outline">Terms & Conditions</Button>
     </DialogTrigger>
     <DialogContent
-      className="flex flex-col gap-0 p-0 sm:max-h-[min(640px,80vh)] sm:max-w-lg [&>button:last-child]:top-3.5"
+      class="flex flex-col gap-0 p-0 sm:max-h-[min(640px,80vh)] sm:max-w-lg [&>button:last-child]:top-3.5"
     >
-      <DialogHeader className="contents space-y-0 text-left">
-        <DialogTitle className="border-b border-border px-6 py-4 text-base">
+      <DialogHeader class="contents space-y-0 text-left">
+        <DialogTitle class="border-b border-border px-6 py-4 text-base">
           Terms & Conditions
         </DialogTitle>
         <div
@@ -142,7 +142,7 @@ const handleScroll = () => {
           </DialogDescription>
         </div>
       </DialogHeader>
-      <DialogFooter className="border-t border-border px-6 py-4 sm:items-center">
+      <DialogFooter class="border-t border-border px-6 py-4 sm:items-center">
         <template v-if="!hasReadToBottom">
           <span class="grow text-xs text-muted-foreground max-sm:text-center">
             Read all terms before accepting.

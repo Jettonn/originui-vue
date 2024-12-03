@@ -17,7 +17,7 @@
         >
           <DemoComponent
             v-for="component in visibleComponents"
-            className="flex justify-center"
+            class="flex justify-center"
             :key="component"
             :directory="directory"
             :componentName="component"

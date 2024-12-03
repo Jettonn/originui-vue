@@ -2,8 +2,8 @@
 import { DialogDescription } from 'radix-vue';
 import { cn } from '@/lib/utils';
 
-defineProps({
-  className: {
+const props = defineProps({
+  class: {
     type: String,
     default: '',
   },
@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <DialogDescription :class="cn('text-sm text-muted-foreground', className)" v-bind="$attrs">
+  <DialogDescription :class="cn('text-sm text-muted-foreground', props.class)">
     <slot />
   </DialogDescription>
 </template>
