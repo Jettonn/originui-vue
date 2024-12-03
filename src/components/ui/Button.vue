@@ -5,28 +5,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, defineProps, toRefs } from 'vue';
-import { cn, buttonVariants } from '@/lib/utils';
+import { ref, computed, defineProps, toRefs } from 'vue'
+import type { VariantProps } from 'class-variance-authority'
+import { buttonVariants, cn } from '@/lib/utils'
 
 const props = defineProps({
   variant: {
-    type: String,
-    default: 'default',
+    type: String as () => VariantProps<typeof buttonVariants>['variant'],
+    default: 'default'
   },
   size: {
-    type: String,
-    default: 'default',
+    type: String as () => VariantProps<typeof buttonVariants>['size'],
+    default: 'default'
   },
-  className: {
+  class: {
     type: String,
-    default: '',
-  },
-});
+    default: ''
+  }
+})
 
-const { variant, size, className } = toRefs(props);
-const buttonRef = ref<HTMLElement | null>(null);
+const { variant, size, class: extraClasses } = toRefs(props)
+const buttonRef = ref<HTMLElement | null>(null)
 
 const buttonClasses = computed(() =>
-  cn(buttonVariants({ variant: variant.value, size: size.value }), className.value)
-);
+  cn(buttonVariants({ variant: variant.value, size: size.value }), extraClasses.value)
+)
 </script>
