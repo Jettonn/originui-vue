@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { AlertDialogContent, AlertDialogOverlay, AlertDialogPortal } from 'radix-vue';
+import { AlertDialogContent } from 'radix-vue';
+import { AlertDialogOverlay, AlertDialogPortal } from './index';
 import { cn } from '@/lib/utils';
 
 defineProps({
