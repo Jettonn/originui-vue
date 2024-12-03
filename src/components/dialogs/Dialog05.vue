@@ -14,7 +14,7 @@ import Button from '@/components/ui/Button.vue'
 
 <template>
   <Dialog>
-    <DialogTrigger>
+    <DialogTrigger asChild>
       <Button variant="outline">Scrollable (sticky header)</Button>
     </DialogTrigger>
     <DialogContent
@@ -25,7 +25,7 @@ import Button from '@/components/ui/Button.vue'
           Frequently Asked Questions (FAQ)
         </DialogTitle>
         <div class="overflow-y-auto">
-          <DialogDescription>
+          <DialogDescription asChild>
             <div class="px-6 py-4">
               <div class="space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground">
                 <div class="space-y-1">
@@ -134,7 +134,7 @@ import Button from '@/components/ui/Button.vue'
             </div>
           </DialogDescription>
           <DialogFooter className="px-6 pb-6 sm:justify-start">
-            <DialogClose>
+            <DialogClose asChild>
               <Button type="button">Okay</Button>
             </DialogClose>
           </DialogFooter>

@@ -16,7 +16,7 @@ import { CircleAlert } from 'lucide-vue-next'
 
 <template>
   <AlertDialog>
-    <AlertDialogTrigger>
+    <AlertDialogTrigger asChild>
       <Button variant="outline">Alert dialog with icon</Button>
     </AlertDialogTrigger>
     <AlertDialogContent>
