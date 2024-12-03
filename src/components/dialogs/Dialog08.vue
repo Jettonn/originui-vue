@@ -21,7 +21,7 @@ const inputValue = ref("")
 
 <template>
   <Dialog>
-    <DialogTrigger>
+    <DialogTrigger asChild>
       <Button variant="outline">Delete project</Button>
     </DialogTrigger>
     <DialogContent>

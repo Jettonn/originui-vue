@@ -15,7 +15,7 @@ import Button from '@/components/ui/Button.vue'
 
 <template>
   <Dialog>
-    <DialogTrigger>
+    <DialogTrigger asChild>
       <Button variant="outline">Scrollable (custom scrollbar)</Button>
     </DialogTrigger>
     <DialogContent
@@ -24,7 +24,7 @@ import Button from '@/components/ui/Button.vue'
       <ScrollArea className="flex max-h-full flex-col">
         <DialogHeader className="contents space-y-0 text-left">
           <DialogTitle className="px-6 pt-6">Frequently Asked Questions (FAQ)</DialogTitle>
-          <DialogDescription>
+          <DialogDescription asChild>
             <div class="p-6">
               <div class="space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground">
                 <div class="space-y-1">
@@ -134,12 +134,12 @@ import Button from '@/components/ui/Button.vue'
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="px-6 pb-6 sm:justify-start">
-          <DialogClose>
+          <DialogClose asChild>
             <Button type="button" variant="outline">
               Cancel
             </Button>
           </DialogClose>
-          <DialogClose>
+          <DialogClose asChild>
             <Button type="button">Okay</Button>
           </DialogClose>
         </DialogFooter>

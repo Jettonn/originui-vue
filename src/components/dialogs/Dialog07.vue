@@ -28,7 +28,7 @@ const handleScroll = () => {
 
 <template>
   <Dialog>
-    <DialogTrigger>
+    <DialogTrigger asChild>
       <Button variant="outline">Terms & Conditions</Button>
     </DialogTrigger>
     <DialogContent
@@ -43,7 +43,7 @@ const handleScroll = () => {
           @scroll="handleScroll"
           class="overflow-y-auto"
         >
-          <DialogDescription>
+          <DialogDescription asChild>
             <div class="px-6 py-4">
               <div class="space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground">
                 <div class="space-y-4">
@@ -148,10 +148,10 @@ const handleScroll = () => {
             Read all terms before accepting.
           </span>
         </template>
-        <DialogClose>
+        <DialogClose asChild>
           <Button type="button" variant="outline">Cancel</Button>
         </DialogClose>
-        <DialogClose>
+        <DialogClose asChild>
           <Button type="button" :disabled="!hasReadToBottom">I agree</Button>
         </DialogClose>
       </DialogFooter>

@@ -14,7 +14,7 @@ import Button from '@/components/ui/Button.vue'
 
 <template>
   <Dialog>
-    <DialogTrigger>
+    <DialogTrigger asChild>
       <Button variant="outline">Scrollable (sticky footer)</Button>
     </DialogTrigger>
     <DialogContent
@@ -25,7 +25,7 @@ import Button from '@/components/ui/Button.vue'
           <DialogTitle className="px-6 pt-6 text-base">
             Frequently Asked Questions (FAQ)
           </DialogTitle>
-          <DialogDescription>
+          <DialogDescription asChild>
             <div class="p-6">
               <div class="space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground">
                 <div class="space-y-1">
@@ -136,10 +136,10 @@ import Button from '@/components/ui/Button.vue'
         </DialogHeader>
       </div>
       <DialogFooter className="border-t border-border px-6 py-4">
-        <DialogClose>
+        <DialogClose asChild>
           <Button type="button" variant="outline">Cancel</Button>
         </DialogClose>
-        <DialogClose>
+        <DialogClose asChild>
           <Button type="button">Okay</Button>
         </DialogClose>
       </DialogFooter>
