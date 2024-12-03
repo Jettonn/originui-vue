@@ -30,49 +30,49 @@
           <nav>
             <ul class="flex flex-col gap-2">
               <li>
-                <a
-                  href="/inputs"
+                <router-link
+                  to="/inputs"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Input and Textarea
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </a>
+                </router-link>
               </li>
               <li>
-                <a
-                  href="/buttons"
+                <router-link
+                  to="/buttons"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Button
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </a>
+                </router-link>
               </li>
               <li>
-                <a
-                  href="/check-radio-switches"
+                <router-link
+                  to="/check-radio-switches"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Checkbox, Radio, and Switch
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </a>
+                </router-link>
               </li>
               <li>
-                <a
-                  href="/selects"
+                <router-link
+                  to="/selects"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Select
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </a>
+                </router-link>
               </li>
               <li>
-                <a
-                  href="/sliders"
+                <router-link
+                  to="/sliders"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Sliders
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </a>
+                </router-link>
               </li>
               <li>
                 <span
@@ -89,13 +89,13 @@
                 </span>
               </li>
               <li>
-                <a
-                  href="/dialogs"
+                <router-link
+                  to="/dialogs"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
                   Dialogs
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </a>
+                </router-link>
               </li>
             </ul>
           </nav>

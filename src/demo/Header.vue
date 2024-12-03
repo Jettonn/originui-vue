@@ -4,7 +4,7 @@
       <div
         class="mx-auto mb-16 flex h-[72px] w-full max-w-6xl items-center justify-between border-b border-border/70"
       >
-        <a href="/" aria-label="Home">
+        <router-link to="/" aria-label="Home">
           <span class="sr-only">Origin UI - Vue</span>
           <svg
             class="stroke-vue"
@@ -17,7 +17,7 @@
             <circle cx="16" cy="16" r="13" fill="none" stroke-width="2" />
             <circle cx="16" cy="16" r="9" fill="none" stroke-width="2" />
           </svg>
-        </a>
+        </router-link>
         <nav>
           <ul class="flex items-center gap-4">
             <li>
