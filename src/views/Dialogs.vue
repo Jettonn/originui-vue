@@ -47,6 +47,7 @@ const isLoading = ref(false)
 const dialogFiles = ref([
   'Dialog01',
   'Dialog02',
+  'Dialog03',
 ])
 const directory = 'dialogs'
 
