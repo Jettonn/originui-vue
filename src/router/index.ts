@@ -5,6 +5,7 @@ import Buttons from '@/views/Buttons.vue'
 import CheckRadioSwitches from '@/views/CheckRadioSwitches.vue'
 import Selects from '@/views/Selects.vue'
 import Sliders from '@/views/Sliders.vue'
+import Dialogs from '@/views/Dialogs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,12 @@ const router = createRouter({
       name: 'sliders',
       component: Sliders,
       meta: { title: 'originui-vue/sliders' }
+    },
+    {
+      path: '/dialogs',
+      name: 'dialogs',
+      component: Dialogs,
+      meta: { title: 'originui-vue/dialogs' }
     }
   ]
 })

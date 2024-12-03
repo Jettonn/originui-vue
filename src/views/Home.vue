@@ -88,6 +88,15 @@
                   </span>
                 </span>
               </li>
+              <li>
+                <a
+                  href="/dialogs"
+                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
+                >
+                  Dialogs
+                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
