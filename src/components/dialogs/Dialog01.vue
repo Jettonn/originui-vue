@@ -15,7 +15,7 @@ import Button from '@/components/ui/Button.vue'
 
 <template>
   <AlertDialog>
-    <AlertDialogTrigger asChild>
+    <AlertDialogTrigger>
       <Button variant="outline">Alert dialog</Button>
     </AlertDialogTrigger>
     <AlertDialogContent>
