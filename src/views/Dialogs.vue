@@ -4,7 +4,7 @@
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
           title="Dialog Components | Origin UI Vue"
-          heading="Dialogs"
+          heading="Dialog"
           description="A growing collection of dialog components built with Vue and TailwindCSS."
         >
           A growing collection of over {{ dialogFiles.length }} dialog components built with
@@ -17,6 +17,7 @@
         >
           <DemoComponent
             v-for="component in visibleComponents"
+            className="flex justify-center"
             :key="component"
             :directory="directory"
             :componentName="component"
