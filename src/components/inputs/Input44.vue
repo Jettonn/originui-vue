@@ -8,7 +8,7 @@ const input = ref('')
 </script>
 
 <template>
-  <div className="space-y-2">
+  <div class="space-y-2">
     <Label for="input-44">OTP input single</Label>
     <OTPInput v-slot="{ slots }" v-model="input" :maxlength="4">
       <div class="flex">
@@ -26,10 +26,10 @@ const input = ref('')
         </div>
       </div>
     </OTPInput>
-    <p className="mt-2 text-xs text-muted-foreground" role="region" aria-live="polite">
+    <p class="mt-2 text-xs text-muted-foreground" role="region" aria-live="polite">
       Built with
       <a
-        className="underline hover:text-foreground"
+        class="underline hover:text-foreground"
         href="https://github.com/wobsoriano/vue-input-otp"
         target="_blank"
         rel="noopener nofollow"
