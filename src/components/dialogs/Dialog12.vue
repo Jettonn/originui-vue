@@ -37,15 +37,9 @@ async function onSubmit() {
           class="flex size-11 shrink-0 items-center justify-center rounded-full border border-border"
           aria-hidden="true"
         >
-          <svg
-            class="stroke-zinc-800 dark:stroke-zinc-100"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-          >
-            <circle cx="16" cy="16" r="12" fill="none" stroke-width="8" />
+          <svg class="stroke-vue" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="13" fill="none" stroke-width="2"></circle>
+            <circle cx="16" cy="16" r="9" fill="none" stroke-width="2"></circle>
           </svg>
         </div>
         <DialogHeader>
