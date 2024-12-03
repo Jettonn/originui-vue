@@ -45,7 +45,8 @@ const containerRef = ref<HTMLElement | null>(null)
 const isLoading = ref(false)
 
 const dialogFiles = ref([
-  'Dialog01'
+  'Dialog01',
+  'Dialog02',
 ])
 const directory = 'dialogs'
 
