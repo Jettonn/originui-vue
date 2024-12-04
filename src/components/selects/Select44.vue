@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Check, ChevronDown } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
-import { cn } from '@/lib/utils'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/Popover'
 import Button from '../ui/Button.vue'
 import {
@@ -114,9 +113,10 @@ const handleSelect = (currentValue: { key: string; value: string }) => {
                 >
                   <span class="text-lg leading-none">{{ country.flag }}</span> {{ country.value }}
                   <Check
-                    :class="
-                      cn('ml-auto', selectedValue === country.value ? 'opacity-100' : 'opacity-0')
-                    "
+                    v-if="selectedValue === country.value"
+                    :size="16"
+                    stroke-width="2"
+                    class="ml-auto"
                   />
                 </CommandItem>
               </CommandGroup>
