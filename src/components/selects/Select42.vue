@@ -77,12 +77,10 @@ const handleSelect = (currentValue: { key: string; value: string }) => {
               >
                 {{ organization.label }}
                 <Check
-                  :class="
-                    cn(
-                      'ml-auto',
-                      selectedValue === organization.value ? 'opacity-100' : 'opacity-0'
-                    )
-                  "
+                  v-if="selectedValue === organization.value"
+                  :size="16"
+                  stroke-width="2"
+                  class="ml-auto"
                 />
               </CommandItem>
             </CommandGroup>

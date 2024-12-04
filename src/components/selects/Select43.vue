@@ -103,9 +103,10 @@ const filterFn = (value: string, search: string) => {
               >
                 {{ timezone.label }}
                 <Check
-                  :class="
-                    cn('ml-auto', selectedValue === timezone.value ? 'opacity-100' : 'opacity-0')
-                  "
+                  v-if="selectedValue === timezone.value"
+                  :size="16"
+                  stroke-width="2"
+                  class="ml-auto"
                 />
               </CommandItem>
             </CommandGroup>

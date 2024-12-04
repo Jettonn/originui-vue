@@ -4,6 +4,7 @@ import { computed, ref } from 'vue'
 import { cn } from '@/lib/utils'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/Popover'
 import Button from '../ui/Button.vue'
+import Label from '../ui/Label.vue'
 import {
   Command,
   CommandEmpty,
@@ -131,9 +132,10 @@ const handleSelect = (currentValue: { key: string; value: string }) => {
               >
                 {{ framework.label }}
                 <Check
-                  :class="
-                    cn('ml-auto', selectedValue === framework.value ? 'opacity-100' : 'opacity-0')
-                  "
+                  v-if="selectedValue === framework.value"
+                  :size="16"
+                  stroke-width="2"
+                  class="ml-auto"
                 />
               </CommandItem>
             </CommandGroup>
