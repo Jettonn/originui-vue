@@ -75,18 +75,13 @@
                 </router-link>
               </li>
               <li>
-                <span
-                  class="inline-flex w-full flex-col justify-between gap-2 whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 sm:h-14 sm:flex-row sm:items-center"
+                <router-link
+                  to="/alerts-notifications-banners"
+                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
-                  <span class="flex items-start gap-2">
-                    Alert, Notification, and Banner
-                    <span
-                      class="-mt-1 text-[10px] font-medium uppercase text-zinc-400 dark:text-zinc-600 animate-pulse"
-                    >
-                      Available soon
-                    </span>
-                  </span>
-                </span>
+                  Alert, Notification, and Banner
+                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
+                </router-link>
               </li>
               <li>
                 <router-link
@@ -96,6 +91,20 @@
                   Dialogs
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
                 </router-link>
+              </li>
+              <li>
+                <span
+                  class="inline-flex w-full flex-col justify-between gap-2 whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 sm:h-14 sm:flex-row sm:items-center"
+                >
+                  <span class="flex items-start gap-2">
+                    Accordion
+                    <span
+                      class="-mt-1 text-[10px] font-medium uppercase text-zinc-400 dark:text-zinc-600 animate-pulse"
+                    >
+                      Available soon
+                    </span>
+                  </span>
+                </span>
               </li>
             </ul>
           </nav>

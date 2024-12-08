@@ -14,6 +14,8 @@
       <Illustration />
       <RouterView />
       <CTA v-if="isNotRootPath" />
+      <Toaster />
+      <Sooner />
     </div>
   </div>
 </template>
@@ -26,6 +28,8 @@ import interVariableWoff2 from '@fontsource-variable/inter/files/inter-latin-wgh
 import Header from './demo/Header.vue'
 import Illustration from './demo/Illustration.vue'
 import CTA from './demo/CTA.vue'
+import Toaster from './components/ui/Toaster.vue'
+import Sooner from './components/ui/Sooner.vue'
 
 const route = useRoute()
 

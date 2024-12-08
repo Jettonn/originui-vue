@@ -19,7 +19,7 @@ const cardNumber = '#### #### #### ####'
       <div
         class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 peer-disabled:opacity-50"
       >
-        <CreditCard :size="16" :strokeWidth="2" aria-hidden="true" />
+        <CreditCard :size="16" :stroke-width="2" aria-hidden="true" />
       </div>
     </div>
     <p class="mt-2 text-xs text-muted-foreground" role="region" aria-live="polite">

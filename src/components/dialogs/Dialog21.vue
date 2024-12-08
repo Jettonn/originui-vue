@@ -7,7 +7,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut,
+  CommandShortcut
 } from '@/components/ui/Command'
 import { ref, onMounted, onUnmounted } from 'vue'
 import { ArrowUpRight, CircleFadingPlus, FileInput, FolderPlus, Search } from 'lucide-vue-next'
@@ -41,7 +41,7 @@ onMounted(() => {
         <Search
           class="-ms-1 me-3 text-muted-foreground/80"
           :size="16"
-          :strokeWidth="2"
+          :stroke-width="2"
           aria-hidden="true"
         />
         <span class="font-normal text-muted-foreground/70">Search</span>
@@ -59,32 +59,17 @@ onMounted(() => {
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Quick start">
           <CommandItem data-value="New folder">
-            <FolderPlus
-              :size="16"
-              :strokeWidth="2"
-              class="opacity-60"
-              aria-hidden="true"
-            />
+            <FolderPlus :size="16" :stroke-width="2" class="opacity-60" aria-hidden="true" />
             <span>New folder</span>
             <CommandShortcut class="justify-center">⌘N</CommandShortcut>
           </CommandItem>
           <CommandItem data-value="Import document">
-            <FileInput
-              :size="16"
-              :strokeWidth="2"
-              class="opacity-60"
-              aria-hidden="true"
-            />
+            <FileInput :size="16" :stroke-width="2" class="opacity-60" aria-hidden="true" />
             <span>Import document</span>
             <CommandShortcut class="justify-center">⌘I</CommandShortcut>
           </CommandItem>
           <CommandItem data-value="Add block">
-            <CircleFadingPlus
-              :size="16"
-              :strokeWidth="2"
-              class="opacity-60"
-              aria-hidden="true"
-            />
+            <CircleFadingPlus :size="16" :stroke-width="2" class="opacity-60" aria-hidden="true" />
             <span>Add block</span>
             <CommandShortcut class="justify-center">⌘B</CommandShortcut>
           </CommandItem>
@@ -92,30 +77,15 @@ onMounted(() => {
         <CommandSeparator />
         <CommandGroup heading="Navigation">
           <CommandItem data-value="Go to dashboard">
-            <ArrowUpRight
-              :size="16"
-              :strokeWidth="2"
-              class="opacity-60"
-              aria-hidden="true"
-            />
+            <ArrowUpRight :size="16" :stroke-width="2" class="opacity-60" aria-hidden="true" />
             <span>Go to dashboard</span>
           </CommandItem>
           <CommandItem data-value="Go to apps">
-            <ArrowUpRight
-              :size="16"
-              :strokeWidth="2"
-              class="opacity-60"
-              aria-hidden="true"
-            />
+            <ArrowUpRight :size="16" :stroke-width="2" class="opacity-60" aria-hidden="true" />
             <span>Go to apps</span>
           </CommandItem>
           <CommandItem data-value="Go to connections">
-            <ArrowUpRight
-              :size="16"
-              :strokeWidth="2"
-              class="opacity-60"
-              aria-hidden="true"
-            />
+            <ArrowUpRight :size="16" :stroke-width="2" class="opacity-60" aria-hidden="true" />
             <span>Go to connections</span>
           </CommandItem>
         </CommandGroup>

@@ -7,7 +7,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from '@/components/ui/Dialog'
 import Button from '@/components/ui/Button.vue'
 import { ArrowRight } from 'lucide-vue-next'
@@ -18,23 +18,21 @@ const stepContent = [
   {
     title: 'Welcome to Origin UI',
     description:
-      'Discover a powerful collection of components designed to enhance your development workflow.',
+      'Discover a powerful collection of components designed to enhance your development workflow.'
   },
   {
     title: 'Customizable Components',
-    description:
-      'Each component is fully customizable and built with modern web standards in mind.',
+    description: 'Each component is fully customizable and built with modern web standards in mind.'
   },
   {
     title: 'Ready to Start?',
-    description:
-      'Begin building amazing interfaces with our comprehensive component library.',
+    description: 'Begin building amazing interfaces with our comprehensive component library.'
   },
   {
     title: 'Get Support',
     description:
-      'Access our extensive documentation and community resources to make the most of Origin UI.',
-  },
+      'Access our extensive documentation and community resources to make the most of Origin UI.'
+  }
 ]
 
 const step = ref(1)
@@ -60,13 +58,7 @@ function resetStep() {
     </DialogTrigger>
     <DialogContent class="gap-0 p-0 [&>button:last-child]:text-white">
       <div class="p-2">
-        <img
-          class="w-full rounded-lg"
-          :src="DialogImg"
-          width="382"
-          height="216"
-          alt="dialog"
-        />
+        <img class="w-full rounded-lg" :src="DialogImg" width="382" height="216" alt="dialog" />
       </div>
       <div class="space-y-6 px-6 pb-6 pt-3">
         <DialogHeader>
@@ -80,27 +72,20 @@ function resetStep() {
               :key="index"
               :class="[
                 'h-1.5 w-1.5 rounded-full bg-primary',
-                index === step ? 'bg-primary' : 'opacity-20',
+                index === step ? 'bg-primary' : 'opacity-20'
               ]"
             />
           </div>
           <DialogFooter>
             <DialogClose asChild>
-              <Button type="button" variant="ghost">
-                Skip
-              </Button>
+              <Button type="button" variant="ghost"> Skip </Button>
             </DialogClose>
-            <Button
-              v-if="step < totalSteps"
-              class="group"
-              type="button"
-              @click="handleContinue"
-            >
+            <Button v-if="step < totalSteps" class="group" type="button" @click="handleContinue">
               Next
               <ArrowRight
                 class="-me-1 ms-2 opacity-60 transition-transform group-hover:translate-x-0.5"
                 :size="16"
-                :strokeWidth="2"
+                :stroke-width="2"
                 aria-hidden="true"
               />
             </Button>

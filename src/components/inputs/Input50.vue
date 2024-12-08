@@ -22,7 +22,7 @@ const cvc = '####'
         <div
           class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50"
         >
-          <CreditCard :size="16" :strokeWidth="2" aria-hidden="true" />
+          <CreditCard :size="16" :stroke-width="2" aria-hidden="true" />
         </div>
       </div>
       <div class="-mt-px flex">

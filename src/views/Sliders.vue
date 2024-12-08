@@ -27,8 +27,6 @@
         <div v-if="isLoading" class="flex justify-center my-8">
           <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-vue"></div>
         </div>
-
-        <Cta />
       </div>
     </div>
   </main>

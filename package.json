@@ -29,6 +29,7 @@
     "vue-gtag": "^2.0.1",
     "vue-input-otp": "^0.2.2",
     "vue-router": "^4.4.5",
+    "vue-sonner": "^1.3.0",
     "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {

@@ -53,6 +53,9 @@ dependencies:
   vue-router:
     specifier: ^4.4.5
     version: 4.4.5(vue@3.5.12)
+  vue-sonner:
+    specifier: ^1.3.0
+    version: 1.3.0
   vue-the-mask:
     specifier: ^0.11.1
     version: 0.11.1
@@ -3453,6 +3456,10 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12(typescript@5.6.3)
+    dev: false
+
+  /vue-sonner@1.3.0:
+    resolution: {integrity: sha512-jAodBy4Mri8rQjVZGQAPs4ZYymc1ywPiwfa81qU0fFl+Suk7U8NaOxIDdI1oBGLeQJqRZi/oxNIuhCLqsBmOwg==}
     dev: false
 
   /vue-the-mask@0.11.1:
