@@ -7,7 +7,7 @@ import CopyButton from './CopyButton.vue'
 interface Props {
   directory: string
   componentName: string
-  className?: string
+  class?: string
 }
 
 const props = defineProps<Props>()
@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="cn('group/item relative', className)">
+  <div :class="cn('group/item relative', props.class)">
     <component :is="Component" />
     <CopyButton :code="source" />
   </div>

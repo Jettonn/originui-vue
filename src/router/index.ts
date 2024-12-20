@@ -50,6 +50,12 @@ const router = createRouter({
       name: 'dialogs',
       component: () => import('@/views/Dialogs.vue'),
       meta: { title: 'originui-vue/dialogs' }
+    },
+    {
+      path: '/accordions',
+      name: 'accordions',
+      component: () => import('@/views/Accordions.vue'),
+      meta: { title: 'originui-vue/accordions' }
     }
   ]
 })

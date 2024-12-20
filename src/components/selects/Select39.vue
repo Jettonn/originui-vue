@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils'
 
 const Square = defineComponent({
   props: {
-    className: {
+    class: {
       type: String as PropType<string>,
       default: ''
     }
@@ -27,7 +27,7 @@ const Square = defineComponent({
           'data-square': true,
           class: cn(
             'flex size-5 items-center justify-center rounded bg-muted text-xs font-medium text-muted-foreground',
-            props.className
+            props.class
           ),
           'aria-hidden': 'true'
         },
