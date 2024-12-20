@@ -19,7 +19,7 @@
             :key="component.name"
             :directory="component.directory"
             :component-name="component.name"
-            :class="{ 'flex justify-center': component.directory === switchDir }"
+            :class="component.directory === switchDir ? 'flex justify-center' : ''"
           />
         </div>
 
