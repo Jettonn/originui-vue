@@ -56,6 +56,12 @@ const router = createRouter({
       name: 'accordions',
       component: () => import('@/views/Accordions.vue'),
       meta: { title: 'originui-vue/accordions' }
+    },
+    {
+      path: '/tooltips',
+      name: 'tooltips',
+      component: () => import('@/views/Tooltips.vue'),
+      meta: { title: 'originui-vue/tooltips' }
     }
   ]
 })
