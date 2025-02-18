@@ -22,6 +22,12 @@ const router = createRouter({
       meta: { title: 'originui-vue/buttons' }
     },
     {
+      path: '/badges',
+      name: 'badges',
+      component: () => import('@/views/Badge.vue'),
+      meta: { title: 'originui-vue/badges' }
+    },
+    {
       path: '/check-radio-switches',
       name: 'check-radio-switches',
       component: () => import('@/views/CheckRadioSwitches.vue'),
@@ -68,9 +74,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-    document.title = to.meta.title as string;
+    document.title = to.meta.title as string
   }
-  next();
-});
+  next()
+})
 
 export default router
