@@ -66,7 +66,7 @@ If you want to use the components in your project, you need to setup the followi
 
 #### Utils
 
-In the `src/lib/utils.ts` folder you will find the common `cn` function for Tailwind CSS class merging and the `buttonVariants` function for generating the button classes. 
+In the `src/lib/utils.ts` folder you will find the common `cn` function for Tailwind CSS class merging and the `buttonVariants` function for generating the button classes.
 
 #### Base Components
 
@@ -132,6 +132,7 @@ If you want to use the helpers used in some components you need to copy the `src
 
 - Inputs and Textarea
 - Buttons
+- Badges
 - Checkbox, Radio, and Switch
 - Select
 - Sliders
