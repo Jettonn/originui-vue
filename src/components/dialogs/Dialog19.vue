@@ -26,6 +26,9 @@ import defaultAvatarImage from '@/assets/avatar-72-01.jpg'
 const profileBgImage = ref(defaultProfileBgImage)
 const avatarImage = ref(defaultAvatarImage)
 
+const profileBgInput = ref<HTMLInputElement | null>(null)
+const avatarInput = ref<HTMLInputElement | null>(null)
+
 function handleProfileBgChange(event: Event) {
   const target = event.target as HTMLInputElement
   const file = target.files?.[0]
@@ -72,7 +75,7 @@ function handleAvatarChange(event: Event) {
               <button
                 type="button"
                 class="z-50 flex size-10 cursor-pointer items-center justify-center rounded-full bg-black/60 text-white outline-offset-2 transition-colors hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70"
-                @click="$refs.profileBgInput.click()"
+                @click="profileBgInput?.click()"
                 aria-label="Change background"
               >
                 <ImagePlus :size="16" stroke-width="2" aria-hidden="true" />
@@ -110,7 +113,7 @@ function handleAvatarChange(event: Event) {
             <button
               type="button"
               class="absolute flex size-8 cursor-pointer items-center justify-center rounded-full bg-black/60 text-white outline-offset-2 transition-colors hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring/70"
-              @click="$refs.avatarInput.click()"
+              @click="avatarInput?.click()"
               aria-label="Change profile picture"
             >
               <ImagePlus :size="16" stroke-width="2" aria-hidden="true" />
