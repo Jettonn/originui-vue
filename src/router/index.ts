@@ -22,6 +22,12 @@ const router = createRouter({
       meta: { title: 'originui-vue/buttons' }
     },
     {
+      path: '/avatars',
+      name: 'avatars',
+      component: () => import('@/views/Avatars.vue'),
+      meta: { title: 'originui-vue/avatars' }
+    },
+    {
       path: '/badges',
       name: 'badges',
       component: () => import('@/views/Badge.vue'),
