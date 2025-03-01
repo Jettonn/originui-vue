@@ -20,7 +20,7 @@
             :key="component"
             :directory="directory"
             :componentName="component"
-            class="flex justify-center"
+            class="flex flex-col items-center justify-center"
           />
         </div>
 
