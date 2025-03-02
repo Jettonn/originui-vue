@@ -29,102 +29,21 @@
           <h2 class="mb-5 text-muted-foreground">Latest components</h2>
           <nav>
             <ul class="flex flex-col gap-2">
-              <li>
+              <li v-for="link in availableComponents" :key="link.path">
                 <router-link
-                  to="/inputs"
+                  v-if="link.path !== '#'"
+                  :to="link.path"
                   class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
                 >
-                  Input and Textarea
+                  {{ link.name }}
                   <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
                 </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/buttons"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Button
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/badges"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Badges
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/check-radio-switches"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Checkbox, Radio, and Switch
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/selects"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Select
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/sliders"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Sliders
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/alerts-notifications-banners"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Alert, Notification, and Banner
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/dialogs"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Dialogs
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/accordions"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Accordion
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
-                <router-link
-                  to="/tooltips"
-                  class="inline-flex w-full items-center justify-between whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 sm:h-14"
-                >
-                  Tooltip
-                  <ArrowRightIcon class="-mr-1 ml-2 opacity-60" />
-                </router-link>
-              </li>
-              <li>
                 <span
+                  v-else
                   class="inline-flex w-full flex-col justify-between gap-2 whitespace-nowrap rounded-lg border border-border bg-background p-4 font-bold shadow-sm shadow-black/5 sm:h-14 sm:flex-row sm:items-center"
                 >
                   <span class="flex items-start gap-2">
-                    Dropdown and Popover
+                    {{ link.name }}
                     <span
                       class="-mt-1 text-[10px] font-medium uppercase text-zinc-400 dark:text-zinc-600 animate-pulse"
                     >
@@ -142,8 +61,23 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRight as ArrowRightIcon } from 'lucide-vue-next'
 import { useHead } from '@unhead/vue'
+import { ArrowRight as ArrowRightIcon } from 'lucide-vue-next'
+
+const availableComponents = [
+  { name: 'Input and Textarea', path: '/inputs' },
+  { name: 'Button', path: '/buttons' },
+  { name: 'Avatar', path: '/avatars' },
+  { name: 'Badges', path: '/badges' },
+  { name: 'Checkbox, Radio, and Switch', path: '/check-radio-switches' },
+  { name: 'Select', path: '/selects' },
+  { name: 'Sliders', path: '/sliders' },
+  { name: 'Alert, Notification, and Banner', path: '/alerts-notifications-banners' },
+  { name: 'Dialogs', path: '/dialogs' },
+  { name: 'Accordion', path: '/accordions' },
+  { name: 'Tooltip', path: '/tooltips' },
+  { name: 'Dropdown and Popover', path: '#' }
+]
 
 useHead({
   title: 'Origin UI - Vue Components with Tailwind CSS',
