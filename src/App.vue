@@ -1,12 +1,5 @@
 <template>
   <div>
-    <link
-      rel="preload"
-      :href="interVariableWoff"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
     <div
       class="relative flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip"
     >
@@ -24,7 +17,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { RouterView } from 'vue-router'
-import interVariableWoff from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff'
+import '@fontsource-variable/inter'
 import Header from './demo/Header.vue'
 import Illustration from './demo/Illustration.vue'
 import CTA from './demo/CTA.vue'
