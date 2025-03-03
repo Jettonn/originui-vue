@@ -32,9 +32,8 @@ import Button from '@/components/ui/Button.vue'
                   <strong>Account Management</strong>
                 </p>
                 <p>
-                  Navigate to the registration page, provide required information, and verify
-                  your email address. You can sign up using your email or through social media
-                  platforms.
+                  Navigate to the registration page, provide required information, and verify your
+                  email address. You can sign up using your email or through social media platforms.
                 </p>
               </div>
               <div class="space-y-1">
@@ -52,10 +51,9 @@ import Button from '@/components/ui/Button.vue'
                   <strong>Service Pricing Tiers</strong>
                 </p>
                 <p>
-                  We offer three primary subscription levels designed to meet diverse user
-                  needs: Basic (free with limited features), Professional (monthly fee with
-                  comprehensive access), and Enterprise (custom pricing with full platform
-                  capabilities).
+                  We offer three primary subscription levels designed to meet diverse user needs:
+                  Basic (free with limited features), Professional (monthly fee with comprehensive
+                  access), and Enterprise (custom pricing with full platform capabilities).
                 </p>
               </div>
               <div class="space-y-1">
@@ -63,10 +61,9 @@ import Button from '@/components/ui/Button.vue'
                   <strong>Technical Support Channels</strong>
                 </p>
                 <p>
-                  Customer support is accessible through multiple communication methods
-                  including email support, live chat during business hours, an integrated
-                  support ticket system, and phone support specifically for enterprise-level
-                  customers.
+                  Customer support is accessible through multiple communication methods including
+                  email support, live chat during business hours, an integrated support ticket
+                  system, and phone support specifically for enterprise-level customers.
                 </p>
               </div>
               <div class="space-y-1">
@@ -75,8 +72,8 @@ import Button from '@/components/ui/Button.vue'
                 </p>
                 <p>
                   Our platform implements rigorous security measures including 256-bit SSL
-                  encryption, regular comprehensive security audits, strict data access
-                  controls, and compliance with international privacy protection standards.
+                  encryption, regular comprehensive security audits, strict data access controls,
+                  and compliance with international privacy protection standards.
                 </p>
               </div>
               <div class="space-y-1">
@@ -84,9 +81,9 @@ import Button from '@/components/ui/Button.vue'
                   <strong>Platform Compatibility</strong>
                 </p>
                 <p>
-                  The service supports multiple device and operating system environments,
-                  including web browsers like Chrome and Firefox, mobile applications for iOS
-                  and Android, and desktop applications compatible with Windows and macOS.
+                  The service supports multiple device and operating system environments, including
+                  web browsers like Chrome and Firefox, mobile applications for iOS and Android, and
+                  desktop applications compatible with Windows and macOS.
                 </p>
               </div>
               <div class="space-y-1">
@@ -106,9 +103,9 @@ import Button from '@/components/ui/Button.vue'
                 </p>
                 <p>
                   We accept a wide range of payment methods including major credit cards such as
-                  Visa, MasterCard, and American Express, digital payment platforms like PayPal,
-                  and direct bank transfers. Regional payment options may also be available
-                  depending on user location.
+                  Visa, MasterCard, and American Express, digital payment platforms like PayPal, and
+                  direct bank transfers. Regional payment options may also be available depending on
+                  user location.
                 </p>
               </div>
               <div class="space-y-1">
@@ -125,8 +122,8 @@ import Button from '@/components/ui/Button.vue'
                   <strong>Privacy Policy</strong>
                 </p>
                 <p>
-                  Our privacy policy outlines how we collect, use, and protect your personal
-                  data, ensuring your privacy is protected at all times.
+                  Our privacy policy outlines how we collect, use, and protect your personal data,
+                  ensuring your privacy is protected at all times.
                 </p>
               </div>
             </div>

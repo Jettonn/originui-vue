@@ -5,28 +5,27 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import VueGtag from "vue-gtag";
+import VueGtag from 'vue-gtag'
 
 import { mask } from 'vue-the-mask'
 
-import './router';
+import './router'
 import { createHead } from '@unhead/vue'
 
-const app = createApp(App);
+const app = createApp(App)
 
-
-const googleAnalyticsId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
+const googleAnalyticsId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID
 if (googleAnalyticsId && import.meta.env.PROD) {
   app.use(VueGtag, {
-    config: { id: googleAnalyticsId },
-  });
+    config: { id: googleAnalyticsId }
+  })
 }
 
 const head = createHead()
 
-app.use(createPinia());
-app.use(router);
+app.use(createPinia())
+app.use(router)
 app.use(head)
-app.directive('mask', mask);
+app.directive('mask', mask)
 
-app.mount('#app');
+app.mount('#app')

@@ -55,12 +55,7 @@ const rememberMe = ref(false)
           </div>
           <div class="space-y-2">
             <Label for="login-password">Password</Label>
-            <Input
-              id="login-password"
-              placeholder="Enter your password"
-              type="password"
-              required
-            />
+            <Input id="login-password" placeholder="Enter your password" type="password" required />
           </div>
         </div>
         <div class="flex justify-between gap-2">
@@ -75,7 +70,9 @@ const rememberMe = ref(false)
         <Button type="button" class="w-full">Sign in</Button>
       </form>
 
-      <div class="flex items-center gap-3 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border">
+      <div
+        class="flex items-center gap-3 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border"
+      >
         <span class="text-xs text-muted-foreground">Or</span>
       </div>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DialogPortal } from 'radix-vue';
+import { DialogPortal } from 'radix-vue'
 </script>
 
 <template>

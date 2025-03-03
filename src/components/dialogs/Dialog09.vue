@@ -23,7 +23,14 @@ import { Mail } from 'lucide-vue-next'
           class="flex size-11 shrink-0 items-center justify-center rounded-full border border-border"
           aria-hidden="true"
         >
-          <svg class="stroke-vue" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+          <svg
+            class="stroke-vue"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+          >
             <circle cx="16" cy="16" r="13" fill="none" stroke-width="2"></circle>
             <circle cx="16" cy="16" r="9" fill="none" stroke-width="2"></circle>
           </svg>
@@ -47,16 +54,12 @@ import { Mail } from 'lucide-vue-next'
             </div>
           </div>
         </div>
-        <Button type="button" class="w-full">
-          Subscribe
-        </Button>
+        <Button type="button" class="w-full"> Subscribe </Button>
       </form>
 
       <p class="text-center text-xs text-muted-foreground">
         By subscribing you agree to our
-        <a class="underline hover:no-underline" href="#">
-          Privacy Policy
-        </a>
+        <a class="underline hover:no-underline" href="#"> Privacy Policy </a>
       </p>
     </DialogContent>
   </Dialog>

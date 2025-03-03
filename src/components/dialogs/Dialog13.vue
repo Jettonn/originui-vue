@@ -55,13 +55,20 @@ import Label from '@/components/ui/Label.vue'
           </div>
           <div class="space-y-2">
             <Label for="signup-password">Password</Label>
-            <Input id="signup-password" placeholder="Enter your password" type="password" required />
+            <Input
+              id="signup-password"
+              placeholder="Enter your password"
+              type="password"
+              required
+            />
           </div>
         </div>
         <Button type="button" class="w-full">Sign up</Button>
       </form>
 
-      <div class="flex items-center gap-3 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border">
+      <div
+        class="flex items-center gap-3 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border"
+      >
         <span class="text-xs text-muted-foreground">Or</span>
       </div>
 

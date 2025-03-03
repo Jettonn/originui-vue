@@ -8,7 +8,7 @@ export function useDebounce<T>(value: T, delay: number = 500): Ref<T> {
 
   watch(
     () => value,
-    (newValue) => {
+    newValue => {
       clearTimeout(timeout)
       timeout = setTimeout(() => {
         debouncedValue.value = newValue

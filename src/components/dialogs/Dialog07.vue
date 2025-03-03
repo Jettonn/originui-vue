@@ -38,11 +38,7 @@ const handleScroll = () => {
         <DialogTitle class="border-b border-border px-6 py-4 text-base">
           Terms & Conditions
         </DialogTitle>
-        <div
-          ref="contentRef"
-          @scroll="handleScroll"
-          class="overflow-y-auto"
-        >
+        <div ref="contentRef" @scroll="handleScroll" class="overflow-y-auto">
           <DialogDescription class="px-6 py-4">
             <div class="space-y-4 [&_strong]:font-semibold [&_strong]:text-foreground">
               <div class="space-y-4">
@@ -51,8 +47,8 @@ const handleScroll = () => {
                     <strong>Acceptance of Terms</strong>
                   </p>
                   <p>
-                    By accessing and using this website, users agree to comply with and be bound
-                    by these Terms of Service. Users who do not agree with these terms should
+                    By accessing and using this website, users agree to comply with and be bound by
+                    these Terms of Service. Users who do not agree with these terms should
                     discontinue use of the website immediately.
                   </p>
                 </div>
@@ -63,8 +59,8 @@ const handleScroll = () => {
                   </p>
                   <p>
                     Users are responsible for maintaining the confidentiality of their account
-                    credentials. Any activities occurring under a user&lsquo;s account are the
-                    sole responsibility of the account holder. Users must notify the website
+                    credentials. Any activities occurring under a user&lsquo;s account are the sole
+                    responsibility of the account holder. Users must notify the website
                     administrators immediately of any unauthorized account access.
                   </p>
                 </div>
@@ -75,9 +71,9 @@ const handleScroll = () => {
                   </p>
                   <p>
                     The website and its original content are protected by intellectual property
-                    laws. Users may not reproduce, distribute, modify, create derivative works,
-                    or commercially exploit any content without explicit written permission from
-                    the website owners.
+                    laws. Users may not reproduce, distribute, modify, create derivative works, or
+                    commercially exploit any content without explicit written permission from the
+                    website owners.
                   </p>
                 </div>
 
@@ -110,8 +106,8 @@ const handleScroll = () => {
                     <strong>Modifications to Terms</strong>
                   </p>
                   <p>
-                    The website reserves the right to modify these terms at any time. Continued
-                    use of the website after changes constitutes acceptance of the new terms.
+                    The website reserves the right to modify these terms at any time. Continued use
+                    of the website after changes constitutes acceptance of the new terms.
                   </p>
                 </div>
 
@@ -131,8 +127,8 @@ const handleScroll = () => {
                     <strong>Governing Law</strong>
                   </p>
                   <p>
-                    These terms are governed by the laws of the jurisdiction where the website
-                    is primarily operated, without regard to conflict of law principles.
+                    These terms are governed by the laws of the jurisdiction where the website is
+                    primarily operated, without regard to conflict of law principles.
                   </p>
                 </div>
               </div>

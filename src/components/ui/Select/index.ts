@@ -15,5 +15,5 @@ export {
   SelectScrollButton,
   SelectSeparator,
   SelectTrigger,
-  SelectValue,
+  SelectValue
 }

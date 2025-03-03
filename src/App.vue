@@ -2,7 +2,7 @@
   <div>
     <link
       rel="preload"
-      :href="interVariableWoff2"
+      :href="interVariableWoff"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -24,7 +24,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { RouterView } from 'vue-router'
-import interVariableWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2'
+import interVariableWoff from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff'
 import Header from './demo/Header.vue'
 import Illustration from './demo/Illustration.vue'
 import CTA from './demo/CTA.vue'

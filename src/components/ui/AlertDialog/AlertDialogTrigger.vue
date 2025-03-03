@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { AlertDialogTrigger } from 'radix-vue';
-import { cn } from '@/lib/utils';
+import { AlertDialogTrigger } from 'radix-vue'
+import { cn } from '@/lib/utils'
 import { toRefs } from 'vue'
 
 const props = defineProps({
   class: {
     type: String,
-    default: '',
-  },
-});
+    default: ''
+  }
+})
 
-const { class: extraClasses } = toRefs(props);
+const { class: extraClasses } = toRefs(props)
 </script>
 
 <template>

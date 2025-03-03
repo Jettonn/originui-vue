@@ -9,8 +9,8 @@ import Badge from '@/components/ui/Badge.vue'
       <AvatarImage src="./avatar-80-07.jpg" alt="Kelly King" />
       <AvatarFallback>KK</AvatarFallback>
     </Avatar>
-    <Badge class="border-background absolute -top-1.5 left-full min-w-5 -translate-x-3.5 px-1"> 
-      6 
+    <Badge class="border-background absolute -top-1.5 left-full min-w-5 -translate-x-3.5 px-1">
+      6
     </Badge>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AlertDialogPortal } from 'radix-vue';
+import { AlertDialogPortal } from 'radix-vue'
 </script>
 
 <template>

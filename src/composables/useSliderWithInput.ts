@@ -11,10 +11,10 @@ export function useSliderWithInput({
   minValue = 0,
   maxValue = 100,
   initialValue = [minValue],
-  defaultValue = [minValue],
+  defaultValue = [minValue]
 }: UseSliderWithInputProps) {
   const sliderValue = ref(initialValue)
-  const inputValues = ref(initialValue.map((v) => v.toString()))
+  const inputValues = ref(initialValue.map(v => v.toString()))
 
   const validateAndUpdateValue = (rawValue: string, index: number) => {
     if (rawValue === '' || rawValue === '-') {
@@ -68,12 +68,12 @@ export function useSliderWithInput({
 
   const handleSliderChange = (newValue: number[]) => {
     sliderValue.value = newValue
-    inputValues.value = newValue.map((v) => v.toString())
+    inputValues.value = newValue.map(v => v.toString())
   }
 
   const resetToDefault = () => {
     sliderValue.value = defaultValue
-    inputValues.value = defaultValue.map((v) => v.toString())
+    inputValues.value = defaultValue.map(v => v.toString())
   }
 
   return {
@@ -82,6 +82,6 @@ export function useSliderWithInput({
     validateAndUpdateValue,
     handleInputChange,
     handleSliderChange,
-    resetToDefault,
+    resetToDefault
   }
 }

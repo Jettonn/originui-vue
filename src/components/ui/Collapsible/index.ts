@@ -1,9 +1,9 @@
-import * as CollapsiblePrimitive from "radix-vue";
+import * as CollapsiblePrimitive from 'radix-vue'
 
-const Collapsible = CollapsiblePrimitive.CollapsibleRoot;
+const Collapsible = CollapsiblePrimitive.CollapsibleRoot
 
-const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger;
+const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger
 
-const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent;
+const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent
 
-export { Collapsible, CollapsibleContent, CollapsibleTrigger };
+export { Collapsible, CollapsibleContent, CollapsibleTrigger }

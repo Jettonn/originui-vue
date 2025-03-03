@@ -19,7 +19,7 @@ const hasGuessed = ref<undefined | boolean>(undefined)
 const closeButtonRef = ref<HTMLElement>()
 
 async function onSubmit() {
-  await new Promise((resolve) => setTimeout(resolve, 100))
+  await new Promise(resolve => setTimeout(resolve, 100))
 
   hasGuessed.value = input.value === CORRECT_CODE
   input.value = ''
@@ -37,7 +37,14 @@ async function onSubmit() {
           class="flex size-11 shrink-0 items-center justify-center rounded-full border border-border"
           aria-hidden="true"
         >
-          <svg class="stroke-vue" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+          <svg
+            class="stroke-vue"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+          >
             <circle cx="16" cy="16" r="13" fill="none" stroke-width="2"></circle>
             <circle cx="16" cy="16" r="9" fill="none" stroke-width="2"></circle>
           </svg>
@@ -47,9 +54,11 @@ async function onSubmit() {
             {{ hasGuessed ? 'Code verified!' : 'Enter confirmation code' }}
           </DialogTitle>
           <DialogDescription class="sm:text-center">
-            {{ hasGuessed
-            ? 'Your code has been successfully verified.'
-            : `Check your email and enter the code - Try ${CORRECT_CODE}` }}
+            {{
+              hasGuessed
+                ? 'Your code has been successfully verified.'
+                : `Check your email and enter the code - Try ${CORRECT_CODE}`
+            }}
           </DialogDescription>
         </DialogHeader>
       </div>
@@ -82,11 +91,7 @@ async function onSubmit() {
             </OTPInput>
           </div>
           <template v-if="hasGuessed === false">
-            <p
-              class="text-center text-xs text-muted-foreground"
-              role="alert"
-              aria-live="polite"
-            >
+            <p class="text-center text-xs text-muted-foreground" role="alert" aria-live="polite">
               Invalid code. Please try again.
             </p>
           </template>

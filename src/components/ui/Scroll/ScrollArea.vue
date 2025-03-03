@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import { ref, toRefs } from 'vue'
-import { ScrollAreaRoot, ScrollAreaViewport, ScrollAreaCorner } from 'radix-vue';
-import { cn } from '@/lib/utils';
+import { ScrollAreaRoot, ScrollAreaViewport, ScrollAreaCorner } from 'radix-vue'
+import { cn } from '@/lib/utils'
 import { ScrollBar } from './index'
 
 const props = defineProps({
   class: {
     type: String,
-    default: '',
-  },
-});
+    default: ''
+  }
+})
 
-const { class: extraClasses } = toRefs(props);
+const { class: extraClasses } = toRefs(props)
 
-const rootRef = ref(null);
+const rootRef = ref(null)
 </script>
 
 <template>
