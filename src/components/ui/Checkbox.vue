@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils'
-import { CheckboxRoot, CheckboxIndicator } from 'radix-vue'
+import { CheckboxRoot, CheckboxIndicator } from 'reka-ui'
 import { computed } from 'vue'
 
 interface Props {
@@ -22,7 +22,7 @@ const classes = computed(() => {
 <template>
   <CheckboxRoot
     :checked="modelValue"
-    @update:checked="value => $emit('update:modelValue', value)"
+    @update:checked="(value: boolean | 'indeterminate') => $emit('update:modelValue', value)"
     :class="classes"
   >
     <CheckboxIndicator class="flex items-center justify-center text-current">

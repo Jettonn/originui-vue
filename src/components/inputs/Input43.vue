@@ -17,13 +17,20 @@ import {
   DateRangePickerPrev,
   DateRangePickerRoot,
   DateRangePickerTrigger
-} from 'radix-vue'
+} from 'reka-ui'
 import Label from '@/components/ui/Label.vue'
 import { CalendarIcon, ChevronLeft, ChevronRight } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
-import { getLocalTimeZone, isWeekend, today, type DateValue } from '@internationalized/date'
+import {
+  getLocalTimeZone,
+  isWeekend,
+  today,
+  type DateValue,
+  parseDate
+} from '@internationalized/date'
 
 const now = today(getLocalTimeZone())
+
 const disabledRanges: [DateValue, DateValue][] = [
   [now, now.add({ days: 5 })],
   [now.add({ days: 14 }), now.add({ days: 16 })],
@@ -115,11 +122,11 @@ const isDateUnavailable = (date: DateValue): boolean => {
                 <DateRangePickerCell
                   v-for="weekDate in weekDates"
                   :key="weekDate.toString()"
-                  :date="weekDate"
+                  :date="parseDate(weekDate.toString())"
                 >
                   <DateRangePickerCellTrigger
-                    :day="weekDate"
-                    :month="month.value"
+                    :day="parseDate(weekDate.toString())"
+                    :month="parseDate(month.value.toString())"
                     :class="
                       cn(
                         'relative flex size-9 items-center justify-center whitespace-nowrap rounded-lg border border-transparent p-0 text-sm font-normal text-foreground ring-offset-background duration-150 [transition-property:border-radius,box-shadow] focus-visible:outline-none data-[disabled]:pointer-events-none data-[unavailable]:pointer-events-none data-[focus-visible]:z-10 data-[selected]:rounded-none data-[highlighted]:rounded-none data-[selection-end]:rounded-e-lg data-[highlighted-end]:rounded-e-lg data-[selection-start]:rounded-s-lg data-[focus-visible]:border-ring hover:bg-accent data-[invalid]:bg-red-100 data-[selected]:bg-accent data-[highlighted]:bg-accent hover:text-foreground data-[selected]:text-foreground data-[highlighted]:text-foreground data-[unavailable]:line-through data-[disabled]:opacity-30 data-[unavailable]:opacity-30 data-[focus-visible]:outline-none data-[focus-visible]:ring-2 data-[focus-visible]:ring-ring/30 data-[focus-visible]:ring-offset-2 data-[invalid]:data-[selection-end]:bg-destructive data-[invalid]:data-[selection-start]:bg-destructive data-[selection-end]:bg-primary data-[highlighted-end]:bg-primary data-[selection-start]:bg-primary data-[invalid]:data-[selection-end]:text-destructive-foreground data-[invalid]:data-[selection-start]:text-destructive-foreground data-[selection-end]:text-primary-foreground data-[highlighted-end]:text-primary-foreground data-[selection-start]:text-primary-foreground',
@@ -139,11 +146,11 @@ const isDateUnavailable = (date: DateValue): boolean => {
       Built with
       <a
         class="underline hover:text-foreground"
-        href="https://www.radix-vue.com/components/date-range-picker"
+        href="https://www.reka-ui.com/components/date-range-picker"
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix Vue DateRangePicker
+        Reka UI DateRangePicker
       </a>
     </p>
   </div>

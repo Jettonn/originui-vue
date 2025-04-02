@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils'
-import { TooltipContent as RadixTooltipContent, TooltipArrow, TooltipPortal } from 'radix-vue'
+import { TooltipContent, TooltipArrow, TooltipPortal } from 'reka-ui'
 import { computed, defineProps } from 'vue'
 import type { VNode } from 'vue'
 
@@ -24,12 +24,12 @@ const computedClass = computed(() => {
 
 <template>
   <TooltipPortal>
-    <RadixTooltipContent :side-offset="sideOffset" :class="computedClass" v-bind="$attrs">
+    <TooltipContent :side-offset="sideOffset" :class="computedClass" v-bind="$attrs">
       <slot />
       <TooltipArrow
         v-if="showArrow"
         class="-my-px text-popover drop-shadow-[0_1px_0_hsl(var(--border))]"
       />
-    </RadixTooltipContent>
+    </TooltipContent>
   </TooltipPortal>
 </template>

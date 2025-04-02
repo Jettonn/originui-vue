@@ -7,7 +7,7 @@ import {
   NumberFieldIncrement,
   NumberFieldInput,
   NumberFieldRoot
-} from 'radix-vue'
+} from 'reka-ui'
 
 const value = ref(2048)
 const minValue = 0

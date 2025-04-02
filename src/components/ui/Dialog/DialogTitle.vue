@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DialogTitle } from 'radix-vue'
+import { DialogTitle } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { toRefs } from 'vue'
 

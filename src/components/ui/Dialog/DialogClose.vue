@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DialogClose } from 'radix-vue'
+import { DialogClose } from 'reka-ui'
 </script>
 
 <template>

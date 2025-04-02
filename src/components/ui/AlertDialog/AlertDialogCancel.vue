@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AlertDialogCancel } from 'radix-vue'
+import { AlertDialogCancel } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/lib/utils'
 import { toRefs } from 'vue'

@@ -133,7 +133,7 @@ const handleSelect = (currentValue: { key: string; value: string }) => {
           />
         </Button>
       </PopoverTrigger>
-      <PopoverContent class="w-full min-w-[var(--radix-popper-anchor-width)] p-0" align="start">
+      <PopoverContent class="w-full min-w-[var(--reka-popper-anchor-width)] p-0" align="start">
         <Command>
           <CommandInput placeholder="Search services..." />
           <CommandList>

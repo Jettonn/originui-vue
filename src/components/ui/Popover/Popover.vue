@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PopoverRoot } from 'radix-vue'
+import { PopoverRoot } from 'reka-ui'
 
 defineOptions({
   name: 'Popover'

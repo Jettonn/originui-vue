@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { avatarVariant, cn } from '@/lib/utils'
 import type { VariantProps } from 'class-variance-authority'
-import { AvatarRoot } from 'radix-vue'
+import { AvatarRoot } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
 
 type AvatarVariants = VariantProps<typeof avatarVariant>

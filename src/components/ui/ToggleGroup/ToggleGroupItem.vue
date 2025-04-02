@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ToggleGroupItem } from 'radix-vue'
+import { ToggleGroupItem } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { inject } from 'vue'
 import { toggleVariants } from '../Toggle'

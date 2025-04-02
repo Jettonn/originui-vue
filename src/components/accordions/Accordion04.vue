@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
 import { Accordion, AccordionContent, AccordionItem } from '@/components/ui/Accordion'
-import { AccordionHeader, AccordionTrigger } from 'radix-vue'
+import { AccordionHeader, AccordionTrigger } from 'reka-ui'
 import { Plus } from 'lucide-vue-next'
 
 const items = [

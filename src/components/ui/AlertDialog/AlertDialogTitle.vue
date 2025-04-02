@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AlertDialogTitle } from 'radix-vue'
+import { AlertDialogTitle } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { toRefs } from 'vue'
 

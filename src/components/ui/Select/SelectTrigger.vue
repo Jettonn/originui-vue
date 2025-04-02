@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SelectTrigger, SelectIcon } from 'radix-vue'
+import { SelectTrigger, SelectIcon } from 'reka-ui'
 import { ChevronDown } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 

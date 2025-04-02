@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Accordion, AccordionContent, AccordionItem } from '@/components/ui/Accordion'
-import { AccordionHeader, AccordionTrigger } from 'radix-vue'
+import { AccordionHeader, AccordionTrigger } from 'reka-ui'
 import { Bell, LifeBuoy, Link2, Plus, ShieldCheck } from 'lucide-vue-next'
 
 const items = [

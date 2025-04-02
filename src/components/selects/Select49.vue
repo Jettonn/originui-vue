@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ListboxRoot, ListboxItem } from 'radix-vue'
+import { ListboxRoot, ListboxItem } from 'reka-ui'
 import Label from '@/components/ui/Label.vue'
 
 const selected = ref('svelte')
@@ -46,11 +46,11 @@ const selected = ref('svelte')
       Built with
       <a
         class="underline hover:text-foreground"
-        href="https://www.radix-vue.com/components/listbox.html"
+        href="https://www.reka-ui.com/components/listbox.html"
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix Vue Listbox
+        Reka UI Listbox
       </a>
     </p>
   </div>

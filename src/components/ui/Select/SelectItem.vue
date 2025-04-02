@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SelectItem, SelectItemText, SelectItemIndicator } from 'radix-vue'
+import { SelectItem, SelectItemText, SelectItemIndicator } from 'reka-ui'
 import { Check } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 

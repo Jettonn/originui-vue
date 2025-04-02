@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, toRefs } from 'vue'
-import { ScrollAreaRoot, ScrollAreaViewport, ScrollAreaCorner } from 'radix-vue'
+import { ScrollAreaRoot, ScrollAreaViewport, ScrollAreaCorner } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { ScrollBar } from './index'
 

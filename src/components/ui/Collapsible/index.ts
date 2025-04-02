@@ -1,4 +1,4 @@
-import * as CollapsiblePrimitive from 'radix-vue'
+import * as CollapsiblePrimitive from 'reka-ui'
 
 const Collapsible = CollapsiblePrimitive.CollapsibleRoot
 

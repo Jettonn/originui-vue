@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch, onMounted, onUnmounted, h } from 'vue'
-import { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'radix-vue'
+import { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'reka-ui'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './Tooltip'
 import { cn } from '@/lib/utils'
 

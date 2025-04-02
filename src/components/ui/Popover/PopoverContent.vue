@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import {
-  PopoverContent as RadixPopoverContent,
-  PopoverPortal,
-  type PopoverContentProps
-} from 'radix-vue'
+import { PopoverContent, PopoverPortal, type PopoverContentProps } from 'reka-ui'
 import { cn } from '@/lib/utils'
 
 const props = withDefaults(
@@ -21,7 +17,7 @@ const props = withDefaults(
 
 <template>
   <PopoverPortal>
-    <RadixPopoverContent
+    <PopoverContent
       :align="align"
       :sideOffset="sideOffset"
       :class="
@@ -39,6 +35,6 @@ const props = withDefaults(
       "
     >
       <slot />
-    </RadixPopoverContent>
+    </PopoverContent>
   </PopoverPortal>
 </template>

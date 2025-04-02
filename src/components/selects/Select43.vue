@@ -89,7 +89,7 @@ const filterFn = (value: string, search: string) => {
           />
         </Button>
       </PopoverTrigger>
-      <PopoverContent class="w-full min-w-[var(--radix-popper-anchor-width)] p-0" align="start">
+      <PopoverContent class="w-full min-w-[var(--reka-popper-anchor-width)] p-0" align="start">
         <Command :filter="filterFn">
           <CommandInput placeholder="Search timezone..." />
           <CommandList>

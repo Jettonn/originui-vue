@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AccordionHeader, AccordionTrigger } from 'radix-vue'
+import { AccordionHeader, AccordionTrigger } from 'reka-ui'
 import { ChevronDown } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 

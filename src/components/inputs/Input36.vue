@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DateFieldInput, DateFieldRoot } from 'radix-vue'
+import { DateFieldInput, DateFieldRoot } from 'reka-ui'
 import Label from '@/components/ui/Label.vue'
 </script>
 
@@ -24,11 +24,11 @@ import Label from '@/components/ui/Label.vue'
       Built with
       <a
         class="underline hover:text-foreground"
-        href="https://www.radix-vue.com/components/date-field.html"
+        href="https://www.reka-ui.com/components/date-field"
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix Vue DateField
+        Reka UI DateField
       </a>
     </p>
   </div>

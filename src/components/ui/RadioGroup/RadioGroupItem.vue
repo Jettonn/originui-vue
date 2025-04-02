@@ -16,7 +16,7 @@
 
 <script lang="ts" setup>
 import { cn } from '@/lib/utils'
-import { RadioGroupIndicator, RadioGroupItem as RadioItem } from 'radix-vue'
+import { RadioGroupIndicator, RadioGroupItem as RadioItem } from 'reka-ui'
 import { computed } from 'vue'
 
 interface Props {

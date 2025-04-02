@@ -1,4 +1,4 @@
-import { SelectRoot, SelectGroup, SelectValue } from 'radix-vue'
+import { SelectRoot, SelectGroup, SelectValue } from 'reka-ui'
 import SelectContent from './SelectContent.vue'
 import SelectItem from './SelectItem.vue'
 import SelectLabel from './SelectLabel.vue'

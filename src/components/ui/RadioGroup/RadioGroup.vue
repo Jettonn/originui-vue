@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
 import { cn } from '@/lib/utils'
-import { RadioGroupRoot } from 'radix-vue'
+import { RadioGroupRoot } from 'reka-ui'
 import { computed } from 'vue'
 
 interface Props {

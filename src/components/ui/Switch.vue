@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils'
-import { SwitchRoot, SwitchThumb } from 'radix-vue'
+import { SwitchRoot, SwitchThumb } from 'reka-ui'
 import { computed } from 'vue'
 
 const props = defineProps<{
@@ -21,7 +21,7 @@ const classes = computed(() => {
 <template>
   <SwitchRoot
     :checked="modelValue"
-    @update:checked="val => emit('update:modelValue', val)"
+    @update:checked="(val: boolean) => emit('update:modelValue', val)"
     :class="classes"
   >
     <SwitchThumb

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SelectLabel } from 'radix-vue'
+import { SelectLabel } from 'reka-ui'
 import { cn } from '@/lib/utils'
 
 const props = defineProps<{

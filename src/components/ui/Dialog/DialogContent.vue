@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DialogContent } from 'radix-vue'
+import { DialogContent } from 'reka-ui'
 import { DialogOverlay, DialogPortal, DialogClose } from './index'
 import { X } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'

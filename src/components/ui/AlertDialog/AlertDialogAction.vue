@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AlertDialogAction } from 'radix-vue'
+import { AlertDialogAction } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/lib/utils'
 import { toRefs, type PropType } from 'vue'

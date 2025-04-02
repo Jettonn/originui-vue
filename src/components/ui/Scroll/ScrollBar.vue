@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ScrollAreaScrollbar, ScrollAreaThumb } from 'radix-vue'
+import { ScrollAreaScrollbar, ScrollAreaThumb } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { toRefs } from 'vue'
 

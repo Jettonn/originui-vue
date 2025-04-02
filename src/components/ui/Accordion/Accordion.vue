@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AccordionRoot } from 'radix-vue'
+import { AccordionRoot } from 'reka-ui'
 
 defineProps<{
   type?: 'single'

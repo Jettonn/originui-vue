@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, defineProps, toRefs } from 'vue'
+import { ref, computed, toRefs } from 'vue'
 import type { VariantProps } from 'class-variance-authority'
 import { buttonVariants, cn } from '@/lib/utils'
 

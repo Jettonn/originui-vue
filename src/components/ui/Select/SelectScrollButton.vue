@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SelectScrollUpButton, SelectScrollDownButton } from 'radix-vue'
+import { SelectScrollUpButton, SelectScrollDownButton } from 'reka-ui'
 import { ChevronUp, ChevronDown } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AlertDialogRoot } from 'radix-vue'
+import { AlertDialogRoot } from 'reka-ui'
 </script>
 
 <template>

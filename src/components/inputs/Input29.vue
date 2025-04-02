@@ -7,7 +7,7 @@ import {
   NumberFieldIncrement,
   NumberFieldInput,
   NumberFieldRoot
-} from 'radix-vue'
+} from 'reka-ui'
 
 const inputValue = ref(99)
 </script>

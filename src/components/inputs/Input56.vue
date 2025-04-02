@@ -6,7 +6,7 @@ import {
   TagsInputItemText,
   TagsInputItemDelete,
   TagsInputInput
-} from 'radix-vue'
+} from 'reka-ui'
 import Label from '@/components/ui/Label.vue'
 import { X } from 'lucide-vue-next'
 
@@ -43,11 +43,11 @@ const modelValue = ref(['Sport', 'Coding', 'Travel'])
       Built with
       <a
         class="underline hover:text-foreground"
-        href="https://www.radix-vue.com/components/tags-input"
+        href="https://www.reka-ui.com/components/tags-input"
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix Vue Tags Input
+        Reka UI Tags Input
       </a>
     </p>
   </div>

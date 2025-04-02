@@ -4,7 +4,7 @@
 > This is a fork of the original [Origin UI](https://originui.com/) project. This project is unaffiliated with the original. I appreciate their work and have developed these Vue components based on their design.
 
 > [!NOTE]  
-> This is a work in progress. For some components, the implementation is coming soon using (e.g. [Radix Vue](https://www.radix-vue.com/)).
+> This is a work in progress. For some components, the implementation is coming soon using (e.g. [Reka UI](https://www.reka-ui.com/)).
 
 Origin UI - Vue is a collection of copy-and-paste components for quickly building app UIs using Vue. The collection currently features 90+ components and is updated with new examples if the original library is updated.
 
@@ -22,7 +22,7 @@ Origin UI - Vue is a collection of copy-and-paste components for quickly buildin
 
 - [x] [Vue](https://vuejs.org) instead of ~~Next.js~~
 - [x] [Lucide Vue Next](https://lucide.dev/guide/packages/lucide-vue-next) instead of ~~Lucide React~~
-- [x] [Radix Vue](https://www.radix-vue.com/) instead of ~~Radix UI~~
+- [x] [Reka UI](https://www.reka-ui.com/) instead of ~~Radix UI~~
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ If you want to use the components in your project, you need to setup the followi
 - [Vue](https://vuejs.org)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Lucide Icons](https://lucide.dev)
-- [Radix Vue](https://www.radix-vue.com/overview/introduction.html)
+- [Reka UI](https://www.reka-ui.com/overview/introduction.html)
 
 #### Utils
 
@@ -154,7 +154,7 @@ Feel free to use these components in personal and commercial projects. However, 
 - [Vue](https://vuejs.org)
 - [TailwindCSS](https://tailwindcss.com)
 - [Lucide Icons](https://lucide.dev)
-- [Radix Vue](https://www.radix-vue.com/)
+- [Reka UI](https://www.reka-ui.com/)
 
 ## Contact
 

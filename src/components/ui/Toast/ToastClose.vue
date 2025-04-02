@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ToastAction } from 'radix-vue'
+import { ToastAction } from 'reka-ui'
 import { X } from 'lucide-vue-next'
 import { cn } from '@/lib/utils'
 

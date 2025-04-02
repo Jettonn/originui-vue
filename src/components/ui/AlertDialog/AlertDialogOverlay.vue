@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AlertDialogOverlay } from 'radix-vue'
+import { AlertDialogOverlay } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { toRefs } from 'vue'
 

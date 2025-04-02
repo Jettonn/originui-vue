@@ -1,5 +1,5 @@
 <script setup lang="ts" module>
-import { Toggle as RadixToggle } from 'radix-vue'
+import { Toggle } from 'reka-ui'
 import { type VariantProps } from 'class-variance-authority'
 import { computed } from 'vue'
 import { toggleVariants } from '.'
@@ -26,11 +26,11 @@ const classes = computed(() =>
 </script>
 
 <template>
-  <RadixToggle
+  <Toggle
     :pressed="modelValue"
-    @update:pressed="value => emit('update:modelValue', value)"
+    @update:pressed="(value: boolean) => emit('update:modelValue', value)"
     :class="classes"
   >
     <slot />
-  </RadixToggle>
+  </Toggle>
 </template>

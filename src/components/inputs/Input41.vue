@@ -17,7 +17,7 @@ import {
   DatePickerPrev,
   DatePickerRoot,
   DatePickerTrigger
-} from 'radix-vue'
+} from 'reka-ui'
 import Label from '@/components/ui/Label.vue'
 import { CalendarIcon, ChevronLeft, ChevronRight } from 'lucide-vue-next'
 import { getLocalTimeZone, today } from '@internationalized/date'
@@ -114,11 +114,11 @@ const now = today(getLocalTimeZone())
       Built with
       <a
         class="underline hover:text-foreground"
-        href="https://www.radix-vue.com/components/date-picker.html"
+        href="https://www.reka-ui.com/components/date-picker"
         target="_blank"
         rel="noopener nofollow"
       >
-        Radix Vue DatePicker
+        Reka UI DatePicker
       </a>
     </p>
   </div>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ToggleGroupRoot as ToggleGroupPrimitive } from 'radix-vue'
+import { ToggleGroupRoot as ToggleGroupPrimitive } from 'reka-ui'
 import { cn } from '@/lib/utils'
 import { provide } from 'vue'
 

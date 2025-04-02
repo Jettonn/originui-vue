@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HoverCardContent, HoverCardArrow, HoverCardPortal } from 'radix-vue'
+import { HoverCardContent, HoverCardArrow, HoverCardPortal } from 'reka-ui'
 import { cn } from '@/lib/utils'
 
 interface Props {

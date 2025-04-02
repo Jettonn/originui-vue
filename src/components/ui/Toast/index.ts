@@ -1,4 +1,4 @@
-export { ToastProvider } from 'radix-vue'
+export { ToastProvider } from 'reka-ui'
 export { default as ToastViewport } from './ToastViewport.vue'
 export { default as Toast } from './Toast.vue'
 export { default as ToastAction } from './ToastAction.vue'

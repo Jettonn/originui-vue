@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/Dialog'
 import { Command } from './index'
-import { VisuallyHidden } from 'radix-vue'
+import { VisuallyHidden } from 'reka-ui'
 
 defineProps<{
   modelValue?: boolean
