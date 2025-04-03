@@ -15,7 +15,7 @@ const emit = defineEmits<{
 
 const classes = computed(() =>
   cn(
-    'flex h-10 w-full rounded-lg bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground/70 disabled:cursor-not-allowed disabled:opacity-50',
+    'flex h-10 w-full rounded-lg bg-transparent py-3 text-sm outline-hidden placeholder:text-muted-foreground/70 disabled:cursor-not-allowed disabled:opacity-50',
     props.class
   )
 )

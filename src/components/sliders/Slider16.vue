@@ -37,7 +37,7 @@ const handleSliderChange = (value: number[]) => {
     <Label>Slider with input</Label>
     <div class="flex items-center gap-4">
       <Slider
-        class="flex-grow"
+        class="grow"
         :model-value="sliderValue"
         @update:model-value="handleSliderChange"
         :min="minValue"

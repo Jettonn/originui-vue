@@ -11,7 +11,7 @@ const cvc = '####'
 <template>
   <div class="space-y-2">
     <Label class="text-sm font-medium text-foreground">Card Details</Label>
-    <div class="rounded-lg shadow-sm shadow-black/[.04]">
+    <div class="rounded-lg shadow-xs shadow-black/[.04]">
       <div class="relative focus-within:z-10">
         <Input
           id="cardNumber"

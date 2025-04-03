@@ -5,7 +5,7 @@ import Button from '../ui/Button.vue'
 
 <template>
   <div
-    class="z-[100] max-w-[400px] rounded-lg border border-border bg-background p-4 shadow-lg shadow-black/5"
+    class="z-100 max-w-[400px] rounded-lg border border-border bg-background p-4 shadow-lg shadow-black/5"
   >
     <div class="flex gap-2">
       <div class="flex grow gap-3">

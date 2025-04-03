@@ -12,7 +12,7 @@ const selected = ref(['lettuce', 'tuna'])
     <div class="overflow-hidden rounded-lg border border-input">
       <ListboxRoot
         v-model="selected"
-        class="max-h-72 min-h-20 space-y-2 overflow-auto bg-background p-1 text-sm shadow-sm shadow-black/5 transition-shadow"
+        class="max-h-72 min-h-20 space-y-2 overflow-auto bg-background p-1 text-sm shadow-xs shadow-black/5 transition-shadow"
         aria-label="Select some foods"
         multiple
       >
@@ -20,19 +20,19 @@ const selected = ref(['lettuce', 'tuna'])
           <div class="px-2 py-1.5 text-xs font-medium text-muted-foreground">Veggies</div>
           <ListboxItem
             value="lettuce"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Lettuce
           </ListboxItem>
           <ListboxItem
             value="tomato"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Tomato
           </ListboxItem>
           <ListboxItem
             value="onion"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Onion
           </ListboxItem>
@@ -42,19 +42,19 @@ const selected = ref(['lettuce', 'tuna'])
           <div class="px-2 py-1.5 text-xs font-medium text-muted-foreground">Protein</div>
           <ListboxItem
             value="ham"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Ham
           </ListboxItem>
           <ListboxItem
             value="tuna"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Tuna
           </ListboxItem>
           <ListboxItem
             value="tofu"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Tofu
           </ListboxItem>
@@ -64,19 +64,19 @@ const selected = ref(['lettuce', 'tuna'])
           <div class="px-2 py-1.5 text-xs font-medium text-muted-foreground">Condiments</div>
           <ListboxItem
             value="mayo"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Mayonaise
           </ListboxItem>
           <ListboxItem
             value="mustard"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Mustard
           </ListboxItem>
           <ListboxItem
             value="ranch"
-            class="relative rounded-md px-2 py-1.5 data-[disabled]:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-[disabled]:opacity-50 data-[focus-visible]:outline data-[focus-visible]:outline-2 data-[focus-visible]:outline-ring/70"
+            class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
           >
             Ranch
           </ListboxItem>

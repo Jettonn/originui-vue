@@ -27,10 +27,10 @@ const inputValue = ref(99)
       }"
     >
       <div
-        class="relative inline-flex h-9 w-full items-center overflow-hidden whitespace-nowrap rounded-lg border border-input text-sm shadow-sm shadow-black/[.04] ring-offset-background transition-shadow focus-within:border-ring focus-within:outline-none focus-within:ring-2 focus-within:ring-ring/30 focus-within:ring-offset-2"
+        class="relative inline-flex h-9 w-full items-center overflow-hidden whitespace-nowrap rounded-lg border border-input text-sm shadow-xs shadow-black/[.04] ring-offset-background transition-shadow focus-within:border-ring focus-within:outline-hidden focus-within:ring-2 focus-within:ring-ring/30 focus-within:ring-offset-2"
       >
         <NumberFieldInput
-          class="flex-1 bg-background px-3 py-2 tabular-nums text-foreground focus:outline-none"
+          class="flex-1 bg-background px-3 py-2 tabular-nums text-foreground focus:outline-hidden"
         />
         <div class="flex h-[calc(100%+2px)] flex-col">
           <NumberFieldIncrement

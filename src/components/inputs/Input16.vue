@@ -6,7 +6,7 @@ import Label from '@/components/ui/Label.vue'
 <template>
   <div class="space-y-2">
     <Label for="input-16">Input with inline start and end add-on</Label>
-    <div class="relative flex rounded-lg shadow-sm shadow-black/[.04]">
+    <div class="relative flex rounded-lg shadow-xs shadow-black/[.04]">
       <span
         class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-muted-foreground"
       >

@@ -10,7 +10,7 @@ const selectedValue = ref('r1')
   <RadioGroup class="gap-2" v-model="selectedValue">
     <!-- Radio card #1 -->
     <div
-      class="relative flex w-full items-start gap-2 rounded-lg border border-input p-4 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring"
+      class="relative flex w-full items-start gap-2 rounded-lg border border-input p-4 shadow-xs shadow-black/[.04] has-data-[state=checked]:border-ring"
     >
       <RadioGroupItem
         value="r1"
@@ -32,7 +32,7 @@ const selectedValue = ref('r1')
     </div>
     <!-- Radio card #2 -->
     <div
-      class="relative flex w-full items-start gap-2 rounded-lg border border-input p-4 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring"
+      class="relative flex w-full items-start gap-2 rounded-lg border border-input p-4 shadow-xs shadow-black/[.04] has-data-[state=checked]:border-ring"
     >
       <RadioGroupItem
         value="r2"

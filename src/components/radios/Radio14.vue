@@ -18,7 +18,7 @@ const items = [
       <div
         v-for="item in items"
         :key="item.id"
-        class="relative flex flex-col items-start gap-4 rounded-lg border border-input p-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring"
+        class="relative flex flex-col items-start gap-4 rounded-lg border border-input p-3 shadow-xs shadow-black/[.04] has-data-[state=checked]:border-ring"
       >
         <div class="flex items-center gap-2">
           <RadioGroupItem :id="item.id" :value="item.value" class="after:absolute after:inset-0" />

@@ -18,12 +18,12 @@ const selectedValue = ref('r2')
     <legend class="text-sm font-medium leading-none text-foreground">Choose plan</legend>
     <RadioGroup
       v-model="selectedValue"
-      class="gap-0 -space-y-px rounded-lg shadow-sm shadow-black/[.04]"
+      class="gap-0 -space-y-px rounded-lg shadow-xs shadow-black/[.04]"
     >
       <div
         v-for="item in items"
         :key="item.id"
-        class="relative flex flex-col gap-4 border border-input p-4 first:rounded-t-lg last:rounded-b-lg has-[[data-state=checked]]:z-10 has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+        class="relative flex flex-col gap-4 border border-input p-4 first:rounded-t-lg last:rounded-b-lg has-data-[state=checked]:z-10 has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent"
       >
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">

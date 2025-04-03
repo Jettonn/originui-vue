@@ -23,7 +23,7 @@ const value = ref(options[0].value)
 
 <template>
   <ToggleGroup
-    class="flex w-full gap-0 -space-x-px rounded-lg shadow-sm shadow-black/5 rtl:space-x-reverse"
+    class="flex w-full gap-0 -space-x-px rounded-lg shadow-xs shadow-black/5 rtl:space-x-reverse"
     type="single"
     variant="outline"
     v-model="value"

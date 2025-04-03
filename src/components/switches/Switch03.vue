@@ -8,8 +8,7 @@ const checked = ref(true)
 
 <template>
   <div
-    class="inline-flex items-center gap-2"
-    :style="{ '--primary': '238.7 83.5% 66.7%', '--ring': '238.7 83.5% 66.7%' }"
+    class="inline-flex items-center gap-2 [--primary:var(--color-indigo-300)] [--ring:var(--color-indigo-300)] in-[.dark]:[--primary:var(--color-indigo-900)] in-[.dark]:[--ring:var(--color-indigo-900)]"
   >
     <Switch v-model="checked" id="switch-03" />
     <Label for="switch-03" class="sr-only">Colored switch</Label>

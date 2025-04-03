@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
   <div class="space-y-2">
     <Label for="select-36">Select with description and right indicator</Label>
     <Select default-value="s2">
-      <SelectTrigger id="select-36" class="[&_[data-desc]]:hidden">
+      <SelectTrigger id="select-36" class="**:data-desc:hidden">
         <SelectValue placeholder="Choose a plan" />
       </SelectTrigger>
       <SelectContent

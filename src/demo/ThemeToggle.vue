@@ -10,7 +10,7 @@
       aria-label="Toggle dark mode"
     />
     <label
-      class="relative inline-flex size-9 cursor-pointer items-center justify-center rounded-lg border border-transparent bg-background p-2 ring-offset-background transition-shadow peer-focus-visible:border-ring peer-focus-visible:outline-none peer-focus-visible:ring-2 peer-focus-visible:ring-ring/30 peer-focus-visible:ring-offset-2"
+      class="relative inline-flex size-9 cursor-pointer items-center justify-center rounded-lg border border-transparent bg-background p-2 ring-offset-background transition-shadow peer-focus-visible:border-ring peer-focus-visible:outline-hidden peer-focus-visible:ring-2 peer-focus-visible:ring-ring/30 peer-focus-visible:ring-offset-2"
       for="theme-toggle"
       aria-hidden="true"
     >

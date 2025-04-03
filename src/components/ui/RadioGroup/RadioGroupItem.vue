@@ -28,7 +28,7 @@ const props = defineProps<Props>()
 
 const classes = computed(() => {
   return cn(
-    'aspect-square size-4 rounded-full border border-input shadow-sm shadow-black/[.04] ring-offset-background transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground',
+    'aspect-square size-4 rounded-full border border-input shadow-xs shadow-black/[.04] ring-offset-background transition-shadow focus:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground',
     props.class
   )
 })

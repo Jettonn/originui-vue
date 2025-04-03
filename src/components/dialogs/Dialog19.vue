@@ -102,7 +102,7 @@ function handleAvatarChange(event: Event) {
 
         <div class="-mt-10 px-6">
           <div
-            class="relative flex size-20 items-center justify-center overflow-hidden rounded-full border-4 border-background bg-muted shadow-sm shadow-black/10"
+            class="relative flex size-20 items-center justify-center overflow-hidden rounded-full border-4 border-background bg-muted shadow-xs shadow-black/10"
           >
             <img
               v-if="avatarImage"
@@ -172,7 +172,7 @@ function handleAvatarChange(event: Event) {
             </div>
             <div class="space-y-2">
               <Label for="edit-website">Website</Label>
-              <div class="flex rounded-lg shadow-sm shadow-black/5">
+              <div class="flex rounded-lg shadow-xs shadow-black/5">
                 <span
                   class="inline-flex items-center rounded-s-lg border border-input bg-background px-3 text-sm text-muted-foreground"
                 >

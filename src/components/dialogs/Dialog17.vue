@@ -55,7 +55,7 @@ const couponCode = ref('')
           <RadioGroup class="grid-cols-2" default-value="yearly" v-model="paymentPlan">
             <label
               for="radio-monthly"
-              class="relative flex cursor-pointer flex-col gap-1 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] outline-offset-2 transition-colors has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-ring/70"
+              class="relative flex cursor-pointer flex-col gap-1 rounded-lg border border-input px-4 py-3 shadow-xs shadow-black/[.04] outline-offset-2 transition-colors has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent has-focus-visible:outline has-focus-visible:outline-2 has-focus-visible:outline-ring/70"
             >
               <RadioGroupItem
                 id="radio-monthly"
@@ -68,7 +68,7 @@ const couponCode = ref('')
 
             <label
               for="radio-yearly"
-              class="relative flex cursor-pointer flex-col gap-1 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] outline-offset-2 transition-colors has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-ring/70"
+              class="relative flex cursor-pointer flex-col gap-1 rounded-lg border border-input px-4 py-3 shadow-xs shadow-black/[.04] outline-offset-2 transition-colors has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent has-focus-visible:outline has-focus-visible:outline-2 has-focus-visible:outline-ring/70"
             >
               <RadioGroupItem
                 id="radio-yearly"
@@ -94,7 +94,7 @@ const couponCode = ref('')
 
           <div class="space-y-2">
             <Label class="text-sm font-medium text-foreground">Card Details</Label>
-            <div class="rounded-lg shadow-sm shadow-black/[.04]">
+            <div class="rounded-lg shadow-xs shadow-black/[.04]">
               <div class="relative focus-within:z-10">
                 <Input
                   id="cardNumber"

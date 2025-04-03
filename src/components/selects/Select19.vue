@@ -4,7 +4,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 </script>
 
 <template>
-  <div class="space-y-2" :style="{ '--ring': '234 89% 74%' }">
+  <div
+    class="space-y-2 [--ring:var(--color-indigo-300)] in-[.dark]:[--ring:var(--color-indigo-900)]"
+  >
     <Label for="select-19">Select with colored border and ring</Label>
     <Select default-value="s1">
       <SelectTrigger id="select-19">

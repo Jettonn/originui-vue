@@ -80,7 +80,7 @@ async function onSubmit() {
                   :key="idx"
                   :class="
                     cn(
-                      'flex size-9 items-center justify-center rounded-lg border border-input bg-background font-medium text-foreground shadow-sm shadow-black/[.04] ring-offset-background transition-all',
+                      'flex size-9 items-center justify-center rounded-lg border border-input bg-background font-medium text-foreground shadow-xs shadow-black/[.04] ring-offset-background transition-all',
                       { 'z-10 border border-ring ring-2 ring-ring/30 ring-offset-2': slot.isActive }
                     )
                   "

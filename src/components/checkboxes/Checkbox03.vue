@@ -8,8 +8,7 @@ const checked = ref(true)
 
 <template>
   <div
-    class="flex items-center gap-2"
-    :style="{ '--primary': '238.7 83.5% 66.7%', '--ring': '238.7 83.5% 66.7%' }"
+    class="flex items-center gap-2 [--primary:var(--color-indigo-300)] [--ring:var(--color-indigo-300)] in-[.dark]:[--primary:var(--color-indigo-900)] in-[.dark]:[--ring:var(--color-indigo-900)]"
   >
     <Checkbox v-model="checked" id="checkbox-03" />
     <Label for="checkbox-03">Colored checkbox</Label>

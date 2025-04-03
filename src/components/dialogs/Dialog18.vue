@@ -41,7 +41,7 @@ const selectedPlan = ref('plan-02')
       <form class="space-y-5">
         <RadioGroup class="gap-2" default-value="plan-02" v-model="selectedPlan">
           <div
-            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-xs shadow-black/[.04] has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent"
           >
             <RadioGroupItem
               value="plan-01"
@@ -58,7 +58,7 @@ const selectedPlan = ref('plan-02')
           </div>
 
           <div
-            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-xs shadow-black/[.04] has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent"
           >
             <RadioGroupItem
               value="plan-02"
@@ -75,7 +75,7 @@ const selectedPlan = ref('plan-02')
           </div>
 
           <div
-            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-sm shadow-black/[.04] has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent"
+            class="relative flex w-full items-center gap-2 rounded-lg border border-input px-4 py-3 shadow-xs shadow-black/[.04] has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent"
           >
             <RadioGroupItem
               value="plan-03"

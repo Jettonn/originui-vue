@@ -7,7 +7,7 @@ const count = ref(235)
 </script>
 
 <template>
-  <div class="inline-flex -space-x-px rounded-full shadow-sm shadow-black/5 rtl:space-x-reverse">
+  <div class="inline-flex -space-x-px rounded-full shadow-xs shadow-black/5 rtl:space-x-reverse">
     <Button
       class="rounded-none shadow-none first:rounded-s-full last:rounded-e-full focus-visible:z-10"
       size="icon"

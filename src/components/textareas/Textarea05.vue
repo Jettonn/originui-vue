@@ -4,7 +4,9 @@ import Textarea from '@/components/ui/Textarea.vue'
 </script>
 
 <template>
-  <div class="space-y-2" style:--ring="234 89% 74%">
+  <div
+    class="space-y-2 [--ring:var(--color-indigo-300)] in-[.dark]:[--ring:var(--color-indigo-900)]"
+  >
     <Label for="textarea-05">Textarea with colored border and ring</Label>
     <Textarea id="textarea-05" placeholder="Leave a comment" />
   </div>

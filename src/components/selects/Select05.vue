@@ -7,7 +7,9 @@ const selectedOption = ref('s1')
 </script>
 
 <template>
-  <div class="space-y-2" :style="{ '--ring': '234 89% 74%' }">
+  <div
+    class="space-y-2 [--ring:var(--color-indigo-300)] in-[.dark]:[--ring:var(--color-indigo-900)]"
+  >
     <Label for="select-05">Select with colored border (native)</Label>
     <SelectNative v-model="selectedOption" id="select-05">
       <option value="s1">React</option>

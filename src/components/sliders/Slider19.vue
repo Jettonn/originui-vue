@@ -53,7 +53,7 @@ const handleSliderChange = (value: number[]) => {
         aria-label="Enter minimum value"
       />
       <Slider
-        class="flex-grow"
+        class="grow"
         :model-value="sliderValue"
         @update:model-value="handleSliderChange"
         :min="minValue"

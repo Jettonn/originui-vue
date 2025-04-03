@@ -6,7 +6,7 @@ import Label from '@/components/ui/Label.vue'
 <template>
   <div class="space-y-2">
     <Label for="input-14">Input with start add-on</Label>
-    <div class="flex rounded-lg shadow-sm shadow-black/[.04]">
+    <div class="flex rounded-lg shadow-xs shadow-black/[.04]">
       <span
         class="-z-10 inline-flex items-center rounded-s-lg border border-input bg-background px-3 text-sm text-muted-foreground"
       >

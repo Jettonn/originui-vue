@@ -4,7 +4,7 @@ import Button from '../ui/Button.vue'
 
 <template>
   <div
-    class="z-[100] rounded-lg border border-border bg-background px-4 py-3 shadow-lg shadow-black/5"
+    class="z-100 rounded-lg border border-border bg-background px-4 py-3 shadow-lg shadow-black/5"
   >
     <div class="flex flex-col justify-between gap-3 md:flex-row md:items-center">
       <p class="text-sm">

@@ -20,7 +20,7 @@ const selectedValue = ref('r3')
       <label
         v-for="item in items"
         :key="item.id"
-        class="relative flex size-9 cursor-pointer flex-col items-center justify-center rounded-full border border-input text-center text-xl shadow-sm shadow-black/[.04] ring-offset-background transition-colors has-[[data-disabled]]:cursor-not-allowed has-[[data-state=checked]]:border-ring has-[[data-state=checked]]:bg-accent has-[[data-disabled]]:opacity-50 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-ring/70 has-[:focus-visible]:ring-offset-2"
+        class="relative flex size-9 cursor-pointer flex-col items-center justify-center rounded-full border border-input text-center text-xl shadow-xs shadow-black/[.04] ring-offset-background transition-colors has-data-disabled:cursor-not-allowed has-data-[state=checked]:border-ring has-data-[state=checked]:bg-accent has-data-disabled:opacity-50 has-focus-visible:ring-2 has-focus-visible:ring-ring/70 has-focus-visible:ring-offset-2"
       >
         <RadioGroupItem
           :id="item.id"

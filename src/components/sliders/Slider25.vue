@@ -65,7 +65,7 @@ onMounted(() => {
       <div v-for="(slider, index) in sliders" :key="slider.label" class="flex items-center gap-2">
         <Label class="text-xs text-muted-foreground">{{ slider.label }}</Label>
         <Slider
-          class="flex-grow [&>:last-child>span]:rounded"
+          class="grow [&>:last-child>span]:rounded"
           :model-value="sliderValues[index]"
           @update:model-value="value => handleSliderChange(value, index)"
           :min="-10"

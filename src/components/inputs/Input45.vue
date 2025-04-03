@@ -10,7 +10,7 @@ const input = ref('')
 
 const slotClass = (slot: SlotProps) => {
   return cn(
-    'relative flex size-9 items-center justify-center border-y border-e border-input bg-background font-medium text-foreground shadow-sm shadow-black/[.04] ring-offset-background transition-all first:rounded-s-lg first:border-s last:rounded-e-lg',
+    'relative flex size-9 items-center justify-center border-y border-e border-input bg-background font-medium text-foreground shadow-xs shadow-black/[.04] ring-offset-background transition-all first:rounded-s-lg first:border-s last:rounded-e-lg',
     { 'z-10 border border-ring ring-2 ring-ring/30 ring-offset-2': slot.isActive }
   )
 }
@@ -23,7 +23,7 @@ const slotClass = (slot: SlotProps) => {
       v-slot="{ slots }"
       v-model="input"
       :maxlength="6"
-      container-class="flex items-center gap-3 has-[:disabled]:opacity-50"
+      container-class="flex items-center gap-3 has-disabled:opacity-50"
     >
       <div class="flex">
         <div v-for="(slot, idx) in slots.slice(0, 3)" :key="idx" :class="slotClass(slot)">

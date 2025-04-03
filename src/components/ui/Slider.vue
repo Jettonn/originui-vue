@@ -71,7 +71,7 @@ const renderThumb = (value: number) => {
     class: cn(
       'block h-5 w-5 rounded-full border-2 border-primary bg-background transition-colors',
       'focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-ring/40',
-      'data-[disabled]:cursor-not-allowed'
+      'data-disabled:cursor-not-allowed'
     ),
     onPointerdown: handlePointerDown
   })
@@ -127,7 +127,7 @@ const renderThumb = (value: number) => {
       cn(
         'relative flex w-full touch-none select-none items-center',
         'data-[orientation=vertical]:h-full data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col',
-        'data-[disabled]:opacity-50',
+        'data-disabled:opacity-50',
         props.class
       )
     "

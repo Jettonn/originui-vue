@@ -6,7 +6,7 @@ import Label from '@/components/ui/Label.vue'
 <template>
   <div class="space-y-2">
     <Label for="input-15">Input with end add-on</Label>
-    <div class="flex rounded-lg shadow-sm shadow-black/[.04]">
+    <div class="flex rounded-lg shadow-xs shadow-black/[.04]">
       <Input
         id="input-15"
         class="-me-px rounded-e-none shadow-none"

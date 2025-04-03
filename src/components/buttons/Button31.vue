@@ -4,7 +4,7 @@ import { Ellipsis, Files, Film } from 'lucide-vue-next'
 </script>
 
 <template>
-  <div class="inline-flex -space-x-px rounded-lg shadow-sm shadow-black/5 rtl:space-x-reverse">
+  <div class="inline-flex -space-x-px rounded-lg shadow-xs shadow-black/5 rtl:space-x-reverse">
     <Button
       class="rounded-none shadow-none first:rounded-s-lg last:rounded-e-lg focus-visible:z-10"
       variant="outline"

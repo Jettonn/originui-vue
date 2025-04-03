@@ -8,7 +8,7 @@ const value = ref('left')
 
 <template>
   <ToggleGroup
-    class="inline-flex gap-0 -space-x-px divide-x divide-background rounded-lg shadow-sm shadow-black/5 rtl:space-x-reverse"
+    class="inline-flex gap-0 -space-x-px divide-x divide-background rounded-lg shadow-xs shadow-black/5 rtl:space-x-reverse"
     type="single"
     v-model="value"
   >

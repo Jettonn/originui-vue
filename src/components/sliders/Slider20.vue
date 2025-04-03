@@ -36,7 +36,7 @@ const increaseValue = () => {
         </Button>
       </div>
       <Slider
-        class="flex-grow"
+        class="grow"
         v-model="value"
         :min="minValue"
         :max="maxValue"

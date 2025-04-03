@@ -9,7 +9,7 @@ const props = defineProps<{
 
 const classes = computed(() =>
   cn(
-    'relative flex cursor-default select-none items-center gap-3 rounded-md px-2 py-1.5 text-sm outline-none hover:bg-accent aria-disabled:pointer-events-none aria-selected:bg-accent aria-selected:text-accent-foreground aria-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0',
+    'relative flex cursor-default select-none items-center gap-3 rounded-md px-2 py-1.5 text-sm outline-hidden hover:bg-accent aria-disabled:pointer-events-none aria-selected:bg-accent aria-selected:text-accent-foreground aria-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0',
     props.class
   )
 )

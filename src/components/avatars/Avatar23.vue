@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-background flex items-center rounded-full border p-1 shadow-sm">
+  <div class="bg-background flex items-center rounded-full border p-1 shadow-xs">
     <div class="flex -space-x-1.5">
       <img
         class="ring-background rounded-full ring-1"
