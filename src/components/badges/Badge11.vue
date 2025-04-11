@@ -12,7 +12,7 @@ const checked = ref(false)
     :class="
       cn(
         badgeVariants({ variant: 'default' }),
-        'cursor-pointer hover:bg-primary/80 has-data-[state=unchecked]:bg-muted has-data-[state=unchecked]:text-muted-foreground has-focus-visible:outline has-focus-visible:outline-2 has-focus-visible:outline-ring/70'
+        'cursor-pointer hover:bg-primary/80 has-data-[state=unchecked]:bg-muted has-data-[state=unchecked]:text-muted-foreground has-focus-visible:outline-2 has-focus-visible:outline-ring/70'
       )
     "
   >
