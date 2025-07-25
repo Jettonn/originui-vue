@@ -74,6 +74,12 @@ const router = createRouter({
       name: 'tooltips',
       component: () => import('@/views/Tooltips.vue'),
       meta: { title: 'originui-vue/tooltips' }
+    },
+    {
+      path: '/tabs',
+      name: 'tabs',
+      component: () => import('@/views/Tabs.vue'),
+      meta: { title: 'originui-vue/tabs' }
     }
   ]
 })

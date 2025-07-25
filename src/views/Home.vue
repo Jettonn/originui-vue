@@ -76,6 +76,7 @@ const availableComponents = [
   { name: 'Dialogs', path: '/dialogs' },
   { name: 'Accordion', path: '/accordions' },
   { name: 'Tooltip', path: '/tooltips' },
+  { name: 'Tabs', path: '/tabs' },
   { name: 'Dropdown and Popover', path: '#' }
 ]
 
