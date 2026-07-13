@@ -7,7 +7,13 @@ const props = defineProps<{ class?: HTMLAttributes['class'] }>()
 
 <template>
   <tfoot
-    :class="cn('border-t bg-muted/50 font-medium [&>tr]:last:border-b-0', props.class)"
+    data-slot="table-footer"
+    :class="
+      cn(
+        'border-t in-data-[variant=card]:border-none bg-transparent not-in-data-[variant=card]:bg-[color-mix(in_srgb,var(--card),var(--color-black)_2%)] font-medium dark:not-in-data-[variant=card]:bg-[color-mix(in_srgb,var(--card),var(--color-white)_2%)] [&>tr]:last:border-b-0',
+        props.class
+      )
+    "
   >
     <slot />
   </tfoot>

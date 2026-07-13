@@ -6,15 +6,16 @@ const props = defineProps<{ class?: HTMLAttributes['class'] }>()
 </script>
 
 <template>
-  <th
-    data-slot="table-head"
+  <div
+    data-slot="frame"
     :class="
       cn(
-        'h-10 whitespace-nowrap px-2.5 text-left align-middle font-medium text-muted-foreground leading-none has-[[role=checkbox]]:w-px last:has-[[role=checkbox]]:ps-0 first:has-[[role=checkbox]]:pe-0',
+        'relative flex flex-col rounded-2xl bg-muted/72 p-1',
+        '*:[[data-slot=frame-panel]+[data-slot=frame-panel]]:mt-1',
         props.class
       )
     "
   >
     <slot />
-  </th>
+  </div>
 </template>
