@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { cn } from '@/lib/utils'
 import { TooltipContent, TooltipArrow, TooltipPortal } from 'reka-ui'
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import type { VNode } from 'vue'
 
 // Define props to handle side offset, class, and children

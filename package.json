@@ -37,9 +37,9 @@
   },
   "devDependencies": {
     "@iconify/vue": "^4.3.0",
-    "@tsconfig/node20": "^20.1.9",
-    "@types/node": "^20.19.43",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/node": "^22.20.1",
+    "@vitejs/plugin-vue": "^6.0.7",
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.9.0",
     "@vue/tsconfig": "^0.5.1",
@@ -50,9 +50,9 @@
     "postcss": "^8.5.19",
     "prettier": "^3.9.5",
     "tailwindcss": "^4.3.2",
-    "typescript": "~5.6.3",
-    "vite": "^5.4.21",
-    "vite-plugin-vue-devtools": "^7.7.10",
-    "vue-tsc": "^2.2.12"
+    "typescript": "~5.9.3",
+    "vite": "^8.1.4",
+    "vite-plugin-vue-devtools": "^8.1.5",
+    "vue-tsc": "^3.3.7"
   }
 }

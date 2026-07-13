@@ -18,7 +18,7 @@ const { state, dismiss } = useToast()
       v-for="{ id, title, description, action, ...props } in state.toasts"
       :key="id"
       v-bind="props"
-      @update:open="open => !open && dismiss(id)"
+      @update:open="(open: boolean) => !open && dismiss(id)"
     >
       <div class="flex w-full justify-between gap-2">
         <div class="flex flex-col gap-3">
