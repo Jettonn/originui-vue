@@ -5,7 +5,7 @@
         <PageHeader
           title="Tabs Components - Origin UI"
           heading="Tabs"
-          description="A growing collection of 20 tabs components built with React and Tailwind CSS."
+          description="A growing collection of tabs components built with Vue and TailwindCSS."
         >
           A growing collection of {{ totalComponents }} tabs components built with
           <span class="text-vue">Vue</span> and TailwindCSS.

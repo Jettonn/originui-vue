@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 const props = defineProps<TabsListProps & { class?: HTMLAttributes['class'] }>()
 
-const delegatedProps = reactiveOmit(props, 'class')
+const delegatedProps: TabsListProps = reactiveOmit(props, 'class')
 </script>
 
 <template>
