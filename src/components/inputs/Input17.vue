@@ -10,7 +10,7 @@ import Input from '@/components/ui/Input.vue'
     <div class="flex rounded-lg shadow-xs shadow-black/[.04]">
       <div class="relative">
         <select
-          class="peer inline-flex h-full appearance-none items-center rounded-s-lg border border-input bg-background pe-8 ps-3 text-sm text-muted-foreground ring-offset-background transition-shadow hover:bg-accent hover:text-foreground focus:z-10 focus-visible:border-ring focus-visible:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+          class="peer inline-flex h-full appearance-none items-center rounded-s-lg border border-input bg-background pe-8 ps-3 text-sm text-muted-foreground ring-offset-background transition-shadow hover:bg-accent hover:text-foreground focus:z-10 focus-visible:border-ring focus-visible:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-64"
           aria-label="Protocol"
         >
           <option value="https://">https://</option>
@@ -21,7 +21,7 @@ import Input from '@/components/ui/Input.vue'
           <option value="wss://">wss://</option>
         </select>
         <span
-          class="pointer-events-none absolute inset-y-0 end-px z-10 flex h-full w-9 items-center justify-center text-muted-foreground/80 peer-disabled:opacity-50"
+          class="pointer-events-none absolute inset-y-0 end-px z-10 flex h-full w-9 items-center justify-center text-muted-foreground/80 peer-disabled:opacity-64"
         >
           <ChevronDown :size="16" :stroke-width="2" aria-hidden="true" />
         </span>

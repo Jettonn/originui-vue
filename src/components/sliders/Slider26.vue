@@ -224,7 +224,7 @@ const isBarInSelectedRange = (index: number) => {
             aria-label="Enter minimum price"
           />
           <span
-            class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-muted-foreground peer-disabled:opacity-50"
+            class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-muted-foreground peer-disabled:opacity-64"
           >
             $
           </span>
@@ -251,7 +251,7 @@ const isBarInSelectedRange = (index: number) => {
             aria-label="Enter maximum price"
           />
           <span
-            class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-muted-foreground peer-disabled:opacity-50"
+            class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-sm text-muted-foreground peer-disabled:opacity-64"
           >
             $
           </span>

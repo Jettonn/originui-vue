@@ -27,7 +27,7 @@ const {
       />
       <div
         id="character-count"
-        class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-xs tabular-nums text-muted-foreground peer-disabled:opacity-50"
+        class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-xs tabular-nums text-muted-foreground peer-disabled:opacity-64"
         aria-live="polite"
         role="status"
       >

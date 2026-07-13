@@ -33,12 +33,12 @@ const now = today(getLocalTimeZone())
       <div class="flex">
         <DateRangePickerField
           v-slot="{ segments }"
-          class="inline-flex h-9 w-full items-center overflow-hidden whitespace-nowrap rounded-lg border border-input bg-background px-3 py-2 pe-9 text-sm shadow-xs shadow-black/[.04] ring-offset-background transition-shadow focus-within:border-ring data-disabled:opacity-50 focus-within:outline-hidden focus-within:ring-2 focus-within:ring-ring/30 focus-within:ring-offset-2"
+          class="inline-flex h-9 w-full items-center overflow-hidden whitespace-nowrap rounded-lg border border-input bg-background px-3 py-2 pe-9 text-sm shadow-xs shadow-black/[.04] ring-offset-background transition-shadow focus-within:border-ring data-disabled:opacity-64 focus-within:outline-hidden focus-within:ring-2 focus-within:ring-ring/30 focus-within:ring-offset-2"
         >
           <template v-for="item in segments.start" :key="item.part">
             <DateRangePickerInput
               :part="item.part"
-              class="inline rounded p-0.5 text-foreground caret-transparent outline outline-0 focus:bg-accent focus:text-foreground aria-[valuetext=Empty]:text-muted-foreground/70 focus:aria-[valuetext=Empty]:text-foreground data-disabled:cursor-not-allowed data-invalid:data-focused:bg-destructive data-[type=literal]:px-0 data-invalid:text-destructive data-[segment=literal]:text-muted-foreground/70 data-disabled:opacity-50 data-invalid:focus:data-placeholder:text-destructive-foreground data-invalid:focus:text-destructive-foreground data-invalid:aria-[valuetext=Empty]:text-destructive"
+              class="inline rounded p-0.5 text-foreground caret-transparent outline outline-0 focus:bg-accent focus:text-foreground aria-[valuetext=Empty]:text-muted-foreground/70 focus:aria-[valuetext=Empty]:text-foreground data-disabled:cursor-not-allowed data-invalid:data-focused:bg-destructive data-[type=literal]:px-0 data-invalid:text-destructive data-[segment=literal]:text-muted-foreground/70 data-disabled:opacity-64 data-invalid:focus:data-placeholder:text-destructive-foreground data-invalid:focus:text-destructive-foreground data-invalid:aria-[valuetext=Empty]:text-destructive"
               type="start"
             >
               {{ item.value }}
@@ -48,7 +48,7 @@ const now = today(getLocalTimeZone())
           <template v-for="item in segments.end" :key="item.part">
             <DateRangePickerInput
               :part="item.part"
-              class="inline rounded p-0.5 text-foreground caret-transparent outline outline-0 focus:bg-accent focus:text-foreground aria-[valuetext=Empty]:text-muted-foreground/70 focus:aria-[valuetext=Empty]:text-foreground data-disabled:cursor-not-allowed data-invalid:data-focused:bg-destructive data-[type=literal]:px-0 data-invalid:text-destructive data-[segment=literal]:text-muted-foreground/70 data-disabled:opacity-50 data-invalid:focus:data-placeholder:text-destructive-foreground data-invalid:focus:text-destructive-foreground data-invalid:aria-[valuetext=Empty]:text-destructive"
+              class="inline rounded p-0.5 text-foreground caret-transparent outline outline-0 focus:bg-accent focus:text-foreground aria-[valuetext=Empty]:text-muted-foreground/70 focus:aria-[valuetext=Empty]:text-foreground data-disabled:cursor-not-allowed data-invalid:data-focused:bg-destructive data-[type=literal]:px-0 data-invalid:text-destructive data-[segment=literal]:text-muted-foreground/70 data-disabled:opacity-64 data-invalid:focus:data-placeholder:text-destructive-foreground data-invalid:focus:text-destructive-foreground data-invalid:aria-[valuetext=Empty]:text-destructive"
               type="end"
             >
               {{ item.value }}
