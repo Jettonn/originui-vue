@@ -1,12 +1,12 @@
-# Origin UI - Vue
+# COSS UI - Vue
 
 > [!NOTE]  
-> This is a fork of the original [Origin UI](https://originui.com/) project. This project is unaffiliated with the original. I appreciate their work and have developed these Vue components based on their design.
+> This is an unaffiliated, community **Vue port of [COSS UI](https://coss.com/ui)** (formerly Origin UI — the Cal.com design system, [github.com/cosscom/coss](https://github.com/cosscom/coss)). I appreciate their work and have built these Vue components to match their design.
 
 > [!NOTE]  
-> This is a work in progress. For some components, the implementation is coming soon using (e.g. [Reka UI](https://www.reka-ui.com/)).
+> This is a work in progress. The design is being migrated to match the COSS design system, and some components are still being updated.
 
-Origin UI - Vue is a collection of copy-and-paste components for quickly building app UIs using Vue. The collection currently features 90+ components and is updated with new examples if the original library is updated.
+COSS UI - Vue is a collection of copy-and-paste components for quickly building app UIs using Vue. The collection currently features 90+ components and tracks the COSS UI design.
 
 ## Demo
 
@@ -15,14 +15,15 @@ Origin UI - Vue is a collection of copy-and-paste components for quickly buildin
 ## Features
 
 - Built with Vue and TailwindCSS
+- Design tokens matched to the COSS design system
 - Fully customizable
 - Responsive design
 
-## Differences from the original [Origin UI](https://originui.com/)
+## Differences from [COSS UI](https://coss.com/ui)
 
-- [x] [Vue](https://vuejs.org) instead of ~~Next.js~~
+- [x] [Vue](https://vuejs.org) instead of ~~Next.js / React~~
 - [x] [Lucide Vue Next](https://lucide.dev/guide/packages/lucide-vue-next) instead of ~~Lucide React~~
-- [x] [Reka UI](https://www.reka-ui.com/) instead of ~~Radix UI~~
+- [x] [Reka UI](https://www.reka-ui.com/) primitives instead of ~~Base UI~~ (Base UI is React-only; Reka UI is the Vue-native equivalent)
 
 ## Getting Started
 
@@ -177,7 +178,7 @@ Feel free to use these components in personal and commercial projects. However, 
 
 ## Acknowledgements
 
-- [Origin UI](https://originui.com/) - The original project from which this Vue version is adapted
+- [COSS UI](https://coss.com/ui) ([github.com/cosscom/coss](https://github.com/cosscom/coss)) - The design system this Vue port is based on (formerly Origin UI)
 - [Vue](https://vuejs.org)
 - [TailwindCSS](https://tailwindcss.com)
 - [Lucide Icons](https://lucide.dev)

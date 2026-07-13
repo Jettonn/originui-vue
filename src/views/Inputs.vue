@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Input and Textarea Components | Origin UI Vue"
+          title="Input and Textarea Components | COSS UI Vue"
           heading="Input and Textarea"
           description="A growing collection of inputs and textarea components built with Vue and TailwindCSS"
         >

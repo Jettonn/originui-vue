@@ -8,9 +8,9 @@ import { Plus } from 'lucide-vue-next'
 const items = [
   {
     id: '1',
-    title: 'What makes Origin UI different?',
+    title: 'What makes COSS UI different?',
     content:
-      'Origin UI focuses on developer experience and performance. Built with TypeScript, it offers excellent type safety, follows accessibility standards, and provides comprehensive documentation with regular updates.'
+      'COSS UI focuses on developer experience and performance. Built with TypeScript, it offers excellent type safety, follows accessibility standards, and provides comprehensive documentation with regular updates.'
   },
   {
     id: '2',
@@ -20,7 +20,7 @@ const items = [
   },
   {
     id: '3',
-    title: 'Is Origin UI optimized for performance?',
+    title: 'Is COSS UI optimized for performance?',
     content:
       'Yes, with tree-shaking, code splitting, and minimal runtime overhead. Most components are under 5KB gzipped.'
   },

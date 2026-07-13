@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Badge Components | Origin UI Vue"
+          title="Badge Components | COSS UI Vue"
           heading="Badge"
           description="A growing collection of badge components built with Vue and TailwindCSS."
         >

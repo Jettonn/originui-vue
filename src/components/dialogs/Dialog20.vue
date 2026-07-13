@@ -16,7 +16,7 @@ import DialogImg from '@/assets/dialog-content.png'
 
 const stepContent = [
   {
-    title: 'Welcome to Origin UI',
+    title: 'Welcome to COSS UI',
     description:
       'Discover a powerful collection of components designed to enhance your development workflow.'
   },
@@ -31,7 +31,7 @@ const stepContent = [
   {
     title: 'Get Support',
     description:
-      'Access our extensive documentation and community resources to make the most of Origin UI.'
+      'Access our extensive documentation and community resources to make the most of COSS UI.'
   }
 ]
 

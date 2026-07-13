@@ -21,7 +21,7 @@ import Textarea from '@/components/ui/Textarea.vue'
         <DialogTitle>Send us feedback</DialogTitle>
         <DialogDescription>
           Watch
-          <a class="text-foreground hover:underline" href="#">tutorials</a>, read Origin UI's
+          <a class="text-foreground hover:underline" href="#">tutorials</a>, read COSS UI's
           <a class="text-foreground hover:underline" href="#">documentation</a>, or join our
           <a class="text-foreground hover:underline" href="#">Discord</a> for community help.
         </DialogDescription>
@@ -29,7 +29,7 @@ import Textarea from '@/components/ui/Textarea.vue'
       <form class="space-y-5">
         <Textarea
           id="feedback"
-          placeholder="How can we improve Origin UI?"
+          placeholder="How can we improve COSS UI?"
           aria-label="Send feedback"
         />
         <div class="flex flex-col sm:flex-row sm:justify-end">

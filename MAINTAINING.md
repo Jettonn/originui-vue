@@ -1,4 +1,4 @@
-# Maintaining originui-vue
+# Maintaining coss-ui-vue
 
 A practical guide to keeping this repository healthy — and a blueprint you can reuse
 to set up any similar Vue component project. It documents the conventions currently

@@ -1,24 +1,24 @@
 <template>
   <div class="my-16 px-4 text-center sm:px-6">
     <p class="mb-6 text-balance text-muted-foreground">
-      Suggest a component or improvements you'd like to see & check out the original Origin UI!
+      Suggest a component or improvements you'd like to see & check out COSS UI!
     </p>
     <div class="flex flex-wrap items-center justify-center gap-4">
       <a
         class="inline-flex h-9 items-center justify-center whitespace-nowrap rounded-full bg-secondary px-4 py-2 text-sm font-medium text-primary-foreground shadow-xs shadow-black/[.04] transition-shadow hover:bg-secondary/80 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-input disabled:pointer-events-none disabled:opacity-50"
         href="https://github.com/Jettonn/originui-vue/discussions"
         target="_blank"
-        aria-label="Send a suggestion to the Origin UI - Vue repository"
+        aria-label="Send a suggestion to the COSS UI - Vue repository"
       >
         <span class="text-secondary-foreground">Send Suggestion</span>
       </a>
       <a
         class="inline-flex h-9 items-center justify-center whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-xs shadow-black/[.04] transition-shadow hover:bg-primary/90 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-        href="https://originui.com/"
+        href="https://coss.com/ui"
         target="_blank"
-        aria-label="Visit the original Origin UI website"
+        aria-label="Visit the COSS UI website"
       >
-        <span class="text-primary-foreground">Check out the original</span>
+        <span class="text-primary-foreground">Check out COSS UI</span>
       </a>
     </div>
   </div>

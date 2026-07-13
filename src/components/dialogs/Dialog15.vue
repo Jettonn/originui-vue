@@ -100,7 +100,7 @@ const handleFocus = () => {
             id="input-53"
             class="pe-9"
             type="text"
-            value="https://originui.com/refer/87689"
+            value="https://coss.com/ui/refer/87689"
             readonly
           />
           <TooltipProvider :delay-duration="0">

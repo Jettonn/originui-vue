@@ -63,7 +63,7 @@ const selectedRating = ref<string>('')
               <Label for="feedback">Why did you give this rating?</Label>
               <Textarea
                 id="feedback"
-                placeholder="How can we improve Origin UI?"
+                placeholder="How can we improve COSS UI?"
                 aria-label="Send feedback"
               />
             </div>

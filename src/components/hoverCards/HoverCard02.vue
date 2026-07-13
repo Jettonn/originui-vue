@@ -35,7 +35,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/H
           </div>
         </div>
         <p class="text-sm text-muted-foreground">
-          Designer at <strong class="font-medium text-foreground">@Origin UI</strong>. Crafting web
+          Designer at <strong class="font-medium text-foreground">@COSS UI</strong>. Crafting web
           experiences with Tailwind CSS.
         </p>
         <div class="flex items-center gap-2">
