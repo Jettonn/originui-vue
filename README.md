@@ -66,15 +66,15 @@ If you want to use the components in your project, you need to setup the followi
 
 #### Utils
 
-In the `src/lib/utils.ts` folder you will find the common `cn` function for Tailwind CSS class merging and the `buttonVariants` function for generating the button classes.
+In the `src/lib/utils.ts` file you will find the common `cn` function for Tailwind CSS class merging and the `buttonVariants` function for generating the button classes.
 
 #### Base Components
 
-You need to copy the base components from the `src/lib/components/ui` folder to your project and adjust the imports accordingly.
+You need to copy the base components from the `src/components/ui` folder to your project and adjust the imports accordingly.
 
 #### CSS Variables
 
-Import the CSS in your `src/lib/app.css` or `src/lib/main.css` file (the following is based on Tailwind CSS):
+Import the CSS in your main stylesheet (in this project, `src/assets/main.css`; the following is based on Tailwind CSS):
 
 ```css
 @layer base {
@@ -157,8 +157,12 @@ If you want to use the helpers used in some components you need to copy the `src
 - Checkbox, Radio, and Switch
 - Select
 - Sliders
-- Alert, Notification, and Banner (available soon)
+- Alert, Notification, and Banner
 - Dialogs
+- Accordions
+- Avatars
+- Tabs
+- Tooltips
 - (More components coming soon)
 
 ## Contributing
@@ -176,6 +180,10 @@ Feel free to use these components in personal and commercial projects. However, 
 - [TailwindCSS](https://tailwindcss.com)
 - [Lucide Icons](https://lucide.dev)
 - [Reka UI](https://www.reka-ui.com/)
+
+## Related Projects
+
+- [shadcn-originui-vue](https://github.com/mtzrmzia/shadcn-originui-vue) by [@mtzrmzia](https://github.com/mtzrmzia) - Demonstrates using shadcn-vue and originui-vue together in a single Vue/Nuxt 3 app with shared CSS variables and utilities
 
 ## Contact
 
