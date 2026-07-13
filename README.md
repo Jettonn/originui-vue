@@ -167,7 +167,9 @@ If you want to use the helpers used in some components you need to copy the `src
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. See
+[MAINTAINING.md](MAINTAINING.md) for the development workflow, CI, and dependency
+upgrade guidelines.
 
 ## Terms of Use
 
