@@ -104,6 +104,24 @@ const router = createRouter({
       name: 'dropdowns',
       component: () => import('@/views/Dropdowns.vue'),
       meta: { title: 'coss-ui-vue/dropdowns' }
+    },
+    {
+      path: '/tables',
+      name: 'tables',
+      component: () => import('@/views/Tables.vue'),
+      meta: { title: 'coss-ui-vue/tables' }
+    },
+    {
+      path: '/steppers',
+      name: 'steppers',
+      component: () => import('@/views/Steppers.vue'),
+      meta: { title: 'coss-ui-vue/steppers' }
+    },
+    {
+      path: '/navigation-menus',
+      name: 'navigation-menus',
+      component: () => import('@/views/NavigationMenus.vue'),
+      meta: { title: 'coss-ui-vue/navigation-menus' }
     }
   ]
 })

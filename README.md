@@ -168,6 +168,9 @@ If you want to use the helpers used in some components you need to copy the `src
 - Progress
 - Pagination
 - Dropdown Menu
+- Table
+- Stepper
+- Navigation Menu
 - (More components coming soon)
 
 ## Contributing
