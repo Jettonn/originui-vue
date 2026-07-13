@@ -98,6 +98,12 @@ const router = createRouter({
       name: 'pagination',
       component: () => import('@/views/Pagination.vue'),
       meta: { title: 'coss-ui-vue/pagination' }
+    },
+    {
+      path: '/dropdowns',
+      name: 'dropdowns',
+      component: () => import('@/views/Dropdowns.vue'),
+      meta: { title: 'coss-ui-vue/dropdowns' }
     }
   ]
 })
