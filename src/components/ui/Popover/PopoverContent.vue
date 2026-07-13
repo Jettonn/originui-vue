@@ -22,7 +22,7 @@ const props = withDefaults(
       :sideOffset="sideOffset"
       :class="
         cn(
-          'z-50 min-w-[8rem] rounded-lg border border-input bg-popover p-4 text-popover-foreground shadow-lg shadow-black/5 outline-hidden',
+          'relative z-50 min-w-[8rem] rounded-lg border border-input bg-popover p-4 text-popover-foreground shadow-lg shadow-black/5 outline-hidden before:pointer-events-none before:absolute before:inset-0 before:rounded-[calc(var(--radius-lg)-1px)] before:shadow-[0_1px_rgba(0,0,0,0.04)] dark:before:shadow-[0_-1px_rgba(255,255,255,0.06)]',
           'data-[state=open]:animate-in data-[state=closed]:animate-out',
           'data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
           'data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
