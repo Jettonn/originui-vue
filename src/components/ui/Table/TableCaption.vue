@@ -6,7 +6,10 @@ const props = defineProps<{ class?: HTMLAttributes['class'] }>()
 </script>
 
 <template>
-  <caption :class="cn('mt-4 text-sm text-muted-foreground', props.class)">
+  <caption
+    data-slot="table-caption"
+    :class="cn('in-data-[variant=card]:my-4 mt-4 text-muted-foreground text-sm', props.class)"
+  >
     <slot />
   </caption>
 </template>

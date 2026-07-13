@@ -6,7 +6,7 @@ const props = defineProps<{ class?: HTMLAttributes['class'] }>()
 </script>
 
 <template>
-  <thead data-slot="table-header" :class="cn('[&_tr]:border-b', props.class)">
+  <footer data-slot="frame-panel-footer" :class="cn('px-5 py-4', props.class)">
     <slot />
-  </thead>
+  </footer>
 </template>

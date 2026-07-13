@@ -32,7 +32,7 @@ import DemoComponent from '@/demo/DemoComponent.vue'
 import PageHeader from '@/demo/PageHeader.vue'
 import { computed, ref } from 'vue'
 
-const tableFiles = ref(['Table01', 'Table02'])
+const tableFiles = ref(['Table01', 'Table02', 'Table03', 'Table04', 'Table05'])
 const tableDirectory = 'tables'
 
 const totalComponents = computed(() => tableFiles.value.length)
