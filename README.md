@@ -164,6 +164,10 @@ If you want to use the helpers used in some components you need to copy the `src
 - Avatars
 - Tabs
 - Tooltips
+- Breadcrumb
+- Progress
+- Pagination
+- Dropdown Menu
 - (More components coming soon)
 
 ## Contributing
