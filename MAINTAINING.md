@@ -12,6 +12,7 @@ in place, the routine chores, and the known future work.
 - [Branch protection](#branch-protection)
 - [Dependency maintenance](#dependency-maintenance)
 - [Reviewing external PRs](#reviewing-external-prs)
+- [Tracking the COSS design system](#tracking-the-coss-design-system)
 - [Known constraints & future work](#known-constraints--future-work)
 - [Replicating this setup on another project](#replicating-this-setup-on-another-project)
 
@@ -159,6 +160,49 @@ rather than expanding someone else's PR.
 
 ---
 
+## Tracking the COSS design system
+
+This project is a Vue port of [COSS UI](https://coss.com/ui) (formerly Origin UI;
+source at [github.com/cosscom/coss](https://github.com/cosscom/coss), the `apps/ui`
+and `apps/origin` directories are MIT-licensed). COSS itself is built with **React +
+Base UI**, which has no Vue equivalent — so this port keeps **Reka UI** as its headless
+primitive layer and matches COSS's *design*, not its component library.
+
+### Design tokens
+
+The palette lives in `src/assets/main.css` and mirrors COSS's
+`packages/ui/src/styles/globals.css`: a **neutral** base with **translucent** surfaces
+(`--alpha(...)`, `color-mix(...)`) and semantic `info` / `success` / `warning` tokens.
+When COSS updates its tokens, update the `:root` / `.dark` blocks here to match.
+
+### Porting or adding a component
+
+1. **Keep the primitive headless with Reka UI.** Find the Reka equivalent of the Base UI
+   primitive COSS uses (Base UI `Tabs` → Reka `TabsRoot`, etc.).
+2. **Copy the styling from COSS's cva.** The class strings live in
+   `packages/ui/src/components/<name>.tsx` (MIT). Port the `cva(...)` base + variants into
+   the Vue primitive (`src/components/ui/`) or into `buttonVariants`/`badgeVariants` in
+   `src/lib/utils.ts`.
+3. **Translate Base UI conventions to Vue/Reka:**
+   - `data-pressed:` → `active:` (or Reka's `data-[state=...]`)
+   - `data-[slot=...]` selectors → drop, or map to your own markup
+   - `--theme(--color-white/16%)` → `rgba(...)` or `--alpha(var(--color-white)/16%)`
+   - `useRender` / `render` prop → Reka's `asChild` / `Primitive`
+4. **Preserve the public API.** Keep existing variant/size keys so the demo components
+   (which pass `class` overrides through `cn()`) keep working.
+5. **Verify visually** in light *and* dark before opening the PR — token/shadow changes
+   don't show up in type-check or build.
+
+### Known gap
+
+COSS's **input/textarea** use a wrapper element with a `before:` pseudo-element and
+`has-*` focus states. Porting that changes the DOM structure and would affect the
+~130 input/textarea demos, so this port currently applies COSS's *visual signatures*
+(radius, shadow, disabled opacity) without the wrapper. Adopting the wrapper pattern is
+future work — do it as its own PR with a full pass over the input demos.
+
+---
+
 ## Known constraints & future work
 
 - **TypeScript 7 is not yet usable here.** TS 7 is the new native (Go) compiler; as of
@@ -174,6 +218,11 @@ rather than expanding someone else's PR.
   `vue-gtag` 2→3.
 - **Accessibility polish for the Tabs demos** is tracked in an open issue (icon-only tabs
   need `aria-label`s; a couple of focus-ring and consistency nits).
+- **COSS design match — demo-level audit remaining.** The base `ui/` primitives now match
+  COSS, and the token swap restyles most demos automatically. A per-demo pass (radius,
+  spacing, and bespoke inline classes across the ~430 demo components) plus COSS's
+  input/textarea wrapper pattern are still open — see
+  [Tracking the COSS design system](#tracking-the-coss-design-system).
 - **No automated tests yet.** CI only type-checks, lints, and builds. If interactive
   behaviour grows, consider adding Vitest + Vue Test Utils and a component smoke test,
   wired into the same CI job.
