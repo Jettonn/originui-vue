@@ -7,79 +7,79 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: () => import('@/views/Home.vue'),
-      meta: { title: 'originui-vue/home' }
+      meta: { title: 'coss-ui-vue/home' }
     },
     {
       path: '/inputs',
       name: 'inputs',
       component: () => import('@/views/Inputs.vue'),
-      meta: { title: 'originui-vue/inputs' }
+      meta: { title: 'coss-ui-vue/inputs' }
     },
     {
       path: '/buttons',
       name: 'buttons',
       component: () => import('@/views/Buttons.vue'),
-      meta: { title: 'originui-vue/buttons' }
+      meta: { title: 'coss-ui-vue/buttons' }
     },
     {
       path: '/avatars',
       name: 'avatars',
       component: () => import('@/views/Avatars.vue'),
-      meta: { title: 'originui-vue/avatars' }
+      meta: { title: 'coss-ui-vue/avatars' }
     },
     {
       path: '/badges',
       name: 'badges',
       component: () => import('@/views/Badge.vue'),
-      meta: { title: 'originui-vue/badges' }
+      meta: { title: 'coss-ui-vue/badges' }
     },
     {
       path: '/check-radio-switches',
       name: 'check-radio-switches',
       component: () => import('@/views/CheckRadioSwitches.vue'),
-      meta: { title: 'originui-vue/check-radio-switches' }
+      meta: { title: 'coss-ui-vue/check-radio-switches' }
     },
     {
       path: '/selects',
       name: 'selects',
       component: () => import('@/views/Selects.vue'),
-      meta: { title: 'originui-vue/selects' }
+      meta: { title: 'coss-ui-vue/selects' }
     },
     {
       path: '/sliders',
       name: 'sliders',
       component: () => import('@/views/Sliders.vue'),
-      meta: { title: 'originui-vue/sliders' }
+      meta: { title: 'coss-ui-vue/sliders' }
     },
     {
       path: '/alerts-notifications-banners',
       name: 'alerts-notifications-banners',
       component: () => import('@/views/AlertsNotificationsBanners.vue'),
-      meta: { title: 'originui-vue/alerts-notifications-banners' }
+      meta: { title: 'coss-ui-vue/alerts-notifications-banners' }
     },
     {
       path: '/dialogs',
       name: 'dialogs',
       component: () => import('@/views/Dialogs.vue'),
-      meta: { title: 'originui-vue/dialogs' }
+      meta: { title: 'coss-ui-vue/dialogs' }
     },
     {
       path: '/accordions',
       name: 'accordions',
       component: () => import('@/views/Accordions.vue'),
-      meta: { title: 'originui-vue/accordions' }
+      meta: { title: 'coss-ui-vue/accordions' }
     },
     {
       path: '/tooltips',
       name: 'tooltips',
       component: () => import('@/views/Tooltips.vue'),
-      meta: { title: 'originui-vue/tooltips' }
+      meta: { title: 'coss-ui-vue/tooltips' }
     },
     {
       path: '/tabs',
       name: 'tabs',
       component: () => import('@/views/Tabs.vue'),
-      meta: { title: 'originui-vue/tabs' }
+      meta: { title: 'coss-ui-vue/tabs' }
     }
   ]
 })

@@ -13,7 +13,7 @@ import { defineComponent, h } from 'vue'
 const items = [
   {
     id: '1',
-    title: 'What makes Origin UI different?',
+    title: 'What makes COSS UI different?',
     icon: Command,
     collapsibles: [
       {
@@ -49,7 +49,7 @@ const items = [
   },
   {
     id: '3',
-    title: 'Is Origin UI optimized for performance?',
+    title: 'Is COSS UI optimized for performance?',
     icon: Zap,
     collapsibles: [
       {

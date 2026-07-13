@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Alert, Notification, and Banner Components - Origin UI"
+          title="Alert, Notification, and Banner Components - COSS UI"
           heading="Alert, Notification, and Banner"
           description="A growing collection of alert and banner components built with Vue and TailwindCSS."
         >

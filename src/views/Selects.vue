@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Select Components | Origin UI Vue"
+          title="Select Components | COSS UI Vue"
           heading="Select"
           description="A growing collection of select components built with Vue and TailwindCSS."
         >

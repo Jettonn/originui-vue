@@ -5,7 +5,7 @@
         class="mx-auto mb-16 flex h-[72px] w-full max-w-6xl items-center justify-between border-b border-border/70"
       >
         <router-link to="/" aria-label="Home">
-          <span class="sr-only">Origin UI - Vue</span>
+          <span class="sr-only">COSS UI - Vue</span>
           <svg
             class="stroke-vue"
             xmlns="http://www.w3.org/2000/svg"

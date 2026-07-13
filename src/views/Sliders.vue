@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Sliders Components | Origin UI Vue"
+          title="Sliders Components | COSS UI Vue"
           heading="Slider"
           description="A growing collection of slider components built with Vue and TailwindCSS."
         >

@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Dialog Components | Origin UI Vue"
+          title="Dialog Components | COSS UI Vue"
           heading="Dialog"
           description="A growing collection of dialog components built with Vue and TailwindCSS."
         >

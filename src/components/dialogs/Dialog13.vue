@@ -36,7 +36,7 @@ import Label from '@/components/ui/Label.vue'
           </svg>
         </div>
         <DialogHeader>
-          <DialogTitle class="sm:text-center">Sign up Origin UI</DialogTitle>
+          <DialogTitle class="sm:text-center">Sign up COSS UI</DialogTitle>
           <DialogDescription class="sm:text-center">
             We just need a few details to get you started.
           </DialogDescription>

@@ -10,14 +10,14 @@
             <span class="text-vue"> Vue </span>
           </h1>
           <p class="mb-4 text-lg text-muted-foreground">
-            Origin UI - Vue is an extensive collection of copy-and-paste components for quickly
+            COSS UI - Vue is an extensive collection of copy-and-paste components for quickly
             building app UIs. It's free, open-source, and ready to drop into your projects.
           </p>
           <p
             class="w-fit max-w-prose text-pretty border-t border-border pt-4 text-sm text-accent-foreground"
           >
             This project is unaffiliated with the original
-            <a class="text-vue underline" href="https://originui.com/" rel="noreferrer">Origin UI</a
+            <a class="text-vue underline" href="https://coss.com/ui" rel="noreferrer">COSS UI</a
             >. <br />
             <span class="text-xs text-muted-foreground">
               I appreciate their work and have developed these Vue components based on their design.
@@ -81,16 +81,16 @@ const availableComponents = [
 ]
 
 useHead({
-  title: 'Origin UI - Vue Components with Tailwind CSS',
+  title: 'COSS UI - Vue Components with Tailwind CSS',
   meta: [
     {
       name: 'description',
       content:
-        'Beautiful UI components built with Tailwind CSS and Vue. Origin UI - Vue is an extensive collection of copy-and-paste components for quickly building app UIs.'
+        'Beautiful UI components built with Tailwind CSS and Vue. COSS UI - Vue is an extensive collection of copy-and-paste components for quickly building app UIs.'
     },
     {
       property: 'og:title',
-      content: 'Origin UI - Vue Components with Tailwind CSS'
+      content: 'COSS UI - Vue Components with Tailwind CSS'
     },
     {
       property: 'og:description',
@@ -99,7 +99,7 @@ useHead({
     },
     {
       name: 'keywords',
-      content: 'Vue, Tailwind CSS, UI components, Origin UI, Vue components, frontend development'
+      content: 'Vue, Tailwind CSS, UI components, COSS UI, Vue components, frontend development'
     }
   ]
 })

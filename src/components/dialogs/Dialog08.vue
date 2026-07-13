@@ -15,7 +15,7 @@ import Label from '@/components/ui/Label.vue'
 import { CircleAlert } from 'lucide-vue-next'
 import { ref } from 'vue'
 
-const PROJECT_NAME = 'Origin UI'
+const PROJECT_NAME = 'COSS UI'
 const inputValue = ref('')
 </script>
 

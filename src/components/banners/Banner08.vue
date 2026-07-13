@@ -18,7 +18,7 @@ const isVisible = ref<boolean>(true)
         </div>
         <div class="flex grow flex-col justify-between gap-3 md:flex-row md:items-center">
           <div class="space-y-0.5">
-            <p class="text-sm font-medium">Boost your experience with Origin UI</p>
+            <p class="text-sm font-medium">Boost your experience with COSS UI</p>
             <p class="text-sm text-muted-foreground">
               The new feature is live! Try it out and let us know what you think.
             </p>

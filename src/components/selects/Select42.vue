@@ -17,8 +17,8 @@ import Label from '../ui/Label.vue'
 
 const organizations = [
   {
-    value: 'originui',
-    label: 'Origin UI'
+    value: 'coss',
+    label: 'COSS UI'
   },
   {
     value: 'cruip',
@@ -27,7 +27,7 @@ const organizations = [
 ]
 
 const open = ref(false)
-const selectedValue = ref('originui')
+const selectedValue = ref('coss')
 
 const selectedOrganization = computed(
   () => organizations.find(organization => organization.value === selectedValue.value)?.label

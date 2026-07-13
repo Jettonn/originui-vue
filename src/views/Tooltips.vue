@@ -3,7 +3,7 @@
     <div class="px-4 sm:px-6">
       <div ref="containerRef" class="mx-auto w-full max-w-6xl">
         <PageHeader
-          title="Tooltip and Hover Card Components - Origin UI"
+          title="Tooltip and Hover Card Components - COSS UI"
           heading="Tooltip"
           description="A growing collection of tooltip and hover card components built with Vue and TailwindCSS."
         >
