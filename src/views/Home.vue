@@ -77,6 +77,9 @@ const availableComponents = [
   { name: 'Accordion', path: '/accordions' },
   { name: 'Tooltip', path: '/tooltips' },
   { name: 'Tabs', path: '/tabs' },
+  { name: 'Breadcrumb', path: '/breadcrumbs' },
+  { name: 'Progress', path: '/progress' },
+  { name: 'Pagination', path: '/pagination' },
   { name: 'Dropdown and Popover', path: '#' }
 ]
 
