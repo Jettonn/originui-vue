@@ -80,6 +80,24 @@ const router = createRouter({
       name: 'tabs',
       component: () => import('@/views/Tabs.vue'),
       meta: { title: 'coss-ui-vue/tabs' }
+    },
+    {
+      path: '/breadcrumbs',
+      name: 'breadcrumbs',
+      component: () => import('@/views/Breadcrumbs.vue'),
+      meta: { title: 'coss-ui-vue/breadcrumbs' }
+    },
+    {
+      path: '/progress',
+      name: 'progress',
+      component: () => import('@/views/Progress.vue'),
+      meta: { title: 'coss-ui-vue/progress' }
+    },
+    {
+      path: '/pagination',
+      name: 'pagination',
+      component: () => import('@/views/Pagination.vue'),
+      meta: { title: 'coss-ui-vue/pagination' }
     }
   ]
 })
