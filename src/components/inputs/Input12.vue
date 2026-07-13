@@ -9,7 +9,7 @@ import Label from '@/components/ui/Label.vue'
     <div class="relative">
       <Input id="input-12" class="peer pe-12" placeholder="google" type="text" />
       <span
-        class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-sm text-muted-foreground peer-disabled:opacity-50"
+        class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-sm text-muted-foreground peer-disabled:opacity-64"
       >
         .com
       </span>

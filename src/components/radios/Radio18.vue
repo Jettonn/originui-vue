@@ -28,7 +28,7 @@ const items = [
         <img
           :src="item.image"
           :alt="item.label"
-          class="relative h-[70px] w-[88px] cursor-pointer overflow-hidden rounded-lg border border-input shadow-xs shadow-black/[.04] ring-offset-background transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-ring/70 peer-focus-visible:ring-offset-2 peer-data-disabled:cursor-not-allowed peer-data-[state=checked]:border-ring peer-data-[state=checked]:bg-accent peer-data-disabled:opacity-50"
+          class="relative h-[70px] w-[88px] cursor-pointer overflow-hidden rounded-lg border border-input shadow-xs shadow-black/[.04] ring-offset-background transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-ring/70 peer-focus-visible:ring-offset-2 peer-data-disabled:cursor-not-allowed peer-data-[state=checked]:border-ring peer-data-[state=checked]:bg-accent peer-data-disabled:opacity-64"
         />
         <span
           class="group mt-2 flex items-center gap-1 peer-data-[state=unchecked]:text-muted-foreground/70"

@@ -18,25 +18,25 @@ const selected = ref(['react', 'vue'])
       >
         <ListboxItem
           value="react"
-          class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
+          class="relative rounded-sm px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-64 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
         >
           React
         </ListboxItem>
         <ListboxItem
           value="vue"
-          class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
+          class="relative rounded-sm px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-64 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
         >
           Vue
         </ListboxItem>
         <ListboxItem
           value="angular"
-          class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
+          class="relative rounded-sm px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-64 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
         >
           Angular
         </ListboxItem>
         <ListboxItem
           value="svelte"
-          class="relative rounded-md px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-50 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
+          class="relative rounded-sm px-2 py-1.5 data-disabled:cursor-not-allowed data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground data-disabled:opacity-64 data-focus-visible:outline data-focus-visible:outline-2 data-focus-visible:outline-ring/70"
         >
           Svelte
         </ListboxItem>

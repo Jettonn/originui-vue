@@ -164,7 +164,7 @@ function handleAvatarChange(event: Event) {
                   required
                 />
                 <div
-                  class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-50"
+                  class="pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-3 text-muted-foreground/80 peer-disabled:opacity-64"
                 >
                   <Check :size="16" stroke-width="2" class="text-emerald-500" aria-hidden="true" />
                 </div>

@@ -23,7 +23,7 @@ const slotClass = (slot: SlotProps) => {
       v-slot="{ slots }"
       v-model="input"
       :maxlength="6"
-      container-class="flex items-center gap-3 has-disabled:opacity-50"
+      container-class="flex items-center gap-3 has-disabled:opacity-64"
     >
       <div class="flex">
         <div v-for="(slot, idx) in slots.slice(0, 3)" :key="idx" :class="slotClass(slot)">

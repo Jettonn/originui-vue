@@ -48,7 +48,7 @@ import { Mail } from 'lucide-vue-next'
           <div class="relative">
             <Input id="dialog-09" class="peer ps-9" placeholder="hi@yourcompany.com" type="email" />
             <div
-              class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 peer-disabled:opacity-50"
+              class="pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 peer-disabled:opacity-64"
             >
               <Mail :size="16" :stroke-width="2" aria-hidden="true" />
             </div>
