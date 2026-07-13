@@ -6,26 +6,30 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+// Button styling adapted from the COSS design system (packages/ui/src/components/button.tsx).
+// Base UI conventions are translated to Vue/Reka: `data-pressed:` -> `active:`, and the
+// inset highlight uses rgba() so it compiles without COSS's --theme() helper.
 export const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
+  "relative inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-lg border text-sm font-medium outline-none transition-shadow focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-64 [&_svg:not([class*='size-'])]:size-4 [&_svg:not([class*='opacity-'])]:opacity-80 [&_svg]:pointer-events-none [&_svg]:-mx-0.5 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow-sm hover:bg-primary/90",
+        default:
+          "border-primary bg-primary text-primary-foreground shadow-xs shadow-primary/24 not-disabled:inset-shadow-[0_1px_rgba(255,255,255,0.16)] hover:bg-primary/90 active:bg-primary/90 active:inset-shadow-[0_1px_rgba(0,0,0,0.08)] active:shadow-none disabled:shadow-none",
         destructive:
-          "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
+          "border-destructive bg-destructive text-white shadow-xs shadow-destructive/24 not-disabled:inset-shadow-[0_1px_rgba(255,255,255,0.16)] hover:bg-destructive/90 active:bg-destructive/90 active:inset-shadow-[0_1px_rgba(0,0,0,0.08)] active:shadow-none disabled:shadow-none focus-visible:ring-destructive/40",
         outline:
-          "border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground",
+          "border-input bg-popover text-foreground shadow-xs hover:bg-accent/50 active:bg-accent/50 dark:bg-input/32 dark:hover:bg-input/64 dark:active:bg-input/64",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/90 active:bg-secondary/80",
+        ghost: "border-transparent text-foreground hover:bg-accent active:bg-accent",
+        link: "border-transparent text-foreground underline-offset-4 hover:underline active:underline",
       },
       size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
-        icon: "size-9",
+        default: "h-9 px-3 sm:h-8",
+        sm: "h-8 gap-1.5 rounded-md px-2.5 text-xs sm:h-7",
+        lg: "h-10 px-3.5 sm:h-9",
+        icon: "size-9 sm:size-8",
       },
     },
     defaultVariants: {
