@@ -13,7 +13,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <Dialog :open="modelValue" @update:open="val => emit('update:modelValue', val)">
+  <Dialog :open="modelValue" @update:open="(val: boolean) => emit('update:modelValue', val)">
     <DialogContent class="overflow-hidden p-0 sm:max-w-lg [&>button:last-child]:hidden">
       <VisuallyHidden>
         <DialogTitle>Command Dialog</DialogTitle>
