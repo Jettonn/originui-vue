@@ -39,15 +39,22 @@ export const buttonVariants = cva(
   }
 );
 
+// Badge styling adapted from the COSS design system (packages/ui/src/components/badge.tsx):
+// squared-off (rounded-sm) badges plus soft info/success/warning/error variants that
+// use the new semantic tokens.
 export const badgeVariants = cva(
-  'inline-flex items-center justify-center rounded-full border px-1.5 text-xs font-medium leading-normal transition-colors outline-offset-2 focus-visible:outline-2 focus-visible:outline-ring/70',
+  "relative inline-flex shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-sm border border-transparent px-1.5 text-xs font-medium leading-normal outline-none transition-shadow focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-64 [&_svg:not([class*='size-'])]:size-3.5 [&_svg:not([class*='opacity-'])]:opacity-80 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: 'border-transparent bg-primary text-primary-foreground',
-        secondary: 'border-transparent bg-secondary text-secondary-foreground',
-        destructive: 'border-transparent bg-destructive text-destructive-foreground',
-        outline: 'text-foreground'
+        default: 'bg-primary text-primary-foreground',
+        secondary: 'bg-secondary text-secondary-foreground',
+        destructive: 'bg-destructive text-white',
+        outline: 'border-input bg-background text-foreground dark:bg-input/32',
+        error: 'bg-destructive/8 text-destructive-foreground dark:bg-destructive/16',
+        info: 'bg-info/8 text-info-foreground dark:bg-info/16',
+        success: 'bg-success/8 text-success-foreground dark:bg-success/16',
+        warning: 'bg-warning/8 text-warning-foreground dark:bg-warning/16'
       }
     },
     defaultVariants: {
