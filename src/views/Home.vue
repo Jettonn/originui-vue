@@ -80,7 +80,7 @@ const availableComponents = [
   { name: 'Breadcrumb', path: '/breadcrumbs' },
   { name: 'Progress', path: '/progress' },
   { name: 'Pagination', path: '/pagination' },
-  { name: 'Dropdown and Popover', path: '#' }
+  { name: 'Dropdown Menu', path: '/dropdowns' }
 ]
 
 useHead({
