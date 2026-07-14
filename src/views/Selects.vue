@@ -94,7 +94,10 @@ const selectFiles = ref([
   'Select48',
   'Select49',
   'Select50',
-  'Select51'
+  'Select51',
+  'Select52',
+  'Select53',
+  'Select54'
 ])
 const directory = 'selects'
 
